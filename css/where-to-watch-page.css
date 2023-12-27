@@ -1,0 +1,23 @@
+@import url("../css/_optional-cta-module.css");
+
+.logos-section{clear: both; width: 100%;}
+.cnty-dropdown{ margin: 0 auto;}
+.logos-header{margin: 0 auto; padding-top: 10px; text-align: center;}
+.logos-main{padding: 47px; border: 9px solid var(--limegreen); border-radius: 24px;}
+ul.logos-row{margin: 0; gap: 48px;}
+ul.logos-row > li::before {display: none;}
+ 
+
+/*-- media css starts here --*/
+ @media screen and (min-width: 1024px) {
+    .cnty-dropdown{padding: 48px 0;  width: 480px;}
+    .logos-header{width: 840px;  font-size: 2.5rem;}
+    .logos-main{margin-bottom: 80px;}
+    ul.logos-row{gap: 48px;}
+    ul.logos-row > li img{width: 125px;}
+ }
+ @media only screen (min-width: 1299px) and (max-width: 1024px) {
+    ul.logos-row{gap: }
+    ul.logos-row >li img{width: 108px;}
+    
+ }

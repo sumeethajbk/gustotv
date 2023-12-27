@@ -1,0 +1,82 @@
+@import url("../css/_accordion-module.css");
+@import url("../css/_support-module.css");
+@import url("../css/_hero-banner.css");
+@import url("../css/_featured-news-events-module.css");
+@import url("../css/_feature-panel-section.css");
+@import url("../css/_common-cta-section.css");
+@import url("../css/_tiled-module.css");
+@import url("../css/_two-paths-module.css");
+@import url("../css/_intro-module.css");
+@import url("../css/_features-module.css");
+@import url("../css/_repeater-section.css");
+
+
+.hero-banner-section {margin-bottom: 37px;}
+.hero-banner-main {max-width: 1152px; margin: 0 auto;}
+.img-shape-1{width: 352px; height: 437px; top: -62px; left: -115px;}
+.img-shape-2 {right:-54px; top: -33px; width: 297px; height: 388px;}
+
+.general-default-article-section {float: left; width: 100%; padding:82px 0 100px;}
+.intro-module {padding-top: 0;}
+.hr {margin: 35px 0; padding: 0 22px;  width: 100vw; margin-left: -50vw; left: 50%; position: relative;}
+.hr hr {margin: 0;}
+.general-default-article-section p span {font-size: 1.125rem; line-height: 1.39; font-weight: 600; padding: 55px 0; display: block;}
+
+.features-module {padding: 33px 0 21px;}
+.two-paths-module {padding: 46px 0 94px;}
+
+.repeater-section {padding: 70px 0 59px;}
+.repeater-section h2 {font-size: 2.875rem; color: var(--h4); line-height: 1.17; margin-bottom: 25px;}
+
+/* Default Thumb */
+.default-thumb {margin:60px 0 59px;}
+.default-thumb figure, .default-thumb img {overflow: hidden; height: 100%; width: 100%; object-fit: cover; margin: 0;}
+.default-thumb:before {top: 23px; left: -50px; width: 157px; height: 209px; content: ""; position: absolute; display: block; background: url("../images/default-svg-top.svg") 0 0 no-repeat;}
+.default-thumb:after {bottom: -84px; right: -119px; width:362px; height:401px; content: ""; position: absolute; display: block; background: url("../images/default-svg-bottom.svg") 0 0 no-repeat;}
+
+/* Single Testimmonial */
+.single-testimonial {clear: both; width: 100%; padding:62px 65px 51px; margin:59px 0 29px;}
+.single-testimonial .container {padding: 0;}
+.single-testimonial .testimonial-cnt {width: 100%; clear: both;  position: relative; margin: 0 0 29px 0; font-size: 1.375rem; font-weight:300; line-height: 1.36; color: var(--white); letter-spacing: 0.4px; padding: 53px 0 0 0;}
+.single-testimonial .testimonial-cnt:before {content: "" ; width: 28px; background:url("../images/quote.svg") 0 0 no-repeat; height: 26px; display: block; position: absolute; top: 0;}
+
+.author {align-items: center; color: var(--white);}
+.author-thumb {width:55px; height:55px; border-radius: 50%; margin-right: 18px;}
+.author-thumb img {border-radius: 50%;} 
+.author-name {font-size: 1.063rem; font-weight: 600; line-height: normal;}
+.author-pos {opacity: 0.5; font-size: 0.938rem;}
+
+.accordion-module {padding-top: 0;}
+.accordion-module .container {padding: 0;}
+.support-module .container {padding: 0;}
+
+
+
+/*-- media css starts here --*/
+@media only screen and (max-width: 1400px) {
+	.hr {padding: 0;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+	.img-shape-1 {width: 196px; height: 268px; top: -47px; left: -67px;}
+	.img-shape-2 {width: 165px; height: 218px; right: -29px; top: -20px;}
+	.repeater-section {padding: 0;}
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+	
+	
+}
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+	.general-default-article-section { padding:44px 0 36px; }
+	.def-intro {padding: 55px 0 40px;}
+    .default-thumb{max-height: 179px; margin: 60px 0 50px;}
+    .default-thumb img{max-height: 179px;}
+    .default-thumb:before { top: 8px; left: -32px; width: 92px; height: 84px; background-size: 92px 84px;}
+    .default-thumb:after { bottom: -40px; right: -73px; width: 198px; height: 164px; background-size: 198px 164px;}
+	.single-testimonial {padding: 35px 30px 28px;}
+	.single-testimonial .testimonial-cnt{font-size: 1.125rem;}
+	.two-paths-module {padding: 24px 0 94px;}
+	
+	.repeater-main {padding: 55px 0 17px;}
+}
