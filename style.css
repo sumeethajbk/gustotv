@@ -189,6 +189,7 @@ ul.slick-dots li.slick-active button {opacity:1;}
 
 #blog_list{margin: 0;}
 
+
 select.selectBox {display:none;}
 body .selectBox-dropdown {outline:0; width:100% !important; font-size: 1rem; line-height:1.56; background:var(--input); color:var(--body-text); box-shadow:none; border-radius: 0; padding: 18px 22px 15px 19px; border-bottom: 1px solid var(--blacktext); vertical-align:middle; font-family:"DMSerifDisplay"; font-weight: 600; height:auto;  text-transform:capitalize; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; cursor:pointer;}
 body .selectBox-dropdown:focus, body .selectBox-dropdown:focus .selectBox-arrow {border-color:rgba(207, 216, 223, 0.5);}
@@ -197,11 +198,12 @@ body .selectBox-dropdown .selectBox-label a {color:inherit;}
 body .selectBox-dropdown .selectBox-arrow {width:auto; right:25px; top:50%; transform:translateY(-50%); font-size:14px; color: var(--text-violetblue); border:none; font-family:"Font Awesome 6 Pro"; font-weight:900; position:absolute; display:flex; align-items:center; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; background:none;}
 body .selectBox-dropdown .selectBox-arrow::after {content:"\f0d7";}
 body .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow {transform:translateY(-50%) rotate(-180deg);}
-body ul.selectBox-dropdown-menu {border-color:transparent; padding:17px 0 9px; margin:5px 0 0 0; border: solid 1px rgba(0, 0, 0, 0.1) !important; box-shadow:0 1px 4px rgba(0, 0, 0, .2); -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, .2); -moz-box-shadow:0 1px 4px rgba(0, 0, 0, .2);}
-body ul.selectBox-dropdown-menu li {margin-bottom:10px; padding:0 27px;}
+body ul.selectBox-dropdown-menu { background-color: var(--input);     border-color:transparent; padding:17px 0 9px; margin:10px 0 0 0;  box-shadow:0 ; -webkit-box-shadow:0; -moz-box-shadow:0 1px 4px rgba(0, 0, 0, .2);}
+body ul.selectBox-dropdown-menu li { margin-bottom: 16px; padding: 0 24px; font-size: 0.8rem; color: var(--blacktext); }
 body ul.selectBox-dropdown-menu li::before {display:none;}
 body ul.selectBox-dropdown-menu li a {font-size:15px; line-height:24px; letter-spacing:normal; display:block; padding:0; white-space:nowrap; text-transform:capitalize; color:var(--body-text); overflow:hidden; text-overflow:ellipsis; text-decoration: none;}
 body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropdown-menu li a:hover {color:var(--text-violetblue); background-color:transparent; cursor:pointer; font-weight:500;}
+
 
 
 

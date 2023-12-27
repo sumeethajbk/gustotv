@@ -1,8 +1,8 @@
 .optional-cta-module{clear: both; position: relative; width: 100%; height: 100%;}
-/* .optional-img{position: relative; z-index: 0;} */
+
             
 .optional-main{padding: 128px 0;}
-.optional-main h2{font-size: 2rem; line-height: 1.25;}
+.optional-main h2{font-size: 2rem; line-height: 1.25; margin-bottom: 22px;}
 .optional-main p{font-size: 1rem;;}
 .min-line{width: 64px; border: 1px solid var(--green); margin: 22px 0 24px;}
 .optional-cta-bg{position: absolute;  top: 0; left: 0;  width: 100%; height: 100%; z-index: -1;}
