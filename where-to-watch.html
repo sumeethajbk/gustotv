@@ -19,9 +19,50 @@
 </head>
 <body>
 <div id="main">
-<header>
-
-</header>
+    <header id="main_header" class="main_header">
+        <div class="container">
+          <div class="header flex">
+            <div class="logo"> <a href="index.html"><img src="images/logo.svg" alt="GustoTV Logo"></a></div>
+            <div class="toggle_button flex flex-center"><span class="line line1"></span> <span class="line line2"></span> <span class="line line3"></span></div>
+            <div class="header_right mobile_menu flex">
+              <div class="header-btm">
+                <nav class="navigation mobile_menu">
+                  <ul class="main_menu">
+                    <li class="menu-item-has-children" id="menu-item-45"> <a href="#">Recipes</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Submenu 123</a></li>
+                        <li><a href="#">Submenu</a></li>
+                        <li><a href="#">Submenu</a></li>
+                        <li><a href="#">Submenu</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Where to Watch</a> </li>
+                    <li><a href="#">Shows</a></li>
+                    <li><a href="#">Hosts</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#">About</a></li>
+                  </ul>
+                </nav>
+                <div class="header-search"> <a href="#" class="search-btn"><span><img src="images/header-search.svg" alt="Search"/></span></a>
+                  <div class="search_form">
+                    <div class="search_form_container">
+                      <form role="search" method="get" class="hdrsearch-form" action="#">
+                        <input type="search" id="search" class="search-field" placeholder="I’m looking for..." value="" name="search">
+                        <input type="submit" name="" value="">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of header search --> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+       <!-- end of main header -->
+       <main id="mainContent"> </main>
+       
 <section class="header-banner-img">
     <picture class="object-fit">
         <source srcset="/images/where-to-watch-banner@2x.jpg" media="(min-width: 768px)">
@@ -103,28 +144,67 @@
                 <hr class="min-line">
                 <p>Ornare enim facilisi elementum nulla. Pellentesque pellentesque elementum lobortis dignissim pretium in cursus.</p>
                 <button class="" >Call to Action</button>
-                
             </div>
         </div>
     </div>   
 </section>
 
+<footer id="main_footer">
+    <div class="footer-img">
+      <picture class="object-fit">
+        <source srcset="images/footer-banner-two@2x.jpg" media="(min-width: 768px)">
+        <img src="images/footer-banner-two-mobile@2x.jpg" alt="Footer Banner"> </picture>
+    </div>
+    <!-- end of footer img -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer-top flex">
+          <div class="way-to-watch"> <a href="#" class="button green-btn"><span class="fa-regular fa-tv-retro"></span>Ways to Watch</a></div>
+          <!-- end of way to watch -->
+          <div class="footer-menu">
+            <ul class="menu-list">
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">News &amp; Press</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Casting</a></li>
+              <li><a href="#">Screening Room</a></li>
+            </ul>
+          </div>
+          <!-- end of footer menu -->
+          <div class="ftr-sm">
+            <ul>
+              <li><a href="#" class="flex flex-center"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#" class="flex flex-center"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#" class="flex flex-center"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#" class="flex flex-center"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              <li><a href="#" class="flex flex-center"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- ened of footer top -->
+          <hr>
+        <div class="footer-btm flex">
+          <p>Copyright &copy;2023 GustoTV</p>
+          <div class="privacy-links">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+          <!-- end of privacy links --> 
+          
+        </div>
+        <!-- end of footer_btm --> 
+        
+      </div>
+      
+    </div>
+    <!-- end of footer --> 
+  </footer>
+
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="js/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="css/slick.css" media="all"/>
 <script src="js/slick.min.js"></script> 
