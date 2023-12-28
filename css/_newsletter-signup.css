@@ -1,4 +1,5 @@
-.newsletter-main {margin: 104px 0; padding: 64px;  border: 8px solid var(--input)}
+.newsletter-main {margin: 104px 0;  padding: 64px;  border: 8px solid var(--input)}
+.signup-color {color: var(--optional-txt);}
 .text-column{width: 396px;}
 .image-column{width: 287px;}
 .form-column{width: 396px;}
