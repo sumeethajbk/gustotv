@@ -4,10 +4,10 @@
 .careers-list .h5 {margin:0;}
 .careers-list .h5 a {color: var(--blacktext);}
 .careers-list .h5 a:hover {color: var(--green);}
-.careers-title {width: 45%; margin-right: 2%;}
+.careers-title {width: 52%; margin-right: 2%;}
 
-.careers-details {align-items: center; width:calc(100% - 47%); justify-content: flex-end;}
-.carrer-info {font-size: 0;}
+.careers-details {align-items: center; width:85%; justify-content:space-between;}
+.carrer-info {font-size: 0; width: calc(100% - 54%);}
 .carrer-info span {font-size: 1rem; display: inline-block; vertical-align: middle; color: rgb(40, 40, 44, 0.8); position: relative; padding: 3px 12px 4px 12px; max-width: 150px;}
 .carrer-info span:first-child {padding-left: 0;}
 .carrer-info span:last-child {padding-right: 0;}
