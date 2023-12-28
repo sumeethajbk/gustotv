@@ -1,7 +1,7 @@
-.optional-cta-module{clear: both; position: relative; width: 100%; height: 100%;}
+.optional-cta-module{clear: both; position: relative; width: 100%; min-height: 600px;}
 
             
-.optional-main{padding: 128px 0;}
+.optional-main{padding: 128px 0; height: 100%;}
 .optional-main h2{font-size: 2rem; line-height: 1.25; margin-bottom: 22px;}
 .optional-main p{font-size: 1rem;;}
 .min-line{width: 64px; border: 1px solid var(--green); margin: 22px 0 24px;}
@@ -12,3 +12,17 @@
 .reverse .optional-main{left: auto; right: 80px;}
 
 
+@media only screen and (max-width: 1023px) and (min-width: 744px) {
+    
+
+
+}
+
+@media only screen and (max-width: 743px) and (min-width: 200px) {
+    .optional-main h2{font-size: 1.5rem; line-height: 1.75rem; margin-bottom: 12px;}
+    .optional-main{min-height: 600px; display: flex; align-items: flex-end; padding: 20px 0 20px;}
+    .optional-cta-txt{padding: 24px;}
+    .min-line{margin: 10px 0 12px;}
+
+
+}
