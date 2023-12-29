@@ -1,4 +1,4 @@
-footer#main_footer {clear: both; padding: 30px 0 0; width: 100%; position: relative; z-index: 1; overflow: hidden;}
+footer#main_footer {clear: both; width: 100%; position: relative; z-index: 1; overflow: hidden;}
 footer#main_footer .footer-top li:before {display: none;}
 footer#main_footer hr {background-size: 8px 2px; margin: 31px 0 33px 0;}
 
