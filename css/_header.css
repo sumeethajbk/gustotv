@@ -70,13 +70,12 @@ opacity: 0; visibility: hidden; transition-duration: .75s; transition-property: 
 
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
-  	.main_header .header {padding: 15px 0 12px; min-height: 80px;}
+  	.main_header .header {padding: 16px 0 12px; min-height: 64px;}
 	
-  	.main_header .logo {width: 168px;}
+  	.main_header .logo {width: 135px;}
 	.main_header .header-btm {position: relative; display: block; clear: both;}
 	.main_header.menu-open {background: var(--white);}
 	.main_header.menu-open:after {background: rgba(0, 0, 0, 0.1);}
-  	.main_header.menu-open .fixed-logo {visibility: visible; opacity: 1;}
 	.main_header.menu-open .nav-btn .button {border-color: var(--violet); color: var(--violet);}
 	.main_header.menu-open .nav-btn .button:hover {background: var(--violet); color: var(--white);}
 	
@@ -85,12 +84,12 @@ opacity: 0; visibility: hidden; transition-duration: .75s; transition-property: 
 	.main_header .header_right .header-btm:after {top: inherit; bottom: 29px; margin: auto auto 0 auto; z-index: -1;}
  	 .main_header .header_right.navOpen {opacity: 1; visibility: visible;}
 	
-  	.main_header .header .toggle_button {position: absolute; flex-direction: column; width: 18px; right: 25px; height: 15px; cursor: pointer; top: -3px; bottom: 0; margin: auto; display: block;} 
-	.main_header .header .toggle_button span.line {width: 18px; height: 2px; margin: 0 auto; background-color: var(--white); display: block; position: absolute; top: 50%; transform: translateY(-50%); transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out;} 
-    .main_header .header .toggle_button span.line2 {margin-top: 6px;} 
-	.main_header .header .toggle_button span.line1 {margin-top: -6px;} 
-    .main_header .header .toggle_button.active {width: 18px; background-image: none; z-index: 10001;} 
-    .main_header .header .toggle_button.active span.line {width: 18px; display: block; height: 2px; background-color: var(--violet);  top: 50%; position: absolute; transform: translateY(-50%); left: 0; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out;} 
+  	.main_header .header .toggle_button {position: absolute; flex-direction: column; width: 28px; right: 20px; height: 28px; cursor: pointer; top: -3px; bottom: 0; margin: auto; display: block;} 
+	.main_header .header .toggle_button span.line {width: 28px; height: 2px; margin: 0 auto; background-color: var(--optionaltxt); display: block; position: absolute; top: 50%; transform: translateY(-50%); transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out;} 
+    .main_header .header .toggle_button span.line2 {margin-top: 10px;} 
+	.main_header .header .toggle_button span.line1 {margin-top: -10px;} 
+    .main_header .header .toggle_button.active {width: 28px; background-image: none; z-index: 10001;} 
+    .main_header .header .toggle_button.active span.line {width: 28px; display: block; height: 2px; background-color: var(--optionaltxt);  top: 50%; position: absolute; transform: translateY(-50%); left: 0; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out;} 
     .main_header .header .toggle_button.active span.line1 {margin-top: 0; transform: translateY(-50%) rotate(45deg);} 
     .main_header .header .toggle_button.active span.line2 {visibility: hidden; opacity: 0;} 
     .main_header .header .toggle_button.active span.line3 {margin-top: 0; transform: translateY(-50%) rotate(-45deg);} 

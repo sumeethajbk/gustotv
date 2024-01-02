@@ -85,10 +85,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:ho
 .h2 {font-size: 2.5rem; line-height: 1.2; margin-bottom: 31px;}
 .h3 {font-size: 2rem; line-height: 1.25; margin-bottom: 25px;} 
 .h5 {font-size: 1.25rem; line-height: 1.2; margin-bottom: 14px;} 
+.h6 {font-size: 1.125rem; line-height: 1.4; margin: 0 0 11px;}
 
 
 
-section p a, section li a {text-decoration: underline;}
+section p a, section li a {text-decoration: underline; font-weight: bold;}
 
 /* Banner Bg */
 .banner-bg {top:0; left:0; right:0; bottom:0; width:100%; height:100%; position:absolute; z-index:-1; opacity: 0.05;}
@@ -195,14 +196,14 @@ body .selectBox-dropdown {outline:0; width:100% !important; font-size: 1rem; lin
 body .selectBox-dropdown:focus, body .selectBox-dropdown:focus .selectBox-arrow {border-color:rgba(207, 216, 223, 0.5);}
 body .selectBox-dropdown .selectBox-label {padding:0; display:block; width: 100% !important; text-overflow: ellipsis;}
 body .selectBox-dropdown .selectBox-label a {color:inherit;}
-body .selectBox-dropdown .selectBox-arrow {width:auto; right:25px; top:50%; transform:translateY(-50%); font-size:14px; color: var(--text-violetblue); border:none; font-family:"Font Awesome 6 Pro"; font-weight:900; position:absolute; display:flex; align-items:center; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; background:none;}
-body .selectBox-dropdown .selectBox-arrow::after {content:"\f0d7";}
+body .selectBox-dropdown .selectBox-arrow {width:auto; right:20px; top:calc(50% + 2px); transform:translateY(-50%); font-size:18px; color: var(--heading); border:none; font-family:"Font Awesome 6 Pro"; font-weight:600; position:absolute; display:flex; align-items:center; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; background:none;}
+body .selectBox-dropdown .selectBox-arrow::after {content:"\f107";}
 body .selectBox-dropdown.selectBox-menuShowing .selectBox-arrow {transform:translateY(-50%) rotate(-180deg);}
-body ul.selectBox-dropdown-menu { background-color: var(--input);     border-color:transparent; padding:17px 0 9px; margin:10px 0 0 0;  box-shadow:0 ; -webkit-box-shadow:0; -moz-box-shadow:0 1px 4px rgba(0, 0, 0, .2);}
-body ul.selectBox-dropdown-menu li { margin-bottom: 16px; padding: 0 24px; font-size: 0.8rem; color: var(--blacktext); }
+body ul.selectBox-dropdown-menu { background-color: var(--input); border-color:transparent; padding:19px 0 11px; margin:2px 0 0 0;  box-shadow:0 1px 8px rgba(0, 0, 0, .2) ; -webkit-box-shadow:0 1px 8px rgba(0, 0, 0, .2); -moz-box-shadow:0 1px 8px rgba(0, 0, 0, .2); border-radius: 0!important;}
+body ul.selectBox-dropdown-menu li { margin-bottom: 14px; padding: 0 16px; color: var(--blacktext); }
 body ul.selectBox-dropdown-menu li::before {display:none;}
-body ul.selectBox-dropdown-menu li a {font-size:15px; line-height:24px; letter-spacing:normal; display:block; padding:0; white-space:nowrap; text-transform:capitalize; color:var(--body-text); overflow:hidden; text-overflow:ellipsis; text-decoration: none;}
-body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropdown-menu li a:hover {color:var(--text-violetblue); background-color:transparent; cursor:pointer; font-weight:500;}
+body ul.selectBox-dropdown-menu li a {font-size:0.875rem; line-height:1.5; letter-spacing:normal; display:block; padding:0; white-space:nowrap; text-transform:capitalize; color:var(--body-text); overflow:hidden; text-overflow:ellipsis; text-decoration: none; font-weight: bold;}
+body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropdown-menu li a:hover {color:var(--green); background-color:transparent; cursor:pointer;}
 
 
 
@@ -211,22 +212,25 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display:block;}
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:0 !important; width:100%; display:block; font-size:0.688rem !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:normal; top:-19px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
-.frm_forms .frm_form_fields .frm_form_field{margin-bottom:18px; position: relative; clear: both;}
+.frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both;}
-.frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding-left:35px; display:block;}
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: normal; display: block; outline: 0; border-radius: 90px; font-size: 1rem; line-height: 24px; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--white); color: var(--body-text); border:solid 1px rgba(0, 0, 0, 0.1); padding: 15px 27px 17px 27px; width: 100%; box-shadow: none; letter-spacing:0.3px;}
+.frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding-left:29px; display:block;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 0; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--input); color: var(--blacktext); border:solid 1px var(--blacktext); padding:15px 16px 15px 16px; width: 100%; box-shadow: none; border-top: 0 none; border-left: 0 none; border-right: 0 none;}
 .frm_forms .frm_form_fields input:focus, .frm_forms .frm_form_fields textarea:focus {box-shadow:none;}
-.frm_forms .frm_form_fields textarea {min-height:145px;}
-.frm_forms .frm_form_fields .selectBox-dropdown{border: solid 1px #dde4e5; padding: 13px 31px 14px 24px; color: var(--body-text);}
+.frm_forms .frm_form_fields textarea {min-height:212px;}
+.frm_forms .frm_form_fields .selectBox-dropdown{background-color: var(--input); color: var(--blacktext); border:solid 1px var(--blacktext); padding:15px 46px 15px 16px; font-family: "DM Sans", sans-serif; font-weight: bold; border-top: 0 none; border-left: 0 none; border-right: 0 none; line-height: 1.3; text-transform: none;}
 .frm_forms .frm_form_fields div.selector {margin-top:16px;}
 .frm_forms .frm_submit{margin:20px 0 30px 0;}
+.frm_forms .frm_submit .button, .frm_forms .frm_submit button {padding: 9px 34px 10px 12px;}
+.frm_forms .frm_submit .button:after, .frm_forms .frm_submit button:after {right: 12px;}
 .form-field {position:relative; margin-bottom:20px;}
-.form-note p {font-size: 0.75rem; line-height: 1.67; letter-spacing: -0.35px; color: var(--light-blue);}
+.form-note p {font-size: 0.75rem; line-height: 1.67;}
 .frm_forms .frm_error_style {display: none;}
-.frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.4;}
+.frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
 
-.frm_half {width:48.56%; float: left; clear: none!important;}
-.frm_first {margin-right:18px;}
+.frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
+.frm_half {width:48.4%; float: left; clear: none!important;}
+.frm_first {margin-right:24px;}
 .frm_last {float: right;}
 .frm_full {margin-right: 0;}
 .frm_radio {margin: 0 0 9px 0;}
@@ -266,7 +270,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .fixed-social-icons { display: flex; align-items: center; flex-wrap: wrap; margin: 0 0 51px 0; justify-content: flex-end;}
 .fixed-social-icons .share-text {font-size: 0.813rem; color: rgba(0, 7, 51, 0.5); line-height: 1.69; font-weight: 600; margin:0 15px 0 0; display: inline-block;}
 .sharethis-inline-share-buttons .st-btn {width: 40px; height: 40px!important; color: var(--heading); line-height: 40px!important;
-position: relative; z-index: 1; text-decoration: none; border-radius: 50%!important; background-color: var(--lime)!important; display: inline-block!important; text-align: center!important; cursor: pointer; margin: 0 0 0 10px!important; min-width: inherit!important;}
+position: relative; z-index: 1; text-decoration: none; border-radius: 50%!important; background-color: var(--lime)!important; display: inline-block!important; text-align: center!important; cursor: pointer; margin: 0 0 0 10px!important; min-width: inherit!important; padding: 0 !important;}
 .sharethis-inline-share-buttons .st-btn.st-first {margin-left: 0!important;}
 .sharethis-inline-share-buttons {font-size: 0; display: inline-block!important; vertical-align: middle;}
 .sharethis-inline-share-buttons .st-btn:after {font-family: "Font Awesome 6 Brands"; font-weight: 400; margin:0 auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; vertical-align: middle; display: inline-block; font-size: 1.25rem;}
@@ -346,7 +350,9 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
 }
 
-@media only screen and (max-width:767px) and (min-width:200px) {
+@media only screen and (max-width:719px) and (min-width:200px) {
+    .container {padding:0 20px; max-width:100%;}
+    #mainContent {padding: 64px 0 0 0;}
 .hide-in-mobile {display:none;}
 
 
@@ -357,12 +363,17 @@ body .mfp-container { padding-left: 20px; padding-right: 20px; }
 body .cky-consent-container {width: 340px; right: 18px;}
 body .cky-consent-container .cky-consent-bar {padding: 40px 30px 42px;}
 body .cky-notice-btn-wrapper .cky-btn-reject {order: inherit;}	
-body .cky-custom-brand-logo-wrapper, body .cky-notice .cky-title, body .cky-notice-des, body .cky-notice-btn-wrapper {padding: 0!important}
+body .cky-custom-brand-logo-wrapper, body .cky-notice .cky-title, body .cky-notice-des, body .cky-notice-btn-wrapper {padding: 0!important;}
+    
+    .sharethis-inline-share-buttons .st-btn {width: 60px; height: 60px !important; line-height: 56px !important; margin: 0 0 0 12px !important;}
 }
 
-@media only screen and (max-width:640px) {
-    .container {padding:0 20px; max-width:100%;}
+@media only screen and (max-width:480px) {   
 
 img.alignnone, img.alignleft, img.aligncenter, img.alignright {margin:46px 0 !important; width:100%}
 
+}
+
+@media only screen and (max-width: 389px) and (min-width: 200px) {
+    .sharethis-inline-share-buttons .st-btn { margin: 0 0 0 8px !important;}
 }

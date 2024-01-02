@@ -1,4 +1,4 @@
-.careers-main {clear: both; width: 100%; padding: 80px 0 40px;}
+.careers-main {clear: both; width: 100%; padding: 80px 0 70px;}
 .careers-opportunities-main {clear: both; width: 100%; padding:36px 0 38px;}
 .careers-list {background: var(--input); padding: 20px; justify-content: space-between; margin: 0 0 24px 0; align-items: center;}
 .careers-list .h5 {margin:0;}
@@ -6,8 +6,8 @@
 .careers-list .h5 a:hover {color: var(--green);}
 .careers-title {width: 52%; margin-right: 2%;}
 
-.careers-details {align-items: center; width:85%; justify-content:space-between;}
-.carrer-info {font-size: 0; width: calc(100% - 54%);}
+.careers-details {align-items: center; width:85.6%; justify-content:space-between;}
+.carrer-info {font-size: 0; width: calc(100% - 54%); display: flex; flex-wrap: wrap; justify-content: flex-end;}
 .carrer-info span {font-size: 1rem; display: inline-block; vertical-align: middle; color: rgb(40, 40, 44, 0.8); position: relative; padding: 3px 12px 4px 12px; max-width: 150px;}
 .carrer-info span:first-child {padding-left: 0;}
 .carrer-info span:last-child {padding-right: 0;}
@@ -16,19 +16,47 @@
 .carrer-info span.carrer-date {font-weight: bold;}
 .carrer-info span a {color: rgb(40, 40, 44, 0.8);}
 .carrer-info span a:hover {color:rgb(191, 208, 0, 1);}
-.careers-btn {margin: 0 0 0 12px;}
+.careers-btn {margin: 0 0 0 12px; width: calc(100% - 88.25%);}
 
-.share-this-page {clear: both; width:100%; position: relative; justify-content: space-between; align-items: center; padding: 20px 0 10px;}
+.share-this-page {clear: both; width:100%; position: relative; justify-content: space-between; align-items: center; padding:22px 0 10px;}
 .share-this-page:before {content: ""; display: inline-block; position: absolute; left: 0; top: 0; height:2px; background-image: radial-gradient(circle at 1px, var(--green) 1px, rgba(255,255,255,0) 1.25px); width: 100%; background-size: 8px 2px; background-position: 0 0;}
 .share-this-page .h5 {margin: 0; color: var(--blacktext); width: 70%;}
 .share-this-page .share-icons {width: calc(100% - 70%); text-align: right;}
 
 
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+    .careers-main {padding: 64px 0 70px;}
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
-    .careers-title {width: 100%; margin: 0 0 20px 0;}
-    .careers-details {width: 100%;}
+    .careers-title {width: 100%; margin:0 0 5px 0;}
+    
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
-.carrer-info {margin-right: auto;}
+    .careers-main {padding: 64px 0 70px;}
+    .carrer-info {width: 100%; justify-content: flex-start;}
+    .careers-details {width:75%;}
+    .careers-btn {width: calc(100% - 77%); display: flex; justify-content: flex-end;}
+    .share-this-page {padding: 26px 0 10px;}
+    .share-this-page .h5 {width: 60%;}
+    .share-this-page .share-icons {width: calc(100% - 60%); display: flex; justify-content: flex-end;}
 }
+
+@media only screen and (max-width: 719px) and (min-width: 200px) {
+    .careers-main {padding: 40px 0 30px;}
+    .careers-opportunities-main {padding: 4px 0 6px;}
+    .careers-details {width: 100%;}
+    .carrer-info {width: 100%; justify-content: flex-start; margin: 0 0 13px 0;}
+    .carrer-info span.carrer-date {width: 100%; max-width: 100%; display: block; padding: 0; margin: 0 0 3px 0;}
+    .carrer-info span {padding: 1px 8px 2px 9px; max-width: 50%;}
+    .carrer-info span::before {background-size: 2px 6px;}
+    .carrer-info span:nth-child(2) {padding-left:0;}
+    .carrer-info span:nth-child(2):before {display: none;}
+    .careers-title {margin:0 0 14px 0;}
+    .careers-btn {width: 100%; margin: 0;}
+    
+    .share-this-page .h5 {width: 100%; margin: 0 0 32px 0;}
+    .share-this-page .share-icons {width: 100%; text-align: left;}
+}
+

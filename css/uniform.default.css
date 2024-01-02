@@ -33,19 +33,19 @@ div.selector option {font-size: 15px;font-weight: 400; color: #1a1919;background
 
 /* Checkbox */
 div.checker {position: relative; /*background: url("../images/white-30.png") repeat 0 0;*/ background: none; border: 1px solid #d9d9d9;border-radius: 0;border: 0 none;}
-div.checker, div.checker span, div.checker input {width:24px;height:24px;cursor: pointer;outline: none;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius:4px; padding: 0!important}
-div.checker span, div.checker input {background:rgba(117, 117, 117, 0.2); padding: 0!important}
+div.checker, div.checker span, div.checker input {width:21px;height:21px;cursor: pointer;outline: none;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius:3px; padding: 0!important}
+div.checker span, div.checker input {background:var(--optionaltxt); padding: 0!important}
 div.checker span {display: -moz-inline-box;display: inline-block; *display: inline;zoom: 1;text-align: center;border:0 none;}
-div.checker span.checked {background:var(--anchor);}
-div.checker span.checked:before { content: "\f00c"; display: block; border-radius: 0; font-family: "Font Awesome 6 Pro"; font-size: 14px; font-weight: bold; color: var(--white); position: absolute; display: flex; align-items: center; justify-content: center;
-  width: 100%; height: 100%;}
+div.checker span.checked {background:var(--optionaltxt);}
+div.checker span.checked:before {content: "\f00c"; font-family: "Font Awesome 6 Pro"; display: block;height: 21px; left: 0px; position: absolute; top: 0; width: 21px; font-weight: 900; color: var(--white); font-size: 13px;}
 div.checker input {opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;border: none;background: none;display: -moz-inline-box;display: inline-block; *display: inline;zoom: 1;padding: 0}
 
 /* Radio */
 div.radio span {position: relative;border-radius: 50%;}
 div.radio, div.radio span, div.radio input {width:24px;height:24px;cursor: pointer;outline: none;}
-div.radio span {display: -moz-inline-box;display: inline-block; *display: inline;zoom: 1;text-align: center; border: solid 1px #d9e0e7; background: #fff;}
-div.radio span.checked:before {background-color:var(--anchor);border-radius: 50%;content: "";display: block;height: 16px;left: 3px;position: absolute;top: 3px;width: 16px;}
+div.radio span {display: -moz-inline-box;display: inline-block; *display: inline;zoom: 1;text-align: center;border:0 none;background: #fff;}
+div.radio span.checked {border:0 none;}
+div.radio span.checked:before {background-color:#484747;border-radius: 50%;content: "";display: block;height: 14px;left: 5px;position: absolute;top: 5px;width: 14px;}
 div.radio input {opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;border: none;background: none;display: -moz-inline-box;display: inline-block; *display: inline;zoom: 1;text-align: center;}
 
 
@@ -92,10 +92,10 @@ color: #006697;}
 div.selector select {}
 div.selector.disabled span, div.selector.disabled.active span {}
 /* Checker */
-div.checker {margin-right: 7px; margin-top: 0; position: absolute; top: 1px; left: 0;}
+div.checker {margin-right: 7px; margin-top: 0; position: absolute; top: 2px; left: 0;}
 
 /* Radio */
-div.radio {position: absolute; left: 0;}
+div.radio {margin-right: 7px;}
 /* Uploader */
 div.uploader span.action {text-shadow: white 0px 1px 0px;background-color: #fff;font-size: 11px;font-weight: bold;}
 div.uploader span.filename {color: #777; border-right: solid 1px #bbbbbb; font-size: 11px;}
