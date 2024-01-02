@@ -1,8 +1,24 @@
-.newsletter-main {margin: 104px 0;  padding: 64px;  border: 8px solid var(--input); position: relative;}
-.column { float: left; width: 33.33%; box-sizing: border-box;}
-.image-column { position: relative; max-width: 287px; }
-.absolute-img{ position: absolute; top: -120px; right: 0; max-width: 287px;  left: 0 ;height: auto; }
-.signup-color {color: var(--optional-txt);}
-.text-column{width: 396px;}
+.newsletter-main {margin: 104px 0;  padding: 64px;  position: relative; align-items: center;}
+.newsletter-main::before { outline: 8px solid var(--input); display: block; content: ""; width: 100%; position: absolute; box-sizing: border-box; left: 0; height: calc(100% - 250px); top: 121px; z-index: -1; border-radius: 30px; }
+.image-column {  max-width: 287px; }
 
-.form-column{width: 396px;}
+
+
+@media only screen and (min-width: 1024px) {
+    .newsletter-main{gap: 28px;}
+    .text-column{flex: 34.5%;}
+    .image-column{flex: 31%; }
+    .newsletter-form{flex: 34.5%;}
+    .frm_button_submit{gap: 24px;}
+    .form-note{flex: 1;}
+    
+
+}
+@media only screen and (max-width: 1299px) and (min-width: 1024px) {
+    .newsletter-main{gap: 10px;}
+    .text-column{flex: 34.5%;}
+    .image-column{flex: 31%; }
+    .newsletter-form{flex: 34.5%;}
+
+
+}
