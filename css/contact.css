@@ -54,6 +54,13 @@
     .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio {width: 100%; margin: 0 0 24px 0;}
 }
 
+@media only screen and (max-width:1199px) and (min-width:200px) {
+    .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.frm_first {margin-right: 20px;}
+    .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.frm_half {width:calc(50% - 10px);} 
+    .contact-form-rt .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 20px;}
+    .contact-form-rt .frm_forms .frm_form_fields textarea {min-height: 128px;}
+}
+
 
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
     .contact-main {padding: 40px 0;}
@@ -84,11 +91,6 @@
     .contact-form-rt .frm_forms .frm_form_fields .frm_form_field:nth-child(4) {width: 100%; margin-left: 0; margin-right: 0;}
     
     .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio {width: 100%; margin: 0 0 23px 0;}
-    .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding: 0 50px 0 0; line-height: 1.25;}
-    .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker {left: inherit; right: 0; width: 35px; height: 35px; margin: 0 0 0 7px;}
-    .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span {width: 35px; height: 35px; border-radius: 5px;}
-    .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span.checked::before {height: 35px; width: 35px; font-size: 21px; line-height: 33px;}
-    .contact-form-rt .frm_forms .frm_submit {width: 100%;}
     .contact-form-rt .frm_forms .frm_submit button {width: 100%;}
     
     .contact-grids-main {margin: 38px 0 0 0;}

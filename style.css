@@ -312,16 +312,6 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
 
 
-@media only screen and (max-width:1199px) and (min-width:200px) {
-    .frm_first {margin-right: 20px;}
-    .frm_half {width:calc(50% - 10px);} 
-    .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 20px;}
-    .frm_forms .frm_form_fields textarea {min-height: 128px;}
-}
-
-
-
-
 @media only screen and (max-width:1023px) and (min-width:720px) {
     .hide-in-tab, .hide-in-tablet {display:none;}
     #mainContent {padding: 64px 0 0 0;}
@@ -349,9 +339,17 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
     .sharethis-inline-share-buttons .st-btn {width: 60px; height: 60px !important; line-height: 56px !important; margin: 0 0 0 12px !important;}
 
+    .frm_forms .frm_submit {width: 100%;}
     .frm_forms .frm_submit .button {display: flex; justify-content: center; padding:9px 12px 10px 12px;}
-    .frm_forms .frm_submit button span {padding: 0 21px 0 11px;}
     .frm_forms .frm_submit .button::after, .frm_forms .frm_submit button::after {position: inherit;}
+    .frm_forms .frm_submit button span {padding: 0 21px 0 11px;}
+    .frm_half {width:100%; margin-left: 0; margin-right: 0;} 
+    
+    .frm_forms .frm_form_fields .frm_form_field.vertical_radio {width: 100%; margin: 0 0 23px 0;}
+    .frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding: 0 50px 0 0; line-height: 1.25;}
+    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker {left: inherit; right: 0; width: 35px; height: 35px; margin: 0 0 0 7px;}
+    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span {width: 35px; height: 35px; border-radius: 5px;}
+    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span.checked::before {height: 35px; width: 35px; font-size: 21px; line-height: 33px;}
     
 }
 

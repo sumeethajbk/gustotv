@@ -103,6 +103,8 @@ button:hover:after, .button:hover:after {animation-name: bounceAlpha; animation-
 /* Lightgreen Button */
 .btn-green {background: var(--lightgreen); color: var(--heading);}
 .btn-green:hover {background: var(--heading); color: var(--white);}
+.btn-green:after {color:var(--optionaltxt);}
+.btn-green:hover:after {color: var(--green);}
 
 .green-btn {background: var(--green); color:var(--blacktext);}
 .green-btn:hover {background: var(--heading); color: var(--white);}

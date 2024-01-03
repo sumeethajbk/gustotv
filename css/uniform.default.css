@@ -102,3 +102,6 @@ div.uploader span.filename {color: #777; border-right: solid 1px #bbbbbb; font-s
 div.uploader.disabled span.action, div.uploader.disabled.active span.action {color: #aaa;}
 div.uploader.disabled span.filename, div.uploader.disabled.active span.filename {border-color: #ddd; color: #aaa;}
 input.uniform-input, input.uniform-input:focus {background-color: #fff;}
+
+
+
