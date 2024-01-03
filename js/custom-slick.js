@@ -75,46 +75,22 @@ jQuery(document).ready(function () {
 	
 
 
-  jQuery('.rp-slider').slick({
+  jQuery('.tv-show-row').slick({
 
-    slidesToShow: 1,
+    slidesToShow: 6,
 
     slidesToScroll: 1,
 
-    infinite: false,
+    infinite: true,
 
     speed: 1000,
 
     dots: false,
 
-    arrows: true,
+    arrows: false,
 
-    variableWidth: true,
-
-    draggable: true,
-
-    touchThreshold: 200,
-
-    swipeToSlide: true,
-
-    prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-
-    nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-
-    responsive: [{
-
-      breakpoint: 768,
-
-      settings: {
-
-        arrows: false,
-
-        dots: true,
-
-      }
-
-    }, ]
-
+  variableWidth: true,
+    
   });
 
 

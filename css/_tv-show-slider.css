@@ -1,0 +1,7 @@
+.tv-show-main{padding: 80px 0;}
+.tv-show-heading { margin-bottom: 55px; }
+.tv-show-row .slick-track{display: flex; align-items: center;}
+.tv-show-img { margin: 0 24px;}
+.tv-show-img img{max-height: 86px;}
+.tv-show-row::before{background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); display: block; content: ""; width: 80px; height: 101px; position: absolute; top: 0; left: 0; z-index: 1;}
+.tv-show-row::after{background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);display: block; content: ""; width: 80px; height: 101px; position: absolute; top: 0; right: 0; z-index: 1;}
