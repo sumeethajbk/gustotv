@@ -1,4 +1,4 @@
-.newsletter-main {margin: 104px 0;  padding: 64px;  position: relative; align-items: center;}
+.newsletter-main {  padding: 64px;  position: relative; align-items: center;}
 
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 20px;}
 .form-note p{line-height: 1rem; font-size: 0.625rem;}
@@ -73,4 +73,7 @@
   .frm_wrapper{display: block; text-align: center;}
   .form-note p{margin-bottom: 16px;}
 
+}
+@media only screen and (max-width: 385px) and (min-width: 200px) {
+   .newsletter-img img { min-width: 370px;}
 }
