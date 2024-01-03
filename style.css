@@ -18,38 +18,38 @@ Text Domain:GustoTV
 
 
 @font-face {
-    font-family: 'DM Serif Display';
-    src: url('fonts/DMSerifDisplay-Regular.woff2') format('woff2'),
-        url('fonts/DMSerifDisplay-Regular.woff') format('woff'),
-        url('fonts/DMSerifDisplay-Regular.ttf') format('truetype'),
-        url('fonts/DMSerifDisplay-Regular.svg#DMSerifDisplay-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+font-family: 'DM Serif Display';
+src: url('fonts/DMSerifDisplay-Regular.woff2') format('woff2'),
+url('fonts/DMSerifDisplay-Regular.woff') format('woff'),
+url('fonts/DMSerifDisplay-Regular.ttf') format('truetype'),
+url('fonts/DMSerifDisplay-Regular.svg#DMSerifDisplay-Regular') format('svg');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
 }
 
 
 @font-face {
-    font-family: 'DM Sans';
-    src: url('fonts/DMSans-Regular.woff2') format('woff2'),
-        url('fonts/DMSans-Regular.woff') format('woff'),
-        url('fonts/DMSans-Regular.ttf') format('truetype'),
-        url('fonts/DMSans-Regular.svg#DMSans-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+font-family: 'DM Sans';
+src: url('fonts/DMSans-Regular.woff2') format('woff2'),
+url('fonts/DMSans-Regular.woff') format('woff'),
+url('fonts/DMSans-Regular.ttf') format('truetype'),
+url('fonts/DMSans-Regular.svg#DMSans-Regular') format('svg');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
 }
 
 
 @font-face {
-    font-family: 'DM Sans';
-    src: url('fonts/DMSans-Bold.woff2') format('woff2'),
-        url('fonts/DMSans-Bold.woff') format('woff'),
-        url('fonts/DMSans-Bold.ttf') format('truetype'),
-        url('fonts/DMSans-Bold.svg#DMSans-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+font-family: 'DM Sans';
+src: url('fonts/DMSans-Bold.woff2') format('woff2'),
+url('fonts/DMSans-Bold.woff') format('woff'),
+url('fonts/DMSans-Bold.ttf') format('truetype'),
+url('fonts/DMSans-Bold.svg#DMSans-Bold') format('svg');
+font-weight: bold;
+font-style: normal;
+font-display: swap;
 }
 
 
@@ -144,18 +144,6 @@ body .mfp-image-holder .mfp-close:hover, body .mfp-iframe-holder .mfp-close:hove
 body .mfp-close:after {display: none;}
 
 
-/* Banner Category */
-.banner-cat {font-weight: 600; clear: both; width: 100%;}
-.banner-cat ul {margin: 0; font-size: 0;}
-.banner-cat ul li {display: inline-block; color: var(--sub-blue); margin:0 0 0 48px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.75px; line-height: 1.5;}
-.banner-cat ul li:first-child {margin-left: 0!important;}
-.banner-cat ul li:before {content: ""; display: inline-block; background: #e2e5e6; width: 2px; height: 28px; vertical-align: middle;
-transform: rotate(35deg);  position: absolute; top: -5px; left: -31px;}
-.banner-cat ul li:first-child:before {display: none;}
-.banner-cat ul li a {color:var(--sub-blue);}
-.banner-cat ul li a:hover {color: var(--anchor-hover);}
-
-
 
 /* Cat Wrap */
 .cat-wrap {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
@@ -213,8 +201,10 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:0 !important; width:100%; display:block; font-size:0.688rem !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:normal; top:-19px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
-.frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both;}
-.frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding-left:29px; display:block;}
+.frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
+.frm_forms .frm_form_fields .frm_form_field label { font-size: 1rem; line-height: 1.5;}
+.frm_forms .frm_form_fields .frm_form_field label a {text-decoration: underline;}
+.frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding-left:29px; display:block; cursor: pointer;}
 .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 0; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--input); color: var(--blacktext); border:solid 1px var(--blacktext); padding:15px 16px 15px 16px; width: 100%; box-shadow: none; border-top: 0 none; border-left: 0 none; border-right: 0 none;}
 .frm_forms .frm_form_fields input:focus, .frm_forms .frm_form_fields textarea:focus {box-shadow:none;}
 .frm_forms .frm_form_fields textarea {min-height:212px;}
@@ -229,22 +219,14 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
 
 .frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
-.frm_half {width:48.35%; float: left; clear: none!important;}
+.frm_half {width:calc(50% - 12px); float: left; clear: none!important;}
 .frm_first {margin-right:24px;}
-.frm_last {float: right;}
+.frm_last {float: right; margin-left: auto;}
 .frm_full {margin-right: 0;}
 .frm_radio {margin: 0 0 9px 0;}
 .frm_radio label {padding: 0px 0 0 34px; cursor: pointer;}
 /*-- common form css ends here --*/
 
-
-.readmore {position:relative; display:inline-block; font-size: 0.938rem; padding-right: 17px; font-weight: 700; text-decoration: none;}
-.readmore:after {right: 0; content:"\f105"; font-size:0.878rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; top: 2px;}
-.readmore:hover:after {animation-name: bounceAlpha; animation-duration:1.4s; animation-iteration-count:infinite; animation-timing-function:linear;}
-
-.button.more, .readmore.more{min-width: 177px;}
-.button.more:after, .readmore.more:after {content: "\f107";}
-.button.more:hover::after, .readmore.more:hover::after {animation-name: bounceAlphadown; animation-duration: 1.4s; animation-iteration-count: infinite;  animation-timing-function: linear;}
 
 
 .optional-text {font-size:1.125rem; color:var(--optionaltxt); font-weight:bold; margin:0 0 25px 0; display:block;}
@@ -321,28 +303,28 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
 @media only screen and (min-width:1024px) {
     .hide-in-desktop {display:none;}
-    
+
 }
 @media only screen and (max-width:1400px) {
     .container {padding:0 40px; max-width:100%;}
-    }
-    
-
-@media only screen and (max-width:1440px) and (min-width:1024px) {
-
-}
-
-@media only screen and (max-width:1299px) and (min-width:1024px) {
-
-}
-
-@media only screen and (max-width:1199px) and (min-width:1024px) {
-
 }
 
 
-@media only screen and (max-width:1023px) and (min-width:768px) {
-.hide-in-tab, .hide-in-tablet {display:none;}
+
+
+@media only screen and (max-width:1199px) and (min-width:200px) {
+    .frm_first {margin-right: 20px;}
+    .frm_half {width:calc(50% - 10px);} 
+    .frm_forms .frm_form_fields .frm_form_field {margin-bottom: 20px;}
+    .frm_forms .frm_form_fields textarea {min-height: 128px;}
+}
+
+
+
+
+@media only screen and (max-width:1023px) and (min-width:720px) {
+    .hide-in-tab, .hide-in-tablet {display:none;}
+    #mainContent {padding: 64px 0 0 0;}
 
 }
 
@@ -353,24 +335,29 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 @media only screen and (max-width:719px) and (min-width:200px) {
     .container {padding:0 20px; max-width:100%;}
     #mainContent {padding: 64px 0 0 0;}
-.hide-in-mobile {display:none;}
+    .hide-in-mobile {display:none;}
 
 
-body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {right: 0px;}
-body .mfp-container { padding-left: 20px; padding-right: 20px; }
+    body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {right: 0px;}
+    body .mfp-container { padding-left: 20px; padding-right: 20px; }
 
 
-body .cky-consent-container {width: 340px; right: 18px;}
-body .cky-consent-container .cky-consent-bar {padding: 40px 30px 42px;}
-body .cky-notice-btn-wrapper .cky-btn-reject {order: inherit;}	
-body .cky-custom-brand-logo-wrapper, body .cky-notice .cky-title, body .cky-notice-des, body .cky-notice-btn-wrapper {padding: 0!important;}
-    
+    body .cky-consent-container {width: 340px; right: 18px;}
+    body .cky-consent-container .cky-consent-bar {padding: 40px 30px 42px;}
+    body .cky-notice-btn-wrapper .cky-btn-reject {order: inherit;}	
+    body .cky-custom-brand-logo-wrapper, body .cky-notice .cky-title, body .cky-notice-des, body .cky-notice-btn-wrapper {padding: 0!important;}
+
     .sharethis-inline-share-buttons .st-btn {width: 60px; height: 60px !important; line-height: 56px !important; margin: 0 0 0 12px !important;}
+
+    .frm_forms .frm_submit .button {display: flex; justify-content: center; padding:9px 12px 10px 12px;}
+    .frm_forms .frm_submit button span {padding: 0 21px 0 11px;}
+    .frm_forms .frm_submit .button::after, .frm_forms .frm_submit button::after {position: inherit;}
+    
 }
 
-@media only screen and (max-width:480px) {   
 
-img.alignnone, img.alignleft, img.aligncenter, img.alignright {margin:46px 0 !important; width:100%}
+@media only screen and (max-width:480px) {   
+    img.alignnone, img.alignleft, img.aligncenter, img.alignright {margin:46px 0 !important; width:100%}
 
 }
 
