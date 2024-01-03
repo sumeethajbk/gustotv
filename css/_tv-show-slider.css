@@ -5,3 +5,15 @@
 .tv-show-img img{max-height: 86px;}
 .tv-show-row::before{background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); display: block; content: ""; width: 80px; height: 101px; position: absolute; top: 0; left: 0; z-index: 1;}
 .tv-show-row::after{background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);display: block; content: ""; width: 80px; height: 101px; position: absolute; top: 0; right: 0; z-index: 1;}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 720px) {
+    .tv-show-heading { margin-bottom: 40px; }
+    .tv-show-heading h3{font-size: 1.5rem;}
+    .tv-show-img img{max-height: 64px;}
+}
+
+@media only screen and (max-width: 719px) and (min-width: 200px) {
+    .tv-show-heading { margin-bottom: 24px; }
+    .tv-show-heading h3{font-size: 1.5rem;}
+}
