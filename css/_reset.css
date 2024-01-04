@@ -176,6 +176,7 @@ img.alignnone {margin:42px 0 38px; display: block; clear: both;}
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
 	
     h1 {font-size: 2.5rem; line-height: 1.2; margin-bottom: 24px;}
+    .btn-green {padding: 5px 30px 6px 8px;}
 }
 
 

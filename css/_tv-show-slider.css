@@ -9,6 +9,7 @@
 
 
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
+    .tv-show-main{padding: 52px 0 40px;}
     .tv-show-heading { margin-bottom: 40px; }
     .tv-show-heading h3{font-size: 1.5rem;}
     .tv-show-img img{max-height: 64px;}
