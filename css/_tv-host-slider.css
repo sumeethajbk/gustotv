@@ -1,0 +1,9 @@
+.tv-host-slider hr{margin: 0;}
+.tv-host-main{padding: 80px 0 ;}
+.host-bg{background: url("/images/cmg@2x.png"); border-radius: 50%; width: 112px; height: 112px; display: flex; align-items: flex-end; overflow: hidden;}
+.tv-host-img img{max-height: 112px;}
+.tv-host-list{margin: 0 28px;}
+.tv-host-list span{display: block;}
+.host-text{text-align: center;}
+.host-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; margin-bottom: 3px;}
+.host-text .position{font-size: 0.75rem; color: var(--foreground); line-height: 0.75rem; font-weight: bold; opacity: 0.5;}
