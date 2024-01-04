@@ -1,10 +1,10 @@
-.accordion-item { position: relative; margin: 0 0 24px 0; background-color: rgba(28, 183, 165, 0.1); border-radius: 7px; border: solid 1px transparent; }
-.accordion-item .content { display: none; padding: 13px 21px 19px 21px;}
-.accordion-item.active { border: solid 1px var(--sc-blue); }
+.accordion-item { position: relative; margin: 0 0 24px 0; background-color: var(--input); border-radius: 16px; font-size: 1rem;}
+.accordion-item.active {background: rgba(242, 246, 186, 0.5);}
+.accordion-item .content { display: none; padding: 8px 22px 17px 22px; line-height: 1.5; color: var(--foreground);}
 .accordion-main .accordion:last-child .accordion-item{margin-bottom: 0;}
-.accordion-item.active .accordion-heading::after { transform: rotate(180deg) translateY(-50%); color: var(--sc-heading); }
-.accordion-item .accordion-heading::after { content: "\f0d7"; width: 12px; font-family: 'Font Awesome 6 Pro'; font-style: normal; font-weight: 900; font-size: 16px; line-height:0; color: #1A7F88; right: 27px; top: 50%; transform: translateY(-50%); position: absolute; display: inline-block; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; }
-.accordion-item .accordion-heading { display: block; line-height: 1.4; font-size: 1.25rem; color: var(--sc-heading); text-decoration: none;  font-weight: bold; padding: 13px 21px 13px 22px; position: relative;}
+.accordion-item.active .accordion-heading::after { content: "\f056"; }
+.accordion-item .accordion-heading::after { content: "\f055"; width: 20px; font-family: 'Font Awesome 6 Pro'; font-style: normal; font-weight: normal; font-size: 1.25rem; line-height:16px; height: 20px; color:var(--optionaltxt); right: 22px; top: 50%; transform: translateY(-50%); position: absolute; display: inline-block; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; }
+.accordion-item .accordion-heading { display: block; line-height: 1.44; font-size: 1.125rem; color: var(--heading); text-decoration: none; font-weight: bold; padding:14px 22px 16px 22px; position: relative;}
 .accordion-item .content p { margin-bottom: 0; }
 
 
