@@ -7,5 +7,17 @@
 @import url("../css/_tv-show-slider.css");
 @import url("../css/_newsletter-signup.css");
 
-.logos-main{margin-bottom: 40px;}
-.newsletter-main.flex { margin-bottom: -19px; }
+@media only screen and (min-width: 1200px) {
+
+    .newsletter-main{ margin-bottom: -19px; }
+}
+@media only screen and (min-width: 1024px) {
+    .logos-main{margin-bottom: 40px;}
+
+
+}
+
+
+@media only screen and (max-width: 719px) and (min-width: 200px) {
+    .logos-section { padding-bottom: 0 }
+  }

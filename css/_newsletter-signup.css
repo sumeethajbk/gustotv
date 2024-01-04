@@ -31,7 +31,7 @@
    .newsletter-right{flex: calc(31.5% - 10px);}
 } 
 @media only screen and (max-width: 1199px) and (min-width: 1024px) {
-    .newsletter-main{gap: 80px; align-items: inherit; padding: 40px; border: 8px solid var(--input); border-radius: 32px;}
+    .newsletter-main{gap: 80px; align-items: inherit; padding: 40px; border: 8px solid var(--input); border-radius: 32px; margin-bottom: 40px;}
     .newsletter-main::before{top: 0;}
    .newsletter-left { flex: 40%; gap: 0;}
    .text-column{width: 392px;}
@@ -41,7 +41,7 @@
    .newsletter-right{flex: calc(50% - 80px);}
 }
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
-   .newsletter-main{padding: 32px; border: 8px solid var(--input); display: block; border-radius: 32px;}
+   .newsletter-main{padding: 32px; border: 8px solid var(--input); display: block; border-radius: 32px; margin-bottom: 40px;}
    .newsletter-left{width: 100%; display: block; text-align: center;}
    .text-column{width: 100%;}
    .text-column .h2{font-size: 2rem;}
@@ -60,7 +60,7 @@
 }
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
-   .newsletter-main{padding: 20px; border: 8px solid var(--input); display: block; border-radius: 32px;}
+   .newsletter-main{padding: 20px; border: 8px solid var(--input); display: block; border-radius: 32px; margin-bottom: 40px;}
    .newsletter-left{width: 100%; display: block; text-align: center;}
    .text-column{width: 100%;}
   .text-column .h2{font-size: 1.5rem;}
