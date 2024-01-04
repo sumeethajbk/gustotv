@@ -1,9 +1,10 @@
 footer#main_footer {clear: both; width: 100%; position: relative; z-index: 1; overflow: hidden;}
 footer#main_footer .footer-top li:before {display: none;}
 footer#main_footer hr {background-size: 8px 2px; margin: 31px 0 33px 0;}
+.footer-img {width:100%; clear: both;}
+
 
 /* Footer top */
-footer#main_footer .footer-img {width:100%; clear: both;}
 footer#main_footer .footer-top {align-items: center;}
 footer#main_footer .footer-top .way-to-watch {margin: 0 32px 0 0;}
 footer#main_footer .footer-top .button:after {display: none;}
