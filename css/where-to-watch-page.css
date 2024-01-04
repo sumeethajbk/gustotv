@@ -2,8 +2,4 @@
 @import url("../css/_logos-section.css");
 
 
-@media only screen and (min-width: 1024px) {
-    .logos-main{margin: 0 0 80px;}
-
-
-}
+.logos-section{margin-top: 0;}
