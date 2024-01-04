@@ -1,7 +1,7 @@
 @import url("../css/_accordion-module.css");
 
 
-.general-default-article-section {float: left; width: 100%; padding:82px 0 100px;}
+.general-default-article-section {float: left; width: 100%; padding:82px 0 43px;}
 .default-main {justify-content: space-between;}
 .default-inner {width:67.1875%;}
 .sidebar {width: calc(100% - 76.5625%);}

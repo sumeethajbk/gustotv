@@ -1,3 +1,5 @@
+.accordion-module {clear: both; width: 100%; padding: 36px 0;}
+
 .accordion-item { position: relative; margin: 0 0 24px 0; background-color: var(--input); border-radius: 16px; font-size: 1rem;}
 .accordion-item.active {background: rgba(242, 246, 186, 0.5);}
 .accordion-item .content { display: none; padding: 8px 22px 17px 22px; line-height: 1.5; color: var(--foreground);}
@@ -6,6 +8,7 @@
 .accordion-item .accordion-heading::after { content: "\f055"; width: 20px; font-family: 'Font Awesome 6 Pro'; font-style: normal; font-weight: normal; font-size: 1.25rem; line-height:16px; height: 20px; color:var(--optionaltxt); right: 22px; top: 50%; transform: translateY(-50%); position: absolute; display: inline-block; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; }
 .accordion-item .accordion-heading { display: block; line-height: 1.44; font-size: 1.125rem; color: var(--heading); text-decoration: none; font-weight: bold; padding:14px 22px 16px 22px; position: relative;}
 .accordion-item .content p { margin-bottom: 0; }
+
 
 
 /*-- media starts here --*/
