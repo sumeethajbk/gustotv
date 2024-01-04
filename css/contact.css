@@ -18,7 +18,7 @@
 .contact-form-rt .frm_forms .frm_form_fields .frm_form_field label a:hover {color: var(--green);}
 .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio {margin: 0;}
 .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio a {text-decoration: underline;}
-.contact-form-rt .frm_forms .frm_submit {margin: 0;}
+.contact-form-rt .frm_forms .frm_submit {margin: 0; text-align: right;}
 
 .contact-grids-main {margin: 117px 0 0 0;}
 .contact-grid {display: inline-block; font-size: 1rem; line-height: 1.5; width: 26.9%; position: relative; padding: 2px 3.75% 0 3.75%; margin: 0 0 11px 0;}
@@ -97,5 +97,9 @@
     .contact-grid, .contact-grid:nth-child(4n+1), .contact-grid:nth-child(4n) {width: 100%; padding: 41px 0 0 0; margin: 0 0 39px 0;}
     .contact-grid:before {background-size:8px 2px; height: 2px; width: 100%;}
     .contact-grid:last-child {margin-bottom: 0;}
+}
+
+@media only screen and (max-width:385px) and (min-width: 200px) { 
+    .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.frm_half {width: 100%;}
 }
 
