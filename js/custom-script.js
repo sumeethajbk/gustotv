@@ -50,9 +50,8 @@ jQuery(document).ready(function () {
 
 
 
-
-  // New edit
-  jQuery(".accordion-item .heading").on("click", function (e) {
+/* Accorrdion */
+jQuery(".accordion-item .accordion-heading").on("click", function (e) {
     e.preventDefault();
     if (jQuery(this).closest(".accordion-item").hasClass("active")) {
       jQuery(".accordion-item").removeClass("active");
@@ -63,7 +62,7 @@ jQuery(document).ready(function () {
     var jQuerycontent = jQuery(this).next();
     jQuerycontent.slideToggle(300);
     jQuery(".accordion-item .content").not(jQuerycontent).slideUp("slow");
-  });
+});
 
 
   jQuery('select').selectBox({
