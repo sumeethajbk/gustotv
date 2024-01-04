@@ -16,7 +16,7 @@ h5 {font-size: 1.25rem; line-height: 1.4; margin-bottom: 18px;}
 h6 {font-size: 1.125rem; line-height: 1.4; margin: 0 0 19px;}
 address {margin-bottom: 9px;}
 abbr[title] {border-bottom: 1px dotted #2b2b2b; cursor: help;}
-b, strong {font-weight: 700;}
+b, strong {font-weight: bold;}
 cite, dfn, em, i {font-style: italic;}
 mark, ins {background: #fff9c0; text-decoration: none;}
 p {margin-bottom: 28px;}
@@ -70,7 +70,7 @@ table tbody tr td:first-child {padding-left: 0; text-align: left; width:19.8%; f
 table thead tr th:first-child {text-align: left; padding-left: 0;}
 table tbody img {margin: 0 auto;}
 caption, th, td {text-align: left;}
-th {font-weight: bold; border-width: 0; padding:16px 7px 16px; text-align: center; border-bottom: solid 1px rgba(0, 58, 85, 0.13); color: var(--heading);}
+th {font-weight: bold; border-width: 0; padding:16px 7px 16px; text-align: center; border-bottom: solid 1px rgba(0, 58, 85, 0.13); color: var(--heading); }
 td {border-width: 0; padding:31px 18px 31px; text-align: center; border-bottom: solid 1px rgba(0, 58, 85, 0.13);}
 th:first-child{text-align: left;}
 tr:last-child td{border-bottom: 0;}
