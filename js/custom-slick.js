@@ -73,7 +73,7 @@ jQuery(document).ready(function () {
   }
 	
 	
-
+//Show Slider //
 
   jQuery('.tv-show-row').slick({
 
@@ -93,7 +93,25 @@ jQuery(document).ready(function () {
     
   });
 
+//Host Slider //
 
+  jQuery('.tv-host-row').slick({
+
+    slidesToShow: 6,
+
+    slidesToScroll: 1,
+
+    infinite: true,
+
+    speed: 1000,
+
+    dots: false,
+
+    arrows: false,
+
+  variableWidth: true,
+    
+  });
   //Event Slider //
 
   var eventslider = jQuery('.event-slider');
