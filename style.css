@@ -148,12 +148,12 @@ body .mfp-close:after {display: none;}
 
 /* Cat Wrap */
 .cat-wrap {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
-.cat-wrap .tag-links {margin: 0; width: 75%;}
-.cat-wrap .tag-links li {margin: 0;}
-.cat-wrap .tag-links li:before {display: none;}
-.cat-wrap .tag-links li a {background: var(--text-violetblue); display: inline-block; text-transform: uppercase; font-size: 0.688rem; letter-spacing: 1.65px; color: var(--white); font-weight: 700; padding:6px 15px 7px 16px; border-radius: 90px; margin: 0 4px 4px 0; line-height: 1.36; text-decoration: none;}
-.cat-wrap .tag-links li a:hover {color: var(--white-75);}
-.cat-date {font-size: 0.813rem; font-weight: 500; color: rgba(26, 21, 100, 0.6); letter-spacing: 0.15px; width: calc(100% - 75%); text-align: right; margin: 5px 0 0 0;}
+.cat-wrap ul {margin: 0;}
+.cat-wrap ul li {margin: 0;}
+.cat-wrap ul li:before {display: none;}
+.cat-wrap ul li a {display: inline-block; text-transform: uppercase; font-size: 0.688rem; font-weight: 700; padding:6px 15px 7px 16px; border-radius: 90px; margin: 0 4px 4px 0; line-height: 1.36; text-decoration: none;}
+.cat-wrap .tag-links li a:hover {}
+
 
 
 /* Featured Category */

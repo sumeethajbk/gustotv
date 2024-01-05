@@ -1,0 +1,24 @@
+/* Single Testimmonial */
+.single-testimonial {clear: both; width: 100%; padding:62px 0; margin:51px 0 29px;}
+.single-testimonial .container {padding: 0;}
+.single-testimonial .testimonial-cnt {width: 100%; clear: both;  position: relative; margin: 0 0 29px 0; font-size: 1.5rem; line-height: 1.67; color: var(--heading); padding: 53px 0 0 0;}
+.single-testimonial .testimonial-cnt:before {content: "\f10d" ; width: 28px; height: 26px; display: block; position: absolute; top: 0; color: var(--green); font-family:"Font Awesome 6 Pro"; font-weight:900; font-size: 2rem;}
+
+.author {align-items: center; color: var(--white);}
+.author-thumb {width:55px; height:55px; border-radius: 50%; margin-right: 18px;}
+.author-thumb img {border-radius: 50%;} 
+.author-name {font-size: 1.063rem; font-weight: 600; line-height: normal;}
+.author-pos {opacity: 0.5; font-size: 0.938rem;}
+
+
+
+/*-- media starts here --*/
+@media only screen and (max-width: 1299px) and (min-width:1024px){
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px){
+	
+	
+}
+@media only screen and (max-width: 767px) and (min-width: 200px){
+
+}
