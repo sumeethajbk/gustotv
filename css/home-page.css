@@ -7,14 +7,40 @@
 @import url("../css/_tv-show-slider.css");
 @import url("../css/_newsletter-signup.css");
 
-@media only screen and (min-width: 1200px) {
 
+.featured-main{padding: 80px 0;}
+.featured-heading{margin-bottom: 40px;}
+.heading-lt h2{font-size: 2rem; margin-bottom: 0;}
+.featured-img{margin-bottom: 40px;}
+.featured-img img{border-radius: 8px;}
+
+.spice-list{}
+.spice-rt img{width: 112px; margin-bottom: 20px;}
+.spice-text{text-align: center;}
+.spice-text span{display: block;}
+.spice-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; margin-bottom: 3px;}
+.spice-text .position{font-size: 0.75rem; color: var(--foreground); line-height: 0.75rem; font-weight: bold; opacity: 0.5;}
+
+.featured-txt .h3{font-size: 1.5rem; color: var(--foreground);}
+
+/* .featured-heading .h2{flex: 1;} */
+
+@media only screen and (min-width: 1200px) {
+    
     .newsletter-main{ margin-bottom: -19px; }
 }
 @media only screen and (min-width: 1024px) {
     .logos-main{margin-bottom: 40px;}
+    .featured-main{gap: 80px;}
+    .featured-show{flex: 1;}
+    .featured-recipe{flex: 1;}
+    .spice-lt { flex: 50%; padding-right: 30px; border-right: 2px solid var(--input); }
+    .spice-rt { flex: 50%; padding-left: 32px; gap: 19px; }
 
-
+    .featured-list{gap: 32px;}
+   .featured-thumb{flex: 0 0 40%;}
+   .featured-txt{flex: 0 0 calc(60% - 32px);}
+   
 }
 
 
