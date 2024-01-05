@@ -1,6 +1,6 @@
 .main_header {width: 100%; top: 0; left: 0; right: 0; position: fixed; z-index: 850; transition: .3s ease-in-out; background: var(--white);}
 .main_header:after {content: ""; background:var(--input); height: 1px; width: 100%; display: block; position: absolute; bottom: 0;}
-.main_header .header {padding:16px 0 16px;}
+.main_header .header {padding:16px 0 0;}
 .main_header .logo {width: 202px; position: relative;}
 .main_header .logo a {width: 100%; height: 100%; display: block;}
 
@@ -20,7 +20,7 @@
   ul.main_menu li.flex-menu > ul > li:first-child:before, ul.main_menu li::before {display: none;}
   ul.main_menu > li {margin-left: 32px; display: inline-block; margin-bottom: 0;}
   ul.main_menu > li:first-child {margin-left: 0;}
-  ul.main_menu > li > a {padding:14px 0; font-size: 1rem; font-weight: bold; line-height: normal; display: inline-block; position: relative; color: var(--heading); }
+  ul.main_menu > li > a {padding:14px 0 30px; font-size: 1rem; font-weight: bold; line-height: normal; display: inline-block; position: relative; color: var(--heading); }
     ul.main_menu > li >a::after {content: ''; position: absolute; display: block; margin: auto; height: 2px; width: 0; bottom: 10px; transition: width .5s ease, background-color .5s ease; left: 50%; transform: translate(-50%, 0);}
     ul.main_menu > li >a:hover:after, ul.main_menu > li.current-menu-item > a:after, 
 	ul.main_menu > li.current-menu-parent > a:after, 
@@ -47,10 +47,12 @@ opacity: 0; visibility: hidden; transition-duration: .75s; transition-property: 
   ul.main_menu > li > ul > li > a:hover {color: var(--orange);}
   nav.navigation, ul.main_menu > li:hover > ul {opacity: 1; visibility: visible; top: 100%;}
     
-    .header-search {margin: 0 0 0 32px;}
+    .header-search {margin:0 0 0 32px; display: flex; flex-wrap: wrap;  flex-direction: row-reverse; max-width: 280px; align-items: center;}
+    .header-search .search-btn {bottom: 8px; position: relative;}
+    .header-search .search-btn.active {right: 8px; position: relative; z-index: 1;}
     .search_form_container {position:relative;}
-    .search_form {right:0; width:calc(100% - 15.6%); bottom:24px; display:none; background:#fff; padding-bottom:3px; z-index:100; max-width:1700px; padding:0 37px 0 0;}
-.search_form input[type=search] {border:solid 2px solid 2px var(--input); padding:22px 42px 20px; border-radius: 16px;;}
+    .search_form {right:-40px; width:calc(100% - 40px); display:none; background:var(--white); position: relative;}
+.search_form input[type=search] {padding: 14px 50px 14px 15px;}
 .search_form input[type=submit] {display:none;}
 }
 
