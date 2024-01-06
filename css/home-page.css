@@ -1,5 +1,6 @@
 
 @import url("../css/_optional-cta-module.css");
+@import url("../css/_gustotv-recipes.css");
 @import url("../css/_recipe-module.css");
 @import url("../css/_logos-section.css");
 @import url("../css/_tv-host-slider.css");
@@ -10,20 +11,21 @@
 
 .featured-main{padding: 80px 0;}
 .featured-heading{margin-bottom: 40px;}
-.heading-lt h2{font-size: 2rem; margin-bottom: 0;}
+.heading-lt h2{font-size: 2rem; margin-bottom: 0; line-height: 2.5rem;}
 .featured-img{margin-bottom: 40px;}
 .featured-img img{border-radius: 8px;}
 
-.spice-list{}
+
+.spice-lt{border-right: 2px solid var(--input); justify-content: center; align-items: center; display: flex;}
 .spice-rt img{width: 112px; margin-bottom: 20px;}
 .spice-text{text-align: center;}
 .spice-text span{display: block;}
-.spice-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; margin-bottom: 3px;}
-.spice-text .position{font-size: 0.75rem; color: var(--foreground); line-height: 0.75rem; font-weight: bold; opacity: 0.5;}
+.spice-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; }
+.spice-text .position{font-size: 0.75rem; color: var(--foreground); line-height: 0.75rem; font-weight: bold; opacity: 0.5; margin-bottom: 3px;}
+.featured-list{justify-content: center; align-items: center; margin-bottom: 24px;}
+.featured-txt .h3{font-size: 1.5rem; color: var(--foreground); margin-bottom: 2px;}
+.featured-thumb img{border-radius: 6px;}
 
-.featured-txt .h3{font-size: 1.5rem; color: var(--foreground);}
-
-/* .featured-heading .h2{flex: 1;} */
 
 @media only screen and (min-width: 1200px) {
     
@@ -33,17 +35,50 @@
     .logos-main{margin-bottom: 40px;}
     .featured-main{gap: 80px;}
     .featured-show{flex: 1;}
+    .featured-heading{justify-content: center; align-items: center;}
     .featured-recipe{flex: 1;}
-    .spice-lt { flex: 50%; padding-right: 30px; border-right: 2px solid var(--input); }
+    .spice-lt { flex: 50%; padding-right: 30px; }
     .spice-rt { flex: 50%; padding-left: 32px; gap: 19px; }
 
     .featured-list{gap: 32px;}
-   .featured-thumb{flex: 0 0 40%;}
-   .featured-txt{flex: 0 0 calc(60% - 32px);}
+    .featured-thumb{flex: 0 0 40%;}
+    .featured-txt{flex: 0 0 calc(60% - 32px);}
    
 }
 
+@media only screen and (max-width: 1360px) and (min-width: 1024px) {
+    .featured-heading .heading-lt{width: 64%;}
+    .featured-heading .heading-rt{width:  calc(100% - 64%);}
+    .spice-lt { flex: 27%; padding-right: 10px;}
+    .spice-rt { padding-left: 10px; gap: 10px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 720px) {
+    .featured-main{display: block;}
+    .featured-show{width: 100%; margin-bottom: 48px;}
+    .featured-heading{justify-content: center; align-items: center;}
+    .heading-lt h2{line-height: 1rem;}
+    .spice-lt{flex: 50%; padding-right: 30px;}
+    .spice-rt{flex: 50%; padding-left: 32px; gap: 25px;}
+    .featured-list{gap: 32px;}
+    .featured-thumb{flex: 0 0 40%;}
+    .featured-txt{flex: 0 0 calc(60% - 32px);}
+
+}
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
+
+    .featured-main{display: block; padding: 40px 0 24px;}
+    .featured-show{width: 100%; margin-bottom: 48px;}
+    .featured-heading{margin-bottom: 24px;}
+    .featured-img{margin-bottom: 23px;}
+    .spice-secrets{display: block; margin-bottom: 24px;}
+    .spice-lt{ border-right: none; border-bottom: 2px solid var(--input); padding-bottom: 22px;}
+    .spice-rt{ gap: 25px; justify-content: center; padding-top: 22px;}
+    .featured-list{gap: 16px; margin-bottom: 20px;}
+    .featured-thumb {flex: 0 0 30%; }
+    .featured-thumb img{min-height: 104px;}
+    .featured-txt{flex: 0 0 calc(70% - 16px);}
+    .featured-txt .h3{font-size: 1rem; line-height: 1.5rem;}
+
     .logos-section { padding-bottom: 0 }
   }
