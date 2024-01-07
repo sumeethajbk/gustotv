@@ -529,5 +529,27 @@ jQuery(document).ready(function () {
 
   });
 
+if(jQuery(window).width()<=719){
+  jQuery(".recipes-row").slick({
+    slidesToShow: 2,
+
+    slidesToScroll: 1,
+  
+    draggable: true,
+    swipeToSlide: true,
+
+
+    infinite: true,
+
+    speed: 1000,
+
+    dots: false,
+
+    arrows: false,
+    variableWidth: true,
+    centerPadding: '0',
+    centerMode: true,
+  })
+}
 
 });

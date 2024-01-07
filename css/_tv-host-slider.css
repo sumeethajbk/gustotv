@@ -2,7 +2,7 @@
 .tv-host-heading{ margin-bottom: 48px; }
 .tv-host-list{margin: 0 28px;}
 .tv-host-list span{display: block;}
-.host-bg{position: relative; background: red; border-radius: 50%; width: 112px; height: 112px; display: flex; align-items: flex-end; overflow: hidden;}
+.host-bg{position: relative; margin-bottom: 20px; border-radius: 50%; width: 112px; height: 112px; display: flex; align-items: flex-end; overflow: hidden;}
 .host-bg:before{display: block; content: ""; position: absolute; border-radius: 50%; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 120px; width: 120px; top: 0; left: 0; z-index: 1;}
 .tv-host-img img{max-height: 112px;}
 .host-text{text-align: center;}
