@@ -1,21 +1,24 @@
 @import url("../css/_accordion-module.css");
 @import url("../css/_single-testimonial-module.css");
 
-.general-default-article-section {float: left; width: 100%; padding:82px 0 43px;}
+.general-default-article-section {float: left; width: 100%; padding:80px 0 43px;}
+.general-default-article-section .default-inner > p:first-of-type {font-size: 1.745rem; line-height: 1.29; color: var(--optionaltxt); margin: 0 0 62px 0;}
+.general-default-article-section h1 {margin-bottom: 64px;}
 .general-default-article-section ol {margin: 28px 0 61px 24px}
 .default-main {justify-content: space-between;}
 .default-inner {width:67.1875%;}
 .sidebar {width: calc(100% - 76.5625%);}
+.sidebar .side-bucket {clear: both;}
+.sidebar .side-bucket h3 {border-bottom:  solid 4px var(--green); padding:0 0 8px 0; margin-bottom: 26px;}
+.sidebar .side-bucket ul {margin: 0; padding: 0;}
+.sidebar .side-bucket ul li {display: block; margin-bottom: 30px;}
+.sidebar .side-bucket ul li:before {display: none;}
+.sidebar .side-bucket ul li a {text-decoration: none; font-size: 1.125rem; font-weight: normal; padding:5px 8px;}
+.sidebar .side-bucket ul li.active a {background: var(--input); border-radius: 4px; color:rgb(57, 44, 58, 0.8);}
 
-.breadcrumb {clear: both; width: 100%;}
-.breadcrumb ul {margin: 0; font-size: 0;}
-.breadcrumb ul li {display: inline-block; font-size:1.125rem; color: var(--foreground); margin: 0;}
-.breadcrumb ul li:before {left: inherit; top: inherit; content: ""; position: relative; margin: 0 21px; display: inline-block; vertical-align: middle; color: var(--heading);}
-.breadcrumb ul li:first-child:before {display: none;}
-.breadcrumb ul li a {text-decoration: none; font-size:1.125rem; color:var(--optionaltxt); font-weight: 400;}
-.breadcrumb ul li a:hover {color: var(--heading);}
-
-
+.apply-wrap {justify-content: space-between; padding:22px 0 20px 0; align-items: center; position: relative; margin: 0 0 64px 0;}
+.apply-wrap:before, .apply-wrap:after {content: ""; display: inline-block; position: absolute; left: 0; top: 0; height:2px; background-image: radial-gradient(circle at 1px, var(--green) 1px, rgba(255,255,255,0) 1.25px); width: 100%; background-size: 8px 2px; background-position: 0 0;}
+.apply-wrap:after {top: inherit; bottom: 0;}
 
 /*-- media css starts here --*/
 @media only screen and (max-width: 1400px) {
