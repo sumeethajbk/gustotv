@@ -1,12 +1,11 @@
 .tv-host-slider hr{margin: 0;}
 .tv-host-heading{ margin-bottom: 48px; }
-.tv-host-list{margin: 0 28px;}
+.tv-host-list{margin: 0 28px; text-align: center;}
 .tv-host-list span{display: block;}
 
-.host-bg{position: relative;background-color: red; border-radius: 50%; margin-bottom: 20px;  width: 120px; height: 120px; display: flex; align-items: center; overflow: hidden; justify-content: center; padding: 4px;}
-/* .host-bg:before{display: block; content: ""; position: absolute; border-radius: 50%; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 120px; width: 120px; top: 0; left: 0; z-index: 1;} */
+.host-bg-wrap {width: 122px; height: 122px; display: flex; align-items: center; justify-content: center;}
+.host-bg{position: relative;background-color: red; border-radius: 50%; margin-bottom: 20px;  width: 112px; height: 112px; display: flex; align-items: center; overflow: hidden; justify-content: center; margin: 5px;}
 .tv-host-img img{ border-radius: 50%;}
-.host-text{text-align: center;}
 .host-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; margin-bottom: 3px;}
 .host-text .position{font-size: 0.75rem; color: var(--foreground); line-height: 0.75rem; font-weight: bold; opacity: 0.5;}
 .tv-host-row::before{ background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); position: absolute; content: ""; display: block; top: 0; left: 0; z-index: 1; width: 80px; height: 170px;}
