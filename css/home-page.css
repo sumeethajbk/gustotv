@@ -30,6 +30,7 @@
 
 .spice-lt{border-right: 2px solid var(--input); justify-content: center; align-items: center; display: flex;}
 .spice-rt img{width: 112px; margin-bottom: 20px;}
+.spice-rt .spice-list{text-align: center;}
 .spice-text{text-align: center;}
 .spice-text span{display: block;}
 .spice-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; }

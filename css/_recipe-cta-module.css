@@ -10,6 +10,7 @@
 .recipe-cta-content{ background-color: var(--white-75); border-radius: 8px;  position: relative;}
 .recipe-cta-txt .h4{margin-bottom: 18px;}
 .recipe-cta-txt p{margin-bottom: 24px;}
+.recipe-cta-txt a:hover{color: var(--optionaltxt);}
 .recipe-cta-module.reverse .recipe-main{justify-content: flex-end;}
 
 /*-- media css starts here --*/

@@ -7,6 +7,8 @@
 .recipes-form button.recipes-btn::after{display: none;}
 
 .recipes-list{text-align: center;}
+.recipes-list span a { font-size: 1rem; color: var(--darkgreen); font-family: DMSerifDisplay; font-weight: normal; line-height: 1.25;}
+.recipes-list span a:hover{color: var(--green)}
 .links-list{flex: 0 0 25%; padding: 0 40px ; border-left: 2px solid var(--green);}
 .links-list:first-child{padding: 0; border-left: 0;}
 .links-list ul{margin: 0;}
