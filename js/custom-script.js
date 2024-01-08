@@ -84,10 +84,11 @@ if (jQuery(window).width() >= 1023) {
       width: 'toggle',
     }, 400);
   });
-<<<<<<< HEAD
+}
 
   if(jQuery(window).width()<=719){
-jQuery(".links-list span").on("click", function(){
+jQuery(".links-list span").on("click", function(event){
+  event.preventDefault();
   jQuery(this).parent().siblings().find("span.h4").removeClass("active");
   jQuery(this).toggleClass("active");
   jQuery(this).parent().siblings().find(".links-mobile-wrap").slideUp();
@@ -95,7 +96,4 @@ jQuery(".links-list span").on("click", function(){
 });
   }
 
-=======
-}
->>>>>>> 9d3205934d2a4e1be20abfc27326ebd8af11a300
 });
