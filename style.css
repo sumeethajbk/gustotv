@@ -126,14 +126,14 @@ img.mobile {display:none;}
 backdrop-filter: blur(8px); width: 100%; height: 100%; position: absolute; left: 0; top: 0; display: block; clip-path:polygon(0 0, 100% 0, 92% 100%, 0 100%);}
 .video-caption .video-txt {width:calc(100% - 80px); position: relative;}
 
-.video-wrap .video-thumbnail img {border-radius: 16px;}
+.video-wrap .video-thumbnail > img {border-radius: 16px;}
 
 .video-thumbnail {position: relative;}
 .video-thumbnail img {width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;}
 .play-btn-main {top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; position: absolute; z-index: 1;}
-.play-btn {width:115px; height: 115px; background: var(--orange); border-radius: 50%; animation: animate 2s linear infinite;}
+.play-btn {width:112px; height: 112px; border: solid 8px rgb(191, 208, 0, 0.8); background-color: rgb(89, 44, 95, 0.8); border-radius: 50%; animation: animate 2s linear infinite;}
 .play-btn:hover {background:rgba(0, 85, 184, 1);}
-.play-btn img {width: 37px; height: 38px;}
+.play-btn img {width: 30px; height: 35px;}
 
 
 .overlay_main_sec {width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom:0; position: fixed; overflow-y: auto; -webkit-overflow-scrolling: touch; z-index: 1801; visibility: hidden; transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; transform:translateY(100%); -webkit-transform:translateY(100%); -moz-transform: translateY(100%); background:rgba(0, 58, 112, 0.95);}
@@ -328,6 +328,11 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .readmore {position: relative; display: inline-block; font-size:1rem; padding-right: 23px; font-weight: bold; text-decoration: none;}
 .readmore:after {right: 0px; content:"\f061"; font-size:1rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; top: 0; bottom: 0; color: var(--optionaltxt);}
 .readmore:hover:after {animation-name: bounceAlpha; animation-duration: 1.4s; animation-iteration-count: infinite; animation-timing-function: linear;}
+
+/* Dotted ROund Border */
+.dot-border {width: 100%; height: 100%; z-index: -1;}
+.dot-border svg{height: 100%; width: 100%;}
+.dot-border circle {stroke: var(--green); stroke-width: 2;}
 
 
 /*-- media css starts here --*/
