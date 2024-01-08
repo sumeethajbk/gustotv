@@ -9,6 +9,17 @@
 @import url("../css/_newsletter-signup.css");
 
 
+.home-banner-section{position: relative; clear: both; width: 100%; height: 100%; min-height: 890px;}
+/* .home-banner-bg{position: absolute; display: block; content: ""; overflow: hidden;}  */
+.home-banner-overlay{ width: 100%; height: 100%; position: absolute;  top: 0; left: 0; background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);}
+.home-banner-main{width: 100%; min-height: 890px; display: flex; flex-direction: column; justify-content: flex-end; margin: 0; padding: 64px; box-sizing: border-box; max-width: 1440px;}
+.home-banner-main::after{display: block; border: 8px solid var(--green); opacity: 0.25; margin: 64px; content: ""; top: 0; left: 0; width: calc(100% - 128px); height: calc(100% - 128px); position: absolute; box-sizing: border-box; border-radius: 32px;}
+.home-banner-text{margin-left: 0; margin-right: auto; z-index: 1; max-width: 615px;}
+.home-banner-text h1{font-size: 7.5rem; line-height: 0.9; font-weight: bold; text-shadow: 1px 1px 0 #bfd000, 2px 2px 0 #bfd000, 3px 3px 0 #bfd000;
+    -webkit-text-stroke: 2px #fff; margin-bottom: 0;}
+.home-banner-text span{color: var(--white);}
+
+.featured-show-section{position: relative; clear: both;width: 100%; height: 100%;}
 .featured-main{padding: 80px 0;}
 .featured-heading{margin-bottom: 40px;}
 .heading-lt h2{font-size: 2rem; margin-bottom: 0; line-height: 2.5rem;}
