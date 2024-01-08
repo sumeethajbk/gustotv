@@ -34,7 +34,7 @@
 .spice-text span{display: block;}
 .spice-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; }
 .spice-text .position{font-size: 0.75rem; color: var(--foreground); line-height: 0.75rem; font-weight: bold; opacity: 0.5; margin-bottom: 3px;}
-.featured-list{justify-content: center; align-items: center; margin-bottom: 24px;}
+.featured-list{ align-items: center; margin-bottom: 24px;}
 .featured-txt .h3{font-size: 1.5rem; color: var(--foreground); margin-bottom: 2px;}
 .featured-thumb img{border-radius: 6px;}
 
