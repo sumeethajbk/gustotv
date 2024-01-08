@@ -36,14 +36,14 @@ sup {bottom: 1ex;}
 sub {top: 0;}
 dl {margin-bottom: 24px;}
 dd {margin-bottom: 24px;}
-ul {list-style: none; margin: 34px 0 28px 25px;}
+ul {list-style: none; margin: 28px 0 28px 30px;}
 ul > li {counter-increment: li; position: relative; margin-bottom: 12px;}
-ul > li:before {content: ""; width: 5px; height: 5px; display: block; position: absolute; top: 14px; left: -26px; background-color: #AB3226; border-radius: 50%;}
+ul > li:before {content: ""; width: 5px; height: 5px; display: block; position: absolute; top: 12px; left: -17px; background-color:var(--body-text); border-radius: 50%;}
 li > ul {margin: 25px 0 26px 40px;}
-ol {counter-reset: section; list-style: none; margin:28px 0 28px 24px;}
+ol {counter-reset: section; list-style: none; margin:28px 0 28px 30px;}
 ol > li {counter-increment: li; position: relative; margin-bottom: 12px;}
 ol > li:before {counter-increment: section; content: counter(section, decimal) "."; left: -24px; top: 2px; position: absolute; line-height: normal; font-family:"DM Sans", sans-serif; font-size: 1.25rem; min-width: 18px; text-align: right;}
-li > ol {margin: 25px 0 26px 25px;}
+li > ol {margin: 25px 0 26px 40px;}
 img {-ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; max-width: 100%; height: auto;}
 figure {margin: 0;}
 fieldset {border: 1px solid rgba(0, 0, 0, 0.1); margin: 0 0 24px; padding: 11px 12px 0;}
