@@ -1,10 +1,10 @@
 @import url("../css/_accordion-module.css");
 @import url("../css/_single-testimonial-module.css");
 
-.general-default-article-section {float: left; width: 100%; padding:80px 0 43px;}
+.general-default-article-section {float: left; width: 100%; padding:37px 0 62px 0;}
 .general-default-article-section .default-inner > p:first-of-type {font-size: 1.745rem; line-height: 1.29; color: var(--optionaltxt); margin: 0 0 62px 0;}
 .general-default-article-section h1 {margin-bottom: 64px;}
-.general-default-article-section ol {margin: 28px 0 61px 24px}
+.general-default-article-section ol {margin-bottom: 61px;}
 .default-main {justify-content: space-between;}
 .default-inner {width:67.1875%;}
 .sidebar {width: calc(100% - 76.5625%);}
