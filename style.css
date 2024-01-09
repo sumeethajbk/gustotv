@@ -357,6 +357,8 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 }
 
 @media only screen and (max-width:719px) and (min-width:200px) {
+    blockquote {padding: 44px 0 35px 0;}
+    blockquote p {font-size: 1.25rem; line-height: 1.8;}
     
     .container {padding:0 20px; max-width:100%;}
     #mainContent {padding: 64px 0 0 0;}
@@ -396,7 +398,8 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
 
 @media only screen and (max-width:480px) {   
-    img.alignnone, img.alignleft, img.aligncenter, img.alignright {margin:43px 0 39px 0!important; width:100%}
+    img.alignnone, img.alignleft, img.aligncenter {margin:43px 0 39px 0; width:100%}
+    img.alignright {margin:15px 0 39px 0; width: 100%;}
 
 }
 
