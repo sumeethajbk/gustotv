@@ -198,7 +198,7 @@ ul.slick-dots li.slick-active button {opacity:1;}
 
 
 select.selectBox {display:none;}
-body .selectBox-dropdown {outline:0; width:100% !important; font-size: 1rem; line-height:1.56; background:var(--input); color:var(--body-text); box-shadow:none; border-radius: 0; padding: 13px 46px 13px 16px; border-bottom: 1px solid var(--blacktext); vertical-align:middle; font-family:"DMSerifDisplay"; font-weight: 600; height:auto;  text-transform:capitalize; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; cursor:pointer;}
+body .selectBox-dropdown {outline:0; width:100% !important; font-size: 1rem; line-height:1.56; background:var(--input); color:var(--body-text); box-shadow:none; border-radius: 0; padding: 13px 46px 13px 16px; border-bottom: 1px solid var(--blacktext); vertical-align:middle; height:auto;  text-transform:capitalize; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; cursor:pointer;}
 body .selectBox-dropdown:focus, body .selectBox-dropdown:focus .selectBox-arrow {border-color:rgba(207, 216, 223, 0.5);}
 body .selectBox-dropdown .selectBox-label {padding:0; display:block; width: 100% !important; text-overflow: ellipsis;}
 body .selectBox-dropdown .selectBox-label a {color:inherit;}
@@ -220,7 +220,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
-.frm_forms .frm_form_fields .frm_form_field label { font-size: 1rem; line-height: 1.5;}
+.frm_forms .frm_form_fields .frm_form_field label { font-size: 1rem; line-height: 1.5; padding: 0;}
 .frm_forms .frm_form_fields .frm_form_field label a {text-decoration: underline;}
 .frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding-left:29px; display:block; cursor: pointer;}
 .frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 0; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--input)!important; color: var(--blacktext)!important; border: 0 none!important; border-bottom:solid 1px var(--blacktext)!important; padding:15px 16px 15px 16px; width: 100%; box-shadow: none;}
@@ -396,7 +396,7 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
 
 @media only screen and (max-width:480px) {   
-    img.alignnone, img.alignleft, img.aligncenter, img.alignright {margin:46px 0 !important; width:100%}
+    img.alignnone, img.alignleft, img.aligncenter, img.alignright {margin:43px 0 39px 0!important; width:100%}
 
 }
 
