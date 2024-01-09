@@ -48,4 +48,9 @@
     
     .general-default-article-section .breadcrumb ul li a {letter-spacing: -0.17px;}
     
+    .apply-wrap {justify-content: center;}
+    .apply-lt {width: 100%; margin: 0 0 24px 0;}
+    .apply-lt .button {width: 100%; display: flex; justify-content: center; padding: 8px 12px 11px 12px}
+    .apply-lt .button:after {position: static; margin-left:9px;}
+    
 }
