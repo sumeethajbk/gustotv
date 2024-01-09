@@ -1,0 +1,10 @@
+.news-press-heading.flex { gap: 24px; }
+  .news-press-heading-lt { flex: 1; }
+  .news-press-heading-rt { flex: 1; }
+  .search-form { gap: 24px; }
+  .form-field-first.categories-dropdown { flex: 1; }
+  .form-field-last.search-field{flex: 1;}
+
+ 
+  
+  
