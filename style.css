@@ -361,7 +361,10 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
     .container {padding:0 20px; max-width:100%;}
     #mainContent {padding: 64px 0 0 0;}
     .hide-in-mobile {display:none;}
-    .video-wrap .video-thumbnail > img {min-height: 197px;}
+    
+    .video-wrap {margin: 40px 0 41px 0;}
+    .video-wrap .video-thumbnail > img {min-height: 197px; border-radius: 8px;}
+    .video-caption {position: static; background: var(--input); border-radius: 8px; color: var(--foreground); font-weight: bold; margin: 8px 0 0 0; line-height: 1.5; padding: 7px 12px 9px 38px; max-width: 100%; width: 100%;}
 
     .cat-wrap ul li {margin-right: 6px;}
     body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {right: 0px;}
