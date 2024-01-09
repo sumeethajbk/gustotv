@@ -42,7 +42,7 @@
 
 
 .spice-lt{border-right: 2px solid var(--input); justify-content: center; align-items: center; display: flex;}
-.spice-bg-wrap.pos-relative { width: 122px; height: 122px; display: flex; align-items: center; justify-content: center;}
+.spice-bg-wrap { width: 122px; height: 122px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;}
 .spice-bg {position: relative; background-color: red; border-radius: 50%; width: 112px; height: 112px; display: flex; align-items: center; overflow: hidden; justify-content: center; margin: 5px; }
 .spice-rt img{width: 112px;}
 .spice-rt .spice-list{text-align: center;}
