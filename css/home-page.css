@@ -15,10 +15,20 @@
 .container.home-banner-main{max-width: 1440px; margin: 0 auto;}
 .home-banner-section .banner-bg::after{display: block; border: 8px solid var(--green); opacity: 0.25; margin: 64px auto; content: ""; top: 0; left: 0; right: 0; width: calc(100% - 128px); height: calc(100% - 128px); position: absolute; box-sizing: border-box; border-radius: 32px; max-width: 1312px;}
 .home-banner-text{margin-left: 0; margin-right: auto; z-index: 1; max-width: 615px;}
-.home-banner-text h1{line-height: 0.9; font-weight: bold; text-shadow: 1px 1px 0 #bfd000, 2px 2px 0 #bfd000, 3px 3px 0 #bfd000;
-    -webkit-text-stroke: 2px #fff; margin-bottom: 0; color: transparent;}
+/* .home-banner-text h1{line-height: 0.9; font-weight: bold; text-shadow: 1px 1px 0 #bfd000, 2px 2px 0 #bfd000, 3px 3px 0 #bfd000;
+    -webkit-text-stroke: 2px #fff; margin-bottom: 0; color: transparent;} */
 
-
+    .home-banner-text h1 {
+        line-height: 0.9;
+        font-weight: bold;
+        -webkit-text-stroke: 1px #fff;
+        margin-bottom: 0;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        filter: drop-shadow(1px 1px 0px #BFD000);
+        font-family: DMSans;
+    }
 
 .featured-show-section{position: relative; clear: both;width: 100%; height: 100%;}
 .featured-main{padding: 80px 0;}
@@ -29,7 +39,9 @@
 
 
 .spice-lt{border-right: 2px solid var(--input); justify-content: center; align-items: center; display: flex;}
-.spice-rt img{width: 112px; margin-bottom: 20px;}
+.spice-bg-wrap.pos-relative { width: 122px; height: 122px; display: flex; align-items: center; justify-content: center;}
+.spice-bg {position: relative; background-color: red; border-radius: 50%; width: 112px; height: 112px; display: flex; align-items: center; overflow: hidden; justify-content: center; margin: 5px; }
+.spice-rt img{width: 112px;}
 .spice-rt .spice-list{text-align: center;}
 .spice-text{text-align: center;}
 .spice-text span{display: block;}
@@ -56,7 +68,7 @@
     .featured-heading{justify-content: center; align-items: center;}
     .featured-recipe{flex: 1;}
     .spice-lt { flex: 50%; padding-right: 30px; }
-    .spice-rt { flex: 50%; padding-left: 32px; gap: 19px; }
+    .spice-rt { flex: 50%; padding-left: 32px; gap: 15px; }
 
     .featured-list{gap: 32px;}
     .featured-thumb{flex: 0 0 40%;}

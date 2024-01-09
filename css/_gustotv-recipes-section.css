@@ -13,15 +13,15 @@
 .links-list:first-child{padding: 0; border-left: 0;}
 .links-list ul{margin: 0;}
 .links-list ul.h4{margin-bottom: 32px;}
-ul.recipes-block{justify-content: space-around; }
+
 ul.recipes-block li {list-style-type: none;}
 ul.recipes-block  li:before{display: none;}
 ul.recipes-block li a{text-decoration: none; font-size: 1rem; line-height: 1.5rem; color: var(--foreground); opacity: 0.75}
 
 @media only screen and (min-width: 1200px){
 
-
-    ul.recipes-block li { display: inline-block; flex: 0 0 50%;}
+    ul.recipes-block{gap: 0 10px;}
+    ul.recipes-block li { display: inline-block; flex: 0 0 calc(50% - 5px);}
 
 }
 @media only screen and (min-width: 1024px){
@@ -29,6 +29,7 @@ ul.recipes-block li a{text-decoration: none; font-size: 1rem; line-height: 1.5re
     .recipes-heading h2{margin: 0; flex: 0 0 calc(50% - 12px);}
     .recipes-heading-right{flex: 0 0 calc(50% - 12px);}
     .recipes-row{gap: 40px; margin-bottom: 56px;}
+ 
     .recipes-list{width: 9.7%;}
     
     
