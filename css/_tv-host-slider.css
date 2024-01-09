@@ -26,11 +26,13 @@
 
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
     .tv-host-main { padding: 52px 0 40px; }
+    .tv-host-list{margin: 0 15px;}
     .tv-host-heading { margin-bottom: 40px; }
     .tv-host-heading h3{font-size: 1.5rem;}
     .host-bg-wrap{width: 97px; height: 97px;}
     .host-bg{width: 90px; height: 90px; margin: 4px; }
     .tv-host-img img{max-height: 89.6px;}
+    .host-text .title{font-size: 0.8rem;}
 }
 
 
@@ -41,7 +43,10 @@
     .tv-host-list{margin: 0 15px;}
     .tv-host-heading { margin-bottom: 38px;}
     .tv-host-heading h3{font-size: 1.5rem;}
-    .host-bg{width: 89.6px; height: 89.6px;}
+    .host-bg-wrap{width: 97px; height: 97px;}
+    .host-bg{width: 90px; height: 90px;}
     .tv-host-img img{max-height: 89.6px;}
+    .host-text .title{font-size: 0.8rem; margin-bottom: 0;}
+    .host-text .position{font-size: 0.6rem;}
 }
 
