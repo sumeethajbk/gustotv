@@ -63,7 +63,7 @@ textarea {overflow: auto; vertical-align: top; min-height: 128px; border-radius:
 /*-- table --*/
 table, th, td {border:0 none; letter-spacing: normal;}
 table {border-collapse: separate; border-spacing: 0; border-width: 1px; margin:31px 0; width: 100%;}
-table tbody tr td:first-child {padding-left: 0; text-align: left; width:19.8%; font-weight:600;}
+table tbody tr td:first-child {padding-left: 0; text-align: left; width:19.8%; font-weight:bold;}
 table thead tr th:first-child {text-align: left; padding-left: 0;}
 table tbody img {margin: 0 auto;}
 caption, th, td {text-align: left;}
