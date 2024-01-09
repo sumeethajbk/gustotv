@@ -48,4 +48,15 @@
     
     .general-default-article-section .breadcrumb ul li a {letter-spacing: -0.17px;}
     
+    .apply-wrap {justify-content: center; margin: 0 0 41px 0;}
+    .apply-lt {width: 100%; margin: 0 0 24px 0;}
+    .apply-lt .button {width: 100%; display: flex; justify-content: center; padding: 8px 12px 11px 12px}
+    .apply-lt .button:after {position: static; margin-left:9px;}
+    .apply-wrap .sharethis-inline-share-buttons .st-btn {width: 40px; height: 40px!important; margin: 0 0 0 9px !important; line-height: 38px!important;}
+    
+    .default-thumb {margin: 40px 0 41px 0;}
+    .default-thumb figure {min-height: 197px; height: 100%;}
+    .default-thumb figure img { border-radius: 8px;}
+    .default-thumb figure figcaption {position: static; background: var(--input); border-radius: 8px; color: var(--foreground); font-weight: bold; margin: 8px 0 0 0; line-height: 1.5; padding: 7px 12px 9px 38px; max-width: 100%; width: 100%;}
+    
 }
