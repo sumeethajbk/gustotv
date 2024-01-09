@@ -124,8 +124,7 @@ img.mobile {display:none;}
 .video-caption:after {content: "\f03d"; display: block; position: absolute; width: 18px; height: 12px; left: 12px; font-family: "Font Awesome 6 Pro"; top: 14px;
   font-weight: normal; font-size: 1rem; color: var(--green); line-height: 12px;}
 .video-caption .video-txt {width:100%; position: relative;}
-.video-wrap .video-thumbnail {height: 484px;}
-.video-wrap .video-thumbnail > img {border-radius: 16px;}
+.video-wrap .video-thumbnail > img {border-radius: 16px; min-height:484px;}
 
 .video-thumbnail {position: relative;}
 .video-thumbnail img {width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;}
@@ -358,9 +357,11 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 }
 
 @media only screen and (max-width:719px) and (min-width:200px) {
+    
     .container {padding:0 20px; max-width:100%;}
     #mainContent {padding: 64px 0 0 0;}
     .hide-in-mobile {display:none;}
+    .video-wrap .video-thumbnail > img {min-height: 197px;}
 
     .cat-wrap ul li {margin-right: 6px;}
     body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {right: 0px;}
@@ -385,6 +386,8 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
     .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker {left: inherit; right: 0; width: 35px; height: 35px; margin: 0 0 0 7px;}
     .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span {width: 35px; height: 35px; border-radius: 5px;}
     .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span.checked::before {height: 35px; width: 35px; font-size: 21px; line-height: 33px;}
+    
+    .breadcrumb {margin: 0 0 40px 0;}
     
 }
 
