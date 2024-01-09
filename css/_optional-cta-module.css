@@ -9,7 +9,7 @@
 .optional-cta-txt{  padding: 40px; background-color: var(--white); border-radius: 8px;  }
 
 .optional-cta-module.reverse .optional-main{justify-content: flex-end;}
-
+.optional-cta-txt a.button::after{right: 8px; content: "\f019"; font-family: "Font Awesome 6 pro";}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px) {
