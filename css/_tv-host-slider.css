@@ -28,7 +28,8 @@
     .tv-host-main { padding: 52px 0 40px; }
     .tv-host-heading { margin-bottom: 40px; }
     .tv-host-heading h3{font-size: 1.5rem;}
-    .host-bg{width: 89.6px; height: 89.6px;}
+    .host-bg-wrap{width: 97px; height: 97px;}
+    .host-bg{width: 90px; height: 90px; margin: 4px; }
     .tv-host-img img{max-height: 89.6px;}
 }
 
