@@ -42,7 +42,7 @@
 
 
 .spice-lt{border-right: 2px solid var(--input); justify-content: center; align-items: center; display: flex;}
-.spice-bg-wrap.pos-relative { width: 122px; height: 122px; display: flex; align-items: center; justify-content: center;}
+.spice-bg-wrap { width: 122px; height: 122px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;}
 .spice-bg {position: relative; background-color: red; border-radius: 50%; width: 112px; height: 112px; display: flex; align-items: center; overflow: hidden; justify-content: center; margin: 5px; }
 .spice-rt img{width: 112px;}
 .spice-rt .spice-list{text-align: center;}
@@ -51,7 +51,7 @@
 .spice-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; }
 .spice-text .position{font-size: 0.75rem; color: var(--foreground); line-height: 0.75rem; font-weight: bold; opacity: 0.5; margin-bottom: 3px;}
 .featured-list{ align-items: center; margin-bottom: 24px;}
-.featured-txt .h3{font-size: 1.5rem; color: var(--foreground); margin-bottom: 2px;}
+.featured-txt .h3{font-size: 1.5rem; color: var(--foreground); margin-bottom: 12px;}
 .featured-thumb img{border-radius: 6px;}
 
 

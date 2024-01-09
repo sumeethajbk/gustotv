@@ -1,6 +1,6 @@
 .tv-show-slider hr{margin: 0;}
 .tv-show-main{padding: 80px 0 ;}
-.tv-show-heading { margin-bottom: 55px; }
+.tv-show-heading { margin-bottom: 55px; align-items: center;}
 .tv-show-row .slick-track{display: flex; align-items: center;}
 .tv-show-img { margin: 0 24px;}
 .tv-show-img img{max-height: 86px;}

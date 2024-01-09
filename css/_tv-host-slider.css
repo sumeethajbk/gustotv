@@ -1,5 +1,5 @@
 .tv-host-slider hr{margin: 0;}
-.tv-host-heading{ margin-bottom: 48px; }
+.tv-host-heading{ margin-bottom: 48px;align-items: center; }
 .tv-host-list{margin: 0 28px; text-align: center;}
 .tv-host-list span{display: block;}
 
