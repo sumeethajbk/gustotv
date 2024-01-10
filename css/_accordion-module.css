@@ -18,6 +18,7 @@
 	
 	
 }
-@media only screen and (max-width: 767px) and (min-width: 200px){
-
+@media only screen and (max-width: 719px) and (min-width: 200px){
+    .accordion-item .accordion-heading {padding: 15px 50px 17px 22px;}
+    .accordion-item .content {padding: 7px 22px 17px 22px;}
 }
