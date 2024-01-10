@@ -1,5 +1,6 @@
 @import url("../css/default-page.css");
 
+.general-default-article-section .default-inner {width: 100%;}
 .default_form .frm_forms .frm_form_fields .frm_form_field label a {color: var(--foreground);}
 .default_form .frm_forms .frm_form_fields .frm_form_field label a:hover {color: var(--green);}
 .default_form .frm_forms .frm_form_fields .frm_form_field.vertical_radio a {text-decoration: underline;}

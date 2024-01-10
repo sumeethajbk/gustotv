@@ -19,7 +19,7 @@
     .header-search :-ms-input-placeholder {color: var(--heading) !important; text-transform: none;}
     
     .search_form_container {position:relative;}
-    .search_form input[type=search] {padding: 14px 50px 14px 15px; color: var(--heading);}
+    .search_form input[type=search] {padding: 14px 50px 14px 15px; color: var(--heading); border-radius: 16px; border: solid 2px var(--input); background: var(--white); text-transform: capitalize; font-size: 1rem; font-weight: bold; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
     .search_form input[type=submit] {display:none;}
 
 
