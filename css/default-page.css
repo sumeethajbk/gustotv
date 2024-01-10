@@ -45,6 +45,7 @@
 @media only screen and (max-width: 719px) and (min-width: 200px) {
     .general-default-article-section {padding:40px 0 14px 0;}
     .general-default-article-section .default-inner > p:first-of-type {font-size: 1.5rem; line-height: 1.33; margin: 0 0 39px 0;}
+    .general-default-article-section h3 {padding: 21px 0 0 0;}
     
     .general-default-article-section .breadcrumb ul li a {letter-spacing: -0.17px;}
     
@@ -59,7 +60,7 @@
     .default-thumb figure img { border-radius: 8px;}
     .default-thumb figure figcaption {position: static; background: var(--input); border-radius: 8px; color: var(--foreground); font-weight: bold; margin: 8px 0 0 0; line-height: 1.5; padding: 7px 12px 9px 38px; max-width: 100%; width: 100%;}
     
-    .general-default-article-section ol, .general-default-article-section ul {margin-bottom: 38px;}
+    .general-default-article-section ol, .general-default-article-section ul {margin-bottom: 48px;}
     .accordion-module {padding: 12px 0 36px 0;}
     
 }
