@@ -195,7 +195,11 @@ ul.slick-dots li button {width:5px; height:5px; min-width:0; padding:0; font-siz
 ul.slick-dots li.slick-active button {opacity:1;}
 
 #blog_list{margin: 0;}
-.btn-center {width: 100%; clear: both; text-align: center;}
+.btn-center{position: relative; z-index: 1; width: 100%; text-align: center;}
+.btn-center:before{position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%);  background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1;}
+.btn-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
+.btn-center .button::after{display: none;}
+.btn-center .button{padding: 14px 20px 15px 20px;}
 
 select.selectBox {display:none;}
 body .selectBox-dropdown {outline:0; width:100% !important; font-size: 1rem; line-height:1.56; background:var(--input); color:var(--body-text); box-shadow:none; border-radius: 0; padding: 13px 46px 13px 16px; border-bottom: 1px solid var(--blacktext); vertical-align:middle; height:auto;  text-transform:capitalize; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; cursor:pointer; font-weight: bold;}
@@ -216,7 +220,8 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 
 /*-- common form css starts here --*/
 .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_fields_container {display:block;}
-.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:0 !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; bottom:-14px; position:absolute;}
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.frm_blank_field input, .frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field.frm_blank_field textarea {border-bottom:solid 2px #f00!important; padding: 15px 16px 12px 16px;}
+.frm_forms.frm_style_formidable-style.with_frm_style .frm_form_fields .frm_form_field .frm_error {right:16px !important; width:100%; display:block; font-size:12px !important; color:#f00 !important; background:transparent; padding:0; margin:0; border-radius:0; text-align:right !important; line-height:normal !important; font-weight:400; top:-9px; position:absolute;}
 .frm_forms .frm_form_fields fieldset {margin:0; padding:0; border:0;}
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
@@ -225,15 +230,16 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_forms .frm_form_fields .frm_form_field label a {text-decoration: underline;}
 .frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding-left:29px; display:block; cursor: pointer;}
 
-.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 0; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--input)!important; color: var(--blacktext)!important; border: 0 none!important; border-bottom:solid 1px var(--blacktext)!important; padding:15px 16px 15px 16px; width: 100%; box-shadow: none;}
-body .frm_forms .frm_form_fields input:valid, body .frm_forms .frm_form_fields textarea:valid {box-shadow:none!important;  border: 0 none!important; border-bottom:solid 4px var(--heading)!important; background-color: var(--input)!important;}
-body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus {box-shadow:none!important;  border: 0 none!important; border-bottom:solid 4px var(--green)!important; background-color: var(--input)!important;}
+.frm_forms .frm_form_fields input, .frm_forms .frm_form_fields textarea, .frm_forms .frm_form_fields select {font-family: "DM Sans", sans-serif; font-weight: bold; display: block; outline: 0; border-radius: 0; font-size: 1rem; line-height: 1.25; font-style: normal; vertical-align: middle; -webkit-appearance: none; background-color: var(--input)!important; color: var(--blacktext)!important; border: 0 none!important; border-bottom:solid 1px var(--blacktext)!important; padding:15px 16px 15px 16px; width: 100%; box-shadow: none; transition: none;}
+body .frm_forms .frm_form_fields input:focus, body .frm_forms .frm_form_fields textarea:focus {box-shadow:none!important;  border: 0 none!important; border-bottom:solid 2px var(--green)!important; background-color: var(--input)!important; padding: 15px 16px 14px 16px;}
 .frm_forms .frm_form_fields textarea {min-height:160px;}
 
 .frm_forms .frm_form_fields .selectBox-dropdown{background-color: var(--input); color: var(--blacktext); border:solid 1px var(--blacktext); padding:15px 46px 15px 16px; font-family: "DM Sans", sans-serif; font-weight: bold; border-top: 0 none; border-left: 0 none; border-right: 0 none; line-height: 1.3; text-transform: none;}
 .frm_forms .frm_form_fields div.selector {margin-top:16px;}
-.frm_forms .frm_submit{margin:0;}
 
+
+
+.frm_forms .frm_submit{margin:0;}
 body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin:0; padding: 9px 34px 10px 12px; vertical-align: middle; cursor: pointer; border: 0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family: "DM Sans", sans-serif; text-decoration: none; display: inline-block; font-size: 1rem; font-weight: bold; line-height: normal;}
 body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {background-color: var(--green)!important; color: var(--blacktext)!important;}
 body .frm_forms .frm_submit .button:after, body .frm_forms .frm_submit button:after {right: 12px;}
