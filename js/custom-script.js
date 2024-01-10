@@ -93,15 +93,21 @@ jQuery(document).ready(function () {
       jQuery(this).next(".links-mobile-wrap").slideToggle();
     });
   }
-    
-    
-  jQuery('').blur(function () {
-    if (!jQuery(this).val() > 0) {
-      jQuery(this).addClass("has-value");
-    } 
-    else {
-      jQuery(this).removeClass("has-value");
+
+
+  function checkForInput(element) {
+    const $input = jQuery('.frm_form_field input, .frm_form_field textarea');
+    if (jQuery(element).val().length > 0) {
+      $input.addClass('input-has-value');
+    } else {
+      $input.removeClass('input-has-value');
     }
+  }
+  jQuery('.frm_form_field input, .frm_form_field textarea').each(function () {
+    checkForInput(this);
+  });
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('change keyup', function () {
+    checkForInput(this);
   });
 
 });
