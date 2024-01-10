@@ -16,7 +16,6 @@
 .contact-form-rt {width: 55.177%; flex-grow: 1;}
 .contact-form-rt .frm_forms .frm_form_fields .frm_form_field label a {color: var(--foreground);}
 .contact-form-rt .frm_forms .frm_form_fields .frm_form_field label a:hover {color: var(--green);}
-.contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio {margin: 0;}
 .contact-form-rt .frm_forms .frm_form_fields .frm_form_field.vertical_radio a {text-decoration: underline;}
 .contact-form-rt .frm_forms .frm_submit {margin: 0; text-align: right;}
 .contact-form-rt .frm_forms .frm_form_fields textarea {min-height: 212px;}

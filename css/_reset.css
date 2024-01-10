@@ -178,7 +178,7 @@ img.alignnone {margin:42px 0 38px; display: block; clear: both;}
 
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
-    h1 {font-size: 2rem; line-height: 1.25; margin-bottom: 24px;}
+    h1 {font-size: 2.5rem; line-height: 1.2; margin-bottom: 40px;}
     h2 {font-size: 2rem; line-height: 1.25; margin-bottom: 20px;}
     h3 {margin-bottom: 20px;}
     h4 {margin-bottom: 20px;}
