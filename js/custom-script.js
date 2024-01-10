@@ -95,19 +95,20 @@ jQuery(document).ready(function () {
   }
 
 
-  function checkForInput(element) {
-    const $input = jQuery('.frm_form_field input, .frm_form_field textarea');
-    if (jQuery(element).val().length > 0) {
-      $input.addClass('input-has-value');
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('input', function () {
+    var inputLength = jQuery(this).val().length;
+    if (inputLength > 0) {
+      jQuery(this).addClass('input-has-value');
     } else {
-      $input.removeClass('input-has-value');
+      jQuery(this).removeClass('input-has-value');
     }
-  }
-  jQuery('.frm_form_field input, .frm_form_field textarea').each(function () {
-    checkForInput(this);
   });
-  jQuery('.frm_form_field input, .frm_form_field textarea').on('change keyup', function () {
-    checkForInput(this);
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('blur', function () {
+    var inputValue = jQuery(this).val();
+    if (inputValue) {
+      jQuery(this).addClass('highlight');
+    } else {
+      jQuery(this).removeClass('highlight');
+    }
   });
-
 });
