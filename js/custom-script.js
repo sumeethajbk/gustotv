@@ -111,13 +111,6 @@ jQuery(document).ready(function () {
       jQuery(this).removeClass('highlight');
     }
   });
-    
-    jQuery('.scroll-left, .scroll-right').grouploop({
-      velocity: 5,
-      forward: true,
-      pauseOnHover: false,
-      childNode: ".marquee-grid",
-      childWrapper: ".marquee-row"
-    });
-    
+
+  
 });
