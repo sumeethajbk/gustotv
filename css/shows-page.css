@@ -8,9 +8,10 @@
 
 @media only screen and (min-width: 1024px) {
     .tv-host-main { padding: 40px 0 80px; }
+    .tv-host-heading{gap: 24px;}
     .tv-host-heading h1{font-size: 2.5rem; margin-bottom: 0;}
-    .tv-host-heading .heading-lt { width: 53.1%;}
-    .tv-host-heading .heading-rt{width: calc(100% - 53.1%);}
+    .tv-host-heading .heading-lt{flex: 0 0 50%;}
+    .tv-host-heading .heading-rt{flex: 0 0 calc(50% - 40px);}
       
 
 
