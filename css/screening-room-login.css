@@ -3,16 +3,27 @@
 
 .screening-login-container {clear: both; width: 100%; padding: 50px 0 80px;}
 .screening-main {align-items: center; justify-content: space-between;}
-.screening-lt {width: 60%; flex-grow: 1;}
-.screening-rt {width: 29.69%; max-width: 380px; margin: 0 0 0 10%;}
+.screening-lt {width:calc(100% - 60%); flex-grow: 1;}
+.screening-lt .optional-text {margin: 0 0 23px 0;}
+.screening-lt p {margin-bottom: 23px;}
+.screening-rt {width: 380px; margin:0 0 0 8%;}
 
 .login-form {margin: 0; font-size: 1rem;}
 .login-form .form-intro {margin: 0 0 24px 0;}
 .login-form .form-intro h3 {font-size: 1.5rem;}
 
+
+
 /*-- media css starts here --*/
-
-
-@media only screen and (max-width: 719px) and (min-width: 200px) {
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+    .screening-login-container {padding: 29px 0 40px;}
+    .screening-lt {width: 100%;}
+    .screening-lt .optional-text {margin: 0 0 25px 0;}
+    .screening-lt h1 {margin-bottom: 24px;}
+    .screening-rt {width: 100%; margin:16px 0 0 0;}
+    .login-form .frm_forms .frm_submit {width: auto;}
+    .login-form .frm_forms .frm_submit button {display: inline-block; width: auto; padding: 9px 34px 10px 12px;}
+    .login-form .frm_forms .frm_submit button span {padding: 0;}
+    .login-form .frm_forms .frm_submit button:after {position: absolute;}
     
 }

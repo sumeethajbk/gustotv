@@ -63,12 +63,12 @@ jQuery(document).ready(function () {
 
 
   /* Bottom Video Slide*/
-  jQuery('.video-thumbnail .play-btn').on('click', function (e) {
+  jQuery('#request_popup').on('click', function (e) {
     e.preventDefault();
     jQuery('body').addClass('pull_bottom');
     jQuery('.overlay_main_sec').addClass('active');
   });
-  jQuery('.pop_connect_close').on('click', function () {
+  jQuery('.pop_close').on('click', function () {
     jQuery('body').removeClass('pull_bottom');
     jQuery('.overlay_main_sec').removeClass('active');
   });

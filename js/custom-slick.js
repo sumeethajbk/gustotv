@@ -42,8 +42,8 @@ jQuery(document).ready(function () {
     })
   }
 
-
-  jQuery('.scroll-left').slick({
+/* Marquee Slider */
+jQuery('.scroll-left').slick({
     speed: 8000,
     autoplay: true,
     autoplaySpeed: 0,
@@ -80,4 +80,5 @@ jQuery(document).ready(function () {
     buttons: false,
     rtl: true
   });
+    /* End of Marquee Slider */
 });
