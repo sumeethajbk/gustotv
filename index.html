@@ -66,6 +66,8 @@
 
     <section class="home-banner-section">
       <div class="banner-bg">
+
+
         <picture class="object-fit">
           <source srcset="images/home-banner@2x.jpg" media="(min-width: 1024px)">
           <source srcset="images/home-banner-tab@2x.jpg" media="(min-width: 720px)">
@@ -74,6 +76,9 @@
         <div class="home-banner-overlay"></div>
       </div>
       <div class="container home-banner-main">
+        <div class="b-border-top banner-border"></div>
+        <div class="b-border-left banner-border"></div>
+        <div class="b-border-bottom banner-border"></div>
         <div class="home-banner-text">
           <h1>the world’s <span>best</span> food channel</h1>
         </div>
@@ -865,6 +870,34 @@
 <script src="js/custom-uniform.js"></script> 
 <script src="js/jquery.selectBox.js"></script> 
 <script src="js/custom-script.js"></script> 
+<script>
+  var $window = jQuery(window);
+var $document = jQuery(document);
+  function check_if_line() {
+  var height = $(".home-banner-text").height();
+  if(jQuery(window).width() >= 1200){
+    const number = 156;
+    var totHeight = height + number;
+    jQuery(".b-border-left").css({ "height": "calc(100% - " + totHeight + "px)", });
+  }
+  else if(jQuery(window).width() <= 1199 && jQuery(window).width() >= 1024){
+    const number = 116;
+    var totHeight = height + number;
+    jQuery(".b-border-left").css({ "height": "calc(100% - " + totHeight + "px)", });
+  }
+  else if(jQuery(window).width() <= 1023 && jQuery(window).width() >= 720){
+    const number = 82;
+    var totHeight = height + number;
+    jQuery(".b-border-left").css({ "height": "calc(100% - " + totHeight + "px)", });
+  }
+}
 
+$window.on("scroll", check_if_line);
+$window.trigger("scroll");
+$document.ready(function() { 
+  check_if_line();
+  setTimeout(check_if_line, 100);
+});
+</script>
 </body>
 </html>
