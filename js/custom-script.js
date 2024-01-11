@@ -95,7 +95,7 @@ jQuery(document).ready(function () {
   }
 
 
-  jQuery('.frm_form_field input, .frm_form_field textarea').on('input', function () {
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('input', 'textarea', function () {
     var inputLength = jQuery(this).val().length;
     if (inputLength > 0) {
       jQuery(this).addClass('input-has-value');
@@ -111,4 +111,14 @@ jQuery(document).ready(function () {
       jQuery(this).removeClass('highlight');
     }
   });
+    
+    jQuery('.marquee-row.scroll-left').grouploop({
+      velocity: 5,
+      forward: true,
+      pauseOnHover: false,
+      childNode: ".marquee-grid",
+      childWrapper: ".marquee-row"
+    });
+  
+    
 });

@@ -1,5 +1,14 @@
 @import url("../css/_optional-cta-module.css");
+@import url("../css/_marquee.css");
 
+.screening-login-container {clear: both; width: 100%; padding: 50px 0 80px;}
+.screening-main {align-items: center; justify-content: space-between;}
+.screening-lt {width: 60%; flex-grow: 1;}
+.screening-rt {width: 29.69%; max-width: 380px; margin: 0 0 0 10%;}
+
+.login-form {margin: 0; font-size: 1rem;}
+.login-form .form-intro {margin: 0 0 24px 0;}
+.login-form .form-intro h3 {font-size: 1.5rem;}
 
 /*-- media css starts here --*/
 
