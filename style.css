@@ -134,16 +134,17 @@ img.mobile {display:none;}
 .play-btn img {width: 30px; height: 35px; bottom: 1px; left: 3px; position: relative;}
 
 
-.overlay_main_sec {width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom:0; position: fixed; overflow-y: auto; -webkit-overflow-scrolling: touch; z-index: 1801; visibility: hidden; transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; transform:translateY(100%); -webkit-transform:translateY(100%); -moz-transform: translateY(100%); background:rgba(0, 58, 112, 0.95);}
+.overlay_main_sec {width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom:0; position: fixed; overflow-y: auto; -webkit-overflow-scrolling: touch; z-index: 1801; visibility: hidden; transition: all 0.5s ease 0s; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; transform:translateY(100%); -webkit-transform:translateY(100%); -moz-transform: translateY(100%); background:rgba(28, 24, 29, 0.9); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);}
 .overlay_main_sec.active{z-index: 999; overflow-y: auto; visibility: visible;  transform:translateY(0); -webkit-transform: translateY(0); -moz-transform:translateY(0);}
 .overlay_center {width:100%; height:100%;}
-.overlay-main {padding:79px 25px 92px; z-index:13000; margin:0 auto; width:100%; max-width:940px;}
-.overlay-main h2 {margin-bottom: 25px;}
-.overlay-main .pop_connect_close {position: absolute; top:41px; right:48px; cursor: pointer; font-size:44px; height: 40px;
+.overlay-main {z-index:13000; margin:20px; width:100%; max-width:720px;}
+.overlay-main h3 {margin-bottom: 25px;}
+.overlay-main .overlay-cnt {background: var(--white); border-radius: 24px; padding: 48px;}
+.overlay-main .pop_close {position: absolute; top:41px; right:48px; cursor: pointer; font-size:44px; height: 40px;
 display: block; width: 32px; line-height: 26px; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out;
 -moz-transition: all .5s ease-in-out;}
-.overlay-main .pop_connect_close i {color:var(--white);} 
-.overlay-main .pop_connect_close:hover i {color:var(--white-50);}
+.overlay-main .pop_close i {color:var(--white);} 
+.overlay-main .pop_close:hover i {color:var(--white-50);}
 
 .iframe-container {overflow: hidden; padding-top: 56.25%; /* 16:9*/ position: relative;}
 .iframe-container iframe {border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;}
@@ -152,7 +153,11 @@ body .mfp-image-holder .mfp-close, body .mfp-iframe-holder .mfp-close {padding-r
 body .mfp-image-holder .mfp-close:hover, body .mfp-iframe-holder .mfp-close:hover {opacity: 0.8}
 body .mfp-close:after {display: none;}
 
-
+/* Show Author */
+.show-author { align-items: center; color: var(--body-text); }
+.show-author-thumb{width: 32px; height: 32px; border-radius: 50%; margin-right: 9px;}
+.show-author-info{ width: calc(100% - 41px);font-size: 0.75rem; color: var(--blacktext); gap: 4px; line-height: 1.67;}
+.show-author-pos{font-weight: bold;}
 
 /* Cat Wrap */
 .cat-wrap {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
@@ -344,6 +349,8 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .readmore {position: relative; display: inline-block; font-size:1rem; padding-right: 23px; font-weight: bold; text-decoration: none;}
 .readmore:after {right: 0px; content:"\f061"; font-size:1rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; top: 0; bottom: 0; color: var(--optionaltxt);}
 .readmore:hover:after {animation-name: bounceAlpha; animation-duration: 1.4s; animation-iteration-count: infinite; animation-timing-function: linear;}
+
+
 
 /* Dotted ROund Border */
 .dot-border {width: 100%; height: 100%; z-index: -1;}

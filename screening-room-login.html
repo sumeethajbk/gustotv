@@ -118,7 +118,7 @@
           <!-- end of marquee grid --> 
         </div>
         <!-- end of marquee row -->
-        <div class="marquee-row scroll-right">
+        <div class="marquee-row scroll-right" dir="rtl">
           <div class="marquee-grid">
             <figure class="object-fit"><img src="images/video-tile-one@2x.jpg" alt="Shows Thumb"></figure>
           </div>
@@ -155,7 +155,7 @@
           <div class="screening-lt"><span class="optional-text">Screening Room</span>
             <h1>Get a Taste of GustoTV</h1>
             <p>A short excerpt can optionally appear here to introduce the page euismod cras porttitor felis malesuada quam aliquet porttitor lacus. Sed accumsan comm.</p>
-            <p><strong>Don’t have an account? <a href="#">Request access.</a></strong></p>
+            <p><strong>Don’t have an account? <a href="#" id="request_popup">Request access.</a></strong></p>
           </div>
           <!-- end of screening lt -->
           <div class="screening-rt">
@@ -261,6 +261,61 @@
   </div>
   <!-- end of footer --> 
 </footer>
+<section class="overlay_main_sec">
+  <div class="overlay_center flex flex-center">
+    <div class="overlay-main"> <span class="pop_close"><i class="fa-thin fa-xmark"></i></span>
+      <div class="overlay-wrap">
+        <div class="overlay-cnt">
+          <div class="form-intro">
+              <span class="optional-text">Request Screening Room Access</span>
+            <h3>A personable headline for this  form  here.</h3>           
+          </div>
+          <!-- end of form intro -->
+          <div class="frm_forms">
+            <form method="post" class="frm-show-form frm_js_validate " id="">
+              <div class="frm_form_fields ">
+                <fieldset>
+                  <div class="frm_fields_container">
+                    <div class="frm_form_field form-field frm_first frm_half">
+                      <input type="text" id="" name="" value="" placeholder="First Name" aria-required="true">
+                    </div>
+                    <div class="frm_form_field form-field frm_last frm_half">
+                      <input type="text" id="" name="" value="" placeholder="Last Name" aria-required="true">
+                    </div>
+                    <div class="frm_form_field form-field frm_first frm_half">
+                      <input type="email" id="" name="" value="" placeholder="Work Email" aria-required="true">
+                    </div>
+                    <div class="frm_form_field form-field frm_last frm_half">
+                      <input type="text" id="" name="" value="" placeholder="Company" aria-required="true">
+                    </div>
+                    
+                    <div class="frm-wrapper">
+                      <div class="frm_form_field form-field frm_top_container vertical_radio">
+                        <div class="frm_opt_container">
+                          <div class="frm_checkbox">
+                            <label>
+                              <input type="checkbox" name="" id="" value="I have read and agree to the GustoTV privacy policy.">
+                              I have read and agree to the GustoTV <a href="#">privacy policy.</a></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="frm_submit">
+                        <button class="frm_button_submit frm_final_submit button" type="submit" formnovalidate="formnovalidate"><span>Request Access</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end of overlay cnt --> 
+      </div>
+    </div>
+  </div>
+  <!-- end of overlay center --> 
+</section>
+<!-- end of overlay main sec --> 
 <script src="js/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="css/slick.css" media="all"/>
 <script src="js/slick.min.js"></script> 
