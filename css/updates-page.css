@@ -1,0 +1,55 @@
+@import url("../css/_news-press-section.css");
+@import url("../css/_newsletter-signup.css");
+
+
+.update-main{padding: 40px 0 30px;}
+.update-img{margin-bottom: 24px;}
+.update-img figure{height: 216px;}
+.update-img img{border-radius: 4px;}
+.update-text .calender{margin-bottom: 13px;}
+.update-text h3{font-size: 1.25rem; line-height: 1.75rem; color: var(--foreground); font-family: DM Sans; font-weight: 500; margin-bottom: 10px;}
+.update-text h3 a{color: var(--foreground);}
+.update-text h3 a:hover{color: var(--green);}
+.update-text p{margin-bottom: 15px; font-size: 1rem; opacity: 0.75; color: var(--foreground);}
+.update-text .cat-wrap{margin-bottom: 0;}
+
+.fourth-post{display: flex; flex-wrap: wrap; align-items: center; flex-direction: column;}
+.fourth-post-center{margin: auto;}
+.knife-update.ad{margin: 20px 0 20px;}
+.knife-update img{height: 100px;  object-fit: contain;}
+.update-list:nth-child(10){flex: 0 0 100%;}
+.update-main .ad-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
+.update-main .ad-center {margin: 32px 0;}
+.ad-center span img{width: 728px;}
+.ad-center{position: relative; z-index: 1; text-align: center; width: 100%;}
+.ad-center::before { position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%); background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1; }
+
+@media only screen and (min-width: 1200px){
+
+.knife-update img{height: 100px; max-width: 300px;}
+
+}
+
+@media only screen and (min-width: 1024px){
+.news-press-section{padding: 40px 0 30px;}
+
+.update-main{padding: 40px 0 80px;}
+.update-row{gap: 64px; margin-bottom: 64px;}
+.update-list{flex: 0 0 calc(33.33% - 43px);}
+  
+}
+@media only screen and (max-width: 1023px) and (min-width: 720px) {
+    .update-row{gap: 50px; margin-bottom: 40px;}
+    .update-list{flex: 0 0 calc(50% - 25px);}
+    
+  }
+  
+  @media only screen and (max-width: 719px) and (min-width: 200px) {
+    .update-main{padding: 40px 0;}
+    .update-list{margin-bottom: 40px;}
+    .update-img figure{height: 197px;}
+    .update-list.fourth-post {margin: auto; margin-bottom: 40px;}
+    .knife-update{width: 266px; margin: auto;}
+    .update-main .ad-center{margin: 0 0 32px;}
+    .knife-update.ad{margin: 20px auto 20px; width: 300px;}
+  }
