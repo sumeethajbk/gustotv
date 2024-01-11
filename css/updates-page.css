@@ -2,7 +2,7 @@
 @import url("../css/_newsletter-signup.css");
 
 
-.update-main{padding: 40px 0 30px;}
+.update-main{padding: 40px 0 30px; clear: both; width: 100%;}
 .update-img{margin-bottom: 24px;}
 .update-img figure{height: 216px;}
 .update-img img{border-radius: 4px;}
@@ -20,9 +20,9 @@
 .update-list:nth-child(10){flex: 0 0 100%;}
 .update-main .ad-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
 .update-main .ad-center {margin: 32px 0;}
-.ad-center span img{width: 728px;}
-.ad-center{position: relative; z-index: 1; text-align: center; width: 100%;}
-.ad-center::before { position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%); background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1; }
+.update-main .ad-center span img{width: 728px;}
+.update-main .ad-center{position: relative; z-index: 1; text-align: center; width: 100%;}
+.update-main .ad-center::before { position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%); background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1; }
 
 @media only screen and (min-width: 1200px){
 
