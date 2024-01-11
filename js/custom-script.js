@@ -112,13 +112,12 @@ jQuery(document).ready(function () {
     }
   });
     
-    jQuery('.marquee-row.scroll-left').grouploop({
+    jQuery('.scroll-left, .scroll-right').grouploop({
       velocity: 5,
       forward: true,
       pauseOnHover: false,
       childNode: ".marquee-grid",
       childWrapper: ".marquee-row"
     });
-  
     
 });
