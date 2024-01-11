@@ -1,555 +1,83 @@
 jQuery(document).ready(function () {
 
-
-  /*jQuery('.fnews-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    speed: 1000,
-    dots: false,
-    arrows: true,
-    variableWidth: true,
-    draggable: true,
-    touchThreshold: 200,
-    swipeToSlide: true,
-    prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-    nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        dots: true,
-      }
-    }, ]
-
-  });
-	
-	*/
-	
-	var $slider = jQuery('.fnews-slider');
-  var $sliderLength = $slider.find('.fnews-grid').length;
-  if (jQuery(window).width() >= 1024) {
-    if ($sliderLength >= 4) {
-      $slider.slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: false,
-        speed: 1000,
-        dots: false,
-        arrows: true,
-        variableWidth: true,
-        draggable: true,
-        touchThreshold: 200,
-        swipeToSlide: true,
-        prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-        nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-      });
-    }
-  } else {
-    $slider.slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: false,
-      speed: 1000,
-      dots: false,
-      arrows: true,
-      variableWidth: true,
-      draggable: true,
-      touchThreshold: 200,
-      swipeToSlide: true,
-      prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-      nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-      responsive: [{
-        breakpoint: 1024,
-        settings: {
-          arrows: true,
-          dots: true,
-        }
-
-      }, ]
-
-    });
-
-  }
-	
-	
-//Show Slider //
+  //Show Slider //
 
   jQuery('.tv-show-row').slick({
-
     slidesToShow: 6,
-
     slidesToScroll: 1,
-
     infinite: true,
-
     speed: 1000,
-
     dots: false,
-
     arrows: false,
+    variableWidth: true,
 
-  variableWidth: true,
-    
   });
 
-//Host Slider //
+  //Host Slider //
 
   jQuery('.tv-host-row').slick({
-
     slidesToShow: 6,
-
     slidesToScroll: 1,
-
     infinite: true,
-
     speed: 1000,
-
     dots: false,
-
     arrows: false,
-
-  variableWidth: true,
-    
-  });
-  //Event Slider //
-
-  var eventslider = jQuery('.event-slider');
-
-  eventslider.slick({
-
-    touchMove: true,
-
-    speed: 1000,
-
-    slidesToShow: 1,
-
-    slidesToScroll: 1,
-
-    autoplaySpeed: 5000,
-
-    arrows: true,
-
-    draggable: true,
-
-    centerPadding: '0',
-
-    touchThreshold: 200,
-
-    swipeToSlide: true,
-
-    focusOnSelect: true,
-
     variableWidth: true,
-
-    infinite: false,
-
-    appendArrows: jQuery('.custom_arrows_ac'),
-
-    prevArrow: '<div class="custom_arrow custom_arrow_dir_left"></div>',
-
-    nextArrow: '<div class="custom_arrow custom_arrow_dir_right"></div>',
-
-
   });
 
 
-  function slideGo(dir) {
-
-    var eventslider = jQuery('.event-slider');
-
-    if (dir === "+") {
-
-      eventslider.slick('slickNext');
-
-    } else if (dir === "-") {
-
-      eventslider.slick('slickPrev');
-
-    }
-
-  }
-
-
-  var $slider = jQuery('.career-slider');
-  var $sliderLength = $slider.find('.programs-grid').length;
-  if (jQuery(window).width() >= 1024) {
-    if ($sliderLength >= 4) {
-      $slider.slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: false,
-        speed: 1000,
-        dots: false,
-        arrows: true,
-        variableWidth: true,
-        draggable: true,
-        touchThreshold: 200,
-        swipeToSlide: true,
-        prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-        nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-      });
-    }
-  } else {
-    $slider.slick({
-      slidesToShow: 1,
+  if (jQuery(window).width() <= 719) {
+    jQuery(".recipes-row").slick({
+      slidesToShow: 2,
       slidesToScroll: 1,
-      infinite: false,
+      draggable: true,
+      swipeToSlide: true,
+      infinite: true,
       speed: 1000,
       dots: false,
-      arrows: true,
-      variableWidth: true,
-      draggable: true,
-      touchThreshold: 200,
-      swipeToSlide: true,
-      prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-      nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-      responsive: [{
-        breakpoint: 1024,
-        settings: {
-          arrows: true,
-          dots: true,
-        }
-
-      }, ]
-
-    });
-
-  }
-
-
-  jQuery('.video-slider').slick({
-
-    slidesToShow: 1,
-
-    slidesToScroll: 1,
-
-    infinite: false,
-
-    speed: 1000,
-
-    dots: false,
-
-    arrows: true,
-
-    draggable: true,
-
-    touchThreshold: 200,
-
-    swipeToSlide: true,
-
-    prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-
-    nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-
-    responsive: [{
-
-      breakpoint: 1024,
-
-      settings: {
-
-        arrows: false,
-
-        dots: false,
-
-      }
-
-    }, ]
-
-  });
-
-
-  /* Tiled Module */
-
-  if (jQuery(window).width() <= 1023) {
-
-    jQuery('.tiled-slider').slick({
-
-      slidesToShow: 1,
-
-      slidesToScroll: 1,
-
-      infinite: false,
-
-      speed: 1000,
-
-      dots: true,
-
       arrows: false,
-
       variableWidth: true,
-
-      draggable: true,
-
-      touchThreshold: 200,
-
-      swipeToSlide: true,
-
-    });
-
-  }
-
-
-  /* Larche communities */
-
-  if (jQuery(window).width() <= 1023) {
-
-    jQuery('.larche-community-lists').slick({
-
-      slidesToShow: 1,
-
-      slidesToScroll: 1,
-
-      infinite: false,
-
-      speed: 1000,
-
-      dots: true,
-
-      arrows: false,
-
-      variableWidth: true,
-
-      draggable: true,
-
-      touchThreshold: 200,
-
-      swipeToSlide: true,
-
-    });
-
-  }
-
-
-  if (jQuery(window).width() < 1024) {
-
-    jQuery('.directors-slider').slick({
-
-      slidesToShow: 1,
-
-      slidesToScroll: 1,
-
-      infinite: false,
-
-      speed: 1000,
-
-      dots: true,
-
-      arrows: false,
-
-      variableWidth: true,
-
-    });
-
-  }
-
-
-  jQuery('.comm-slider').slick({
-
-    slidesToShow: 1,
-
-    slidesToScroll: 1,
-
-    infinite: false,
-
-    speed: 1000,
-
-    dots: false,
-
-    arrows: true,
-
-    variableWidth: true,
-
-    prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-
-    nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-
-    responsive: [{
-
-        breakpoint: 1024,
-
-        settings: {
-
-          slidesToShow: 1,
-
-          slidesToScroll: 1,
-
-        }
-
-      },
-
-      {
-
-        breakpoint: 768,
-
-        settings: {
-
-          slidesToShow: 1,
-
-          slidesToScroll: 1,
-
-          arrows: false,
-
-          dots: true,
-
-        }
-
-      },
-
-    ]
-
-  });
-
-  if (jQuery(window).width() <= 767) {
-
-    jQuery(".community-row").slick({
-
-      slidesToShow: 1,
-
-      slidesToScroll: 1,
-
-      arrows: false,
-
-      dots: true,
-
-      variableWidth: true,
-
-      infinite: false,
-
+      centerPadding: '0',
+      centerMode: true,
     })
-
-
   }
 
 
-  var sliderRes = jQuery('.resource-slider').slick({
-
+  jQuery('.scroll-left').slick({
+    speed: 8000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: false,
+    cssEase: 'linear',
+    draggable: false,
+    focusOnSelect: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     slidesToShow: 1,
-
     slidesToScroll: 1,
-
-    infinite: false,
-
-    speed: 1000,
-
-    dots: false,
-
-    arrows: true,
-
     variableWidth: true,
-
-    // prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-
-    // nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-
-    responsive: [{
-
-        breakpoint: 1024,
-
-        settings: {
-
-          slidesToShow: 1,
-
-          slidesToScroll: 1,
-
-          arrows: false,
-
-          dots: true,
-
-        }
-
-      },
-
-      {
-
-        breakpoint: 768,
-
-        settings: {
-
-          slidesToShow: 1,
-
-          slidesToScroll: 1,
-
-          arrows: false,
-
-          dots: true,
-
-        }
-
-      },
-
-    ]
-
-  });
-
-
-  jQuery('.testimonial-slider').slick({
-
-    slidesToShow: 1,
-
-    slidesToScroll: 1,
-
-    infinite: false,
-
-    speed: 1000,
-
-    dots: false,
-
-    arrows: true,
-
-    variableWidth: true,
-
-    draggable: true,
-
-    touchThreshold: 200,
-
-    swipeToSlide: true,
-
-    prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
-
-    nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
-
-    responsive: [{
-
-      breakpoint: 1024,
-
-      settings: {
-
-        slidesToShow: 1,
-
-        slidesToScroll: 1,
-
-        arrows: false,
-
-        dots: true,
-
-      }
-
-    }]
-
-  });
-
-if(jQuery(window).width()<=719){
-  jQuery(".recipes-row").slick({
-    slidesToShow: 2,
-
-    slidesToScroll: 1,
-  
-    draggable: true,
-    swipeToSlide: true,
-
-
     infinite: true,
-
-    speed: 1000,
-
-    dots: false,
-
+    initialSlide: 1,
     arrows: false,
+    buttons: false,
+  });
+  jQuery('.scroll-right').slick({
+    speed: 8000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: false,
+    cssEase: 'linear',
+    draggable: false,
+    focusOnSelect: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     variableWidth: true,
-    centerPadding: '0',
-    centerMode: true,
-  })
-}
-
+    infinite: true,
+    initialSlide: 1,
+    arrows: false,
+    buttons: false,
+    rtl: true
+  });
 });
