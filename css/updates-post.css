@@ -1,0 +1,18 @@
+@import url("../css/default-page.css");
+@import url("../css/_newsletter-signup.css");
+
+
+.general-default-article-section .default-inner {width: 100%; max-width: 960px; margin: 0 auto;}
+.general-default-article-section .default-inner h1 {color: var(--foreground); font-size: 2.5rem; line-height: 1.2;}
+.single-testimonial .single-testimonial-lt {max-width: 104px;}
+.single-testimonial .single-testimonial-rt {width: calc(100% - 137px);}
+
+
+/*-- media css starts here --*/
+
+
+@media only screen and (max-width: 719px) and (min-width: 200px) {
+    .general-default-article-section h1 {margin-bottom: 47px;}
+    .general-default-article-section .default-inner > p:first-of-type {margin: 0 0 46px 0;}
+    .apply-wrap {margin: 0 0 52px 0;}
+}

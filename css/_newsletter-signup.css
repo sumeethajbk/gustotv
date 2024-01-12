@@ -1,4 +1,5 @@
-.newsletter-main {  padding: 64px;  position: relative; align-items: center;}
+.newsletter-signup {clear: both; width: 100%; position: relative; background: var(--white);}
+.newsletter-main {  padding: 64px;  position: relative; align-items: center; z-index: 1;}
 
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 20px;}
 .form-note p{line-height: 1rem; font-size: 0.625rem;}
