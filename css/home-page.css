@@ -42,6 +42,8 @@
     .home-banner-section{min-height: 890px;}
     .home-banner-main{min-height: 890px;}
     .home-banner-text  h1{font-size: 7.5rem; }
+    .featured-img figure{height: 337.5px;}
+    .featured-thumb figure{height: 160px;}
     .newsletter-main{ margin-bottom: -19px; }
 }
 @media only screen and (min-width: 1024px) {
