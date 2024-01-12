@@ -95,7 +95,7 @@ jQuery(document).ready(function () {
   }
 
 
-  jQuery('.frm_form_field input, .frm_form_field textarea').on('input', 'textarea', function () {
+  jQuery('.frm_form_field input, .frm_form_field textarea').on('input', function () {
     var inputLength = jQuery(this).val().length;
     if (inputLength > 0) {
       jQuery(this).addClass('input-has-value');
@@ -112,5 +112,37 @@ jQuery(document).ready(function () {
     }
   });
 
-  
+  /* Fixed Section on Scroll 
+  var fixmeTop = jQuery('.fixme').offset().top;
+  jQuery(window).scroll(function () {
+    var currentScroll = jQuery(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+      jQuery('.fixme').css({
+        position: 'fixed',
+        top: '0',
+        left: '0'
+      });
+    } else {
+      jQuery('.fixme').css({
+        position: 'static'
+      });
+    }
+  });*/
+
+    if(jQuery(window).width() >= 1200){
+    (function(jQuery) {
+        var element = jQuery('.fixme'),
+            originalY = element.offset().top;
+
+        element.css('position', 'relative');
+        jQuery(window).on('scroll', function(event) {
+            var scrollTop = jQuery(window).scrollTop();
+            element.stop(false, false).animate({
+                top: scrollTop < originalY
+                    ? 0
+                    : scrollTop - originalY + topMargin
+            }, 0);
+        });
+})(jQuery);
+}
 });
