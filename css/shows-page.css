@@ -81,6 +81,7 @@
     .show-main{padding: 64px 0 44px;}
     .featured-shows{margin-bottom: 64px;}
     
+    .shows-title-main{padding: 40px 0;}
     .shows-title-row{gap: 50px; margin-bottom: 40px;}
     .shows-title-list{flex: 0 0 calc(50% - 25px);}
     

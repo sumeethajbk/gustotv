@@ -38,6 +38,7 @@
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
     .tv-host-main { padding: 65px 0 80px; }
+    .tv-host-heading{display: block;}
     .tv-host-heading .heading-lt{width: 67%;}
     .tv-host-heading .heading-rt{width: calc(100% - 67%);}
     .tv-host-list{margin: 0 15px;}
