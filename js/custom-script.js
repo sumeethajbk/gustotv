@@ -112,37 +112,24 @@ jQuery(document).ready(function () {
     }
   });
 
-  /* Fixed Section on Scroll 
-  var fixmeTop = jQuery('.fixme').offset().top;
-  jQuery(window).scroll(function () {
-    var currentScroll = jQuery(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-      jQuery('.fixme').css({
-        position: 'fixed',
-        top: '0',
-        left: '0'
-      });
-    } else {
-      jQuery('.fixme').css({
-        position: 'static'
-      });
-    }
-  });*/
+  /* Fixed Section on Scroll */
 
-    if(jQuery(window).width() >= 1200){
-    (function(jQuery) {
-        var element = jQuery('.fixme'),
-            originalY = element.offset().top;
+    
+  if (jQuery(window).width() >= 1200) {
+    var element = jQuery('.fixme'),
+      originalY = element.offset().top;
+    var topMargin = 0;
+    element.css('position', 'relative');
 
-        element.css('position', 'relative');
-        jQuery(window).on('scroll', function(event) {
-            var scrollTop = jQuery(window).scrollTop();
-            element.stop(false, false).animate({
-                top: scrollTop < originalY
-                    ? 0
-                    : scrollTop - originalY + topMargin
-            }, 0);
-        });
-})(jQuery);
+    jQuery(window).on('scroll', function (event) {
+      var scrollTop = jQuery(window).scrollTop();
+      element.stop(false, false).animate({
+        top: scrollTop < originalY
+          ? 0
+          : scrollTop - originalY + topMargin
+      }, 0);
+    });
 }
+    
+
 });
