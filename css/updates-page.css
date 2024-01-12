@@ -7,7 +7,7 @@
 .update-img figure{height: 216px;}
 .update-img img{border-radius: 4px;}
 .update-text .calender{margin-bottom: 13px;}
-.update-text h3{font-size: 1.25rem; line-height: 1.75rem; color: var(--foreground); font-family: DM Sans; font-weight: 500; margin-bottom: 10px;}
+.update-text h3{font-size: 1.25rem; line-height: 1.75rem; color: var(--foreground); font-family: DM Sans,sans-serif; font-weight: 500; margin-bottom: 10px;}
 .update-text h3 a{color: var(--foreground);}
 .update-text h3 a:hover{color: var(--green);}
 .update-text p{margin-bottom: 15px; font-size: 1rem; opacity: 0.75; color: var(--foreground);}

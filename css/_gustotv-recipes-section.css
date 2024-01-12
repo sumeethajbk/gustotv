@@ -1,7 +1,6 @@
 .recipes-main{padding: 80px 0;}
 .recipes-heading{margin-bottom: 38px;}
 
-.recipes-form{position: relative;}
 .recipes-form input{padding-right: 47px; text-overflow: ellipsis; overflow: hidden;}
 .recipes-form button.recipes-btn{right: 20px; top: 17px; padding: 0; color: #592C5F; position: absolute; background: none;}
 .recipes-form button.recipes-btn::after{display: none;}
