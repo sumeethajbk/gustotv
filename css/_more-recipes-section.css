@@ -1,16 +1,19 @@
-.more-recipes-heading{margin-bottom: 40px;align-items: center;}
+  .more-recipes-main{width: 100%; clear: both;}
+  .more-recipes-heading{margin-bottom: 40px;align-items: center;}
   .more-recipes-heading .heading-lt h2{font-size: 2rem; margin-bottom: 0; line-height: 2.5rem;}
   .more-recipes-thumb{margin-bottom: 24px;}
   .more-recipes-thumb img{border-radius: 2px;}
   .more-recipes-list h3{font-size: 1.25rem;  font-family: DM Sans; font-weight: 500; }
   .more-recipes-list h3 a{color: var(--foreground);}
   .more-recipes-list h3 a:hover{color: var(--green)}
+  
   @media only screen and (min-width: 1200px) {
     .more-recipes-main{padding: 96px 0 50px;}
   }
-
+  @media only screen and (max-width: 1199px) and (min-width: 1024px) {
+  .more-recipes-main{padding: 64px 0 40px;}
+  }
   @media only screen and (min-width: 1024px) {
-    .more-recipes-main{padding: 64px 0 40px;}
     .more-recipes-row{gap: 48px;}
     .more-recipes-list{flex: 0 0 calc(25% - 36px);}
     .more-recipes-thumb figure{height: 189px;}
