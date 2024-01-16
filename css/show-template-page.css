@@ -50,10 +50,7 @@
   @media only screen and (min-width: 1024px) {
     .show-host-thumb figure { max-width: 300px;}
     .show-host-bg { max-width: 300px;}  
-  
-    .tv-show-heading{gap: 24px}
-    .tv-show-heading .heading-lt { flex: 0 0 50%; }
-    .tv-show-heading .heading-rt { flex: 0 0 calc(50% - 40px); }
+    
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 720px) {

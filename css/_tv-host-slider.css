@@ -11,12 +11,14 @@
 .tv-host-row::before{ background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); position: absolute; content: ""; display: block; top: 0; left: 0; z-index: 1; width: 80px; height: 170px;}
 .tv-host-row::after{ background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); position: absolute; content: ""; display: block; top: 0; right: 0; z-index: 1; width: 80px; height: 170px;}
 
+.recipes-form  .form-field{width: 100%;}
 
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px) {
     .tv-host-main{padding: 97px 0 70px;}
-
-
+    .tv-host-heading{gap: 40px;}
+    .tv-host-heading .heading-lt { flex: 0 0 50%; }
+    .tv-host-heading .heading-rt { flex: 0 0 calc(50% - 40px); }
 }
 
 @media only screen and (max-width: 1299px) and (min-width: 1024px) {
