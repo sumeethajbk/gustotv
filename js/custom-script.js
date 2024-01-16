@@ -141,6 +141,6 @@ jQuery(document).ready(function () {
   }
   checkScreenWidthAndAddClass();
   jQuery(window).on('resize', checkScreenWidthAndAddClass);
-    
+     /* End of Fixed Section on Scroll */
 
 });
