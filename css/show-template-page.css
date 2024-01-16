@@ -42,7 +42,8 @@
   /* .show-template-aside .host-icons.share-icons .st-btn[data-network="linkedin"]  { display: none !important; } */
   
   @media only screen and (min-width: 1200px) {
-    .show-template-main{gap: 0 120px; }
+    .show-template-main{gap: 0 120px; padding: 40px 0 80px; }
+    
     .show-template-article{flex: 0 0 67.2%;}
     .show-template-aside{flex: 0 0 calc(32.8% - 120px);}
 
@@ -55,7 +56,6 @@
 
   }
   @media only screen and (min-width: 1024px) {
-    
     .show-host-thumb figure { max-width: 300px;}
     .show-host-bg { max-width: 300px;}  
 
