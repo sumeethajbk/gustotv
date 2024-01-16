@@ -68,11 +68,9 @@
     .apply-rt{margin-bottom: 20px; width: 100%;}
     .sharethis-inline-share-buttons .st-btn{width: 40px!important; height: 40px!important; line-height: 38px!important;}
     .show-template-section hr{margin: 54px 0 56px;}
-    .heading-lt h2{font-size: 1.5rem!important;}
     
-    .heading-rt{justify-content: flex-start;}
+    
+   
     .tv-show-main{padding: 40px 0 66px;}
-    .tv-show-heading{display: block;}
-    .tv-show-heading .heading-lt{width: 100%; margin-bottom: 24px;}
-    .tv-show-heading .heading-rt{width: 100%;}
+    .tv-show-heading .heading-lt{ margin-bottom: 24px;}
 }

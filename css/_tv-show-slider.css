@@ -16,9 +16,8 @@
 }
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
-    .tv-show-heading .heading-lt{width: 67%;}
-    .tv-show-heading .heading-rt{width: calc(100% - 67%);}
-    .tv-show-heading { margin-bottom: 50px; }
+   
+    .tv-show-heading { margin-bottom: 50px;}
     .tv-show-heading h3{font-size: 1.5rem;}
     .tv-show-img img{max-height: 48px;}
 }
