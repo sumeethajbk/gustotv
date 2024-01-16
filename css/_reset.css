@@ -91,9 +91,9 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;} 
 
 
-button, .button  {display: inline-block; font-size:1rem; font-weight: bold; line-height: normal; padding:8px 34px 11px 12px; vertical-align: middle; cursor: pointer; border:0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family:"DM Sans", sans-serif; text-decoration: none; }
+button, .button  {display: inline-block; font-size:1rem; font-weight: bold; line-height: normal; padding:8px 12px 11px 12px; vertical-align: middle; cursor: pointer; border:0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family:"DM Sans", sans-serif; text-decoration: none; }
 button:hover, button:focus, .button:hover, .button:focus {background-color: var(--green); color: var(--blacktext);}
-button::after, .button::after {right: 12px; content:"\f061"; font-size:1rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; top: 0; bottom: 0; color: var(--green);}
+button::after, .button::after {content:"\f061"; font-size:1rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: static; display: inline-block; margin: -0.5px 0 0 8px;  vertical-align: middle; line-height: 12px; color: var(--green);}
 button:hover:after, .button:hover:after {animation-name: bounceAlpha; animation-duration:1.4s; animation-iteration-count:infinite; animation-timing-function:linear; color: var(--blacktext);}
 
 
