@@ -7,9 +7,9 @@
 .featured-host-img{position: relative; margin-bottom: 20px; width: 100%; clear: both;}
 .featured-host-thumb{position: relative; border-bottom: 3px solid var(--darkgreen); z-index: 1;}
 .featured-host-bg{position: absolute; left: 0; bottom: 0; z-index: -1;}
-.featured-host-content{margin-bottom: 32px;}
+.featured-host-row{margin-bottom: 32px; justify-content: space-between;}
 .featured-host-content h2{font-size: 2rem; color: var(--foreground); margin-bottom: 0;}
-.featured-host-row p{font-size: 1rem; color: var(--foreground); opacity: 0.75;}
+.featured-host-lt p{font-size: 1rem; color: var(--foreground); opacity: 0.75;}
 .featured-host-list{margin-bottom: 24px; align-items: center;}
 .featured-host-image img{border-radius: 6px;}
 .featured-host-text h2{font-size: 1.5rem; color: var(--foreground); margin-bottom: 12px; font-family: DM Sans , sans-serif;}

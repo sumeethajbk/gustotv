@@ -9,8 +9,8 @@
 .optional-cta-txt{  padding: 40px; background:rgba(255, 255, 255, 0.85); border-radius: 8px; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);}
 
 .optional-cta-module.reverse .optional-main{justify-content: flex-end;}
-.optional-cta-txt a.button::after{right: 8px; content: "\f019"; font-family: "Font Awesome 6 pro"; animation-name: bounceAlphadown;}
-
+.optional-cta-txt a.button::after{right: 8px;  font-family: "Font Awesome 6 pro"; animation-name: bounceAlphadown;}
+.optional-cta-txt a.button.download::after{content: "\f019";}
 /*-- media css starts here --*/
 @media only screen and (min-width: 1024px) {
     .optional-main{padding: 128px 0;}

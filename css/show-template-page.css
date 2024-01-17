@@ -49,7 +49,7 @@
   }
   @media only screen and (min-width: 1024px) {
     .show-host-thumb figure { max-width: 300px;}
-    .show-host-bg { max-width: 300px;}  
+    .show-host-bg { max-width: 300px; width: 100%;}  
     
 }
 
