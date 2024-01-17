@@ -1,7 +1,7 @@
 footer#main_footer {clear: both; width: 100%; position: relative; z-index: 1; overflow: hidden;}
 footer#main_footer .footer-top li:before {display: none;}
 footer#main_footer hr {background-size: 8px 2px; margin: 31px 0 33px 0;}
-.footer-img {width:100%; clear: both;}
+.footer-img {width:100%; clear: both; position: relative; z-index: 1;}
 
 
 /* Footer top */

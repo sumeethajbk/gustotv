@@ -1,0 +1,16 @@
+.micro-cta {clear: both; width: 100%; position: relative; z-index: 1; padding: 76px 0 58px;}
+.cta_module {padding: 32px; border-radius: 16px; border: solid 8px rgb(244, 242, 238);}
+.cta_module h3 {padding: 0; margin-bottom: 23px;}
+.cta-main {justify-content: space-between;}
+.cta_module .cta-left {width: 57%; flex-grow: 1;}
+.cta_module .cta-right{width: calc(100% - 57%); position: relative;}
+.cta_module .cta-right .cta-thumb {max-width: 344px; width: 100%; margin-left: auto; position: absolute; top: -79px; right: 0; display: block;}
+
+/*-- media css starts here --*/
+
+
+@media only screen and (max-width: 719px) and (min-width: 200px) {
+    .general-default-article-section h1 {margin-bottom: 47px;}
+    .general-default-article-section .default-inner > p:first-of-type {margin: 0 0 46px 0;}
+    .apply-wrap {margin: 0 0 52px 0;}
+}

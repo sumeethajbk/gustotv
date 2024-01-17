@@ -367,7 +367,7 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .calender{position: relative; display: block;  padding-left:20px; font-size: 0.75rem; font-weight: bold;  line-height: 1.25rem; color: var(--heading); margin-bottom: 11px;}
 .calender::before{position: absolute; content: "\f133"; font-size: 0.875rem; font-weight: normal; font-family: 'Font Awesome 6 Pro'; display: block; left: 0; top: 0; width: 13px; height: 14px;}
 
-
+.fullimg {clear: both; width: 100%;}
 
 
 /*-- media css starts here --*/
