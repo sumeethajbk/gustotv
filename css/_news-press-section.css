@@ -59,7 +59,7 @@
     .featured-news figure{height: 443px;}
   }
   @media only screen and (max-width: 719px) and (min-width: 200px) {
-    .news-press-section{padding: 40px 0 20px;}
+    .news-press-section{padding: 40px 0 10px;}
     .news-press-heading{display: block; margin-bottom: 48px;}
     .news-press-heading-lt h1{margin-bottom: 24px;}
     .news-press-heading-rt .search-form{display: block;}

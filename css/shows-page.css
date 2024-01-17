@@ -36,19 +36,15 @@
 
 
 
-.knife-update img{height: 100px;  object-fit: contain;}
+
 .shows-title-list:nth-child(10){flex: 0 0 100%;}
-.shows-title-main .ad-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
-.shows-title-main .ad-center {margin: 32px 0;}
-.shows-title-main .ad-center span img{width: 728px;}
-.shows-title-main .ad-center{position: relative; z-index: 1; text-align: center; width: 100%;}
-.shows-title-main .ad-center::before { position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%); background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1; }
+
 
 
 @media only screen and (min-width: 1200px) {
     .show-main{padding: 80px 0;}
     .featured-show-img figure{height: 337.5px;}
-    .knife-update img { height: 100px; max-width: 300px;}
+    
 }
 @media only screen and (min-width: 1024px) {
     .tv-host-main { padding: 40px 0 80px; }
@@ -91,12 +87,7 @@
     .shows-title-main{padding: 40px 0;}
     .shows-title-list{ margin: auto; margin-bottom: 40px;}
     .shows-title-img figure{height: 197px;}
-    .shows-title-list.ad-post {margin: auto; margin-bottom: 40px;}
-    .knife-update{width: 266px; margin: auto;}
-    .update-main .ad-center{margin: 0 0 32px;}
-    .knife-update.ad{margin: 20px auto 20px; width: 300px;}
-    .shows-title-list.ad-center{margin: 0 0 40px;}
-
+    
     
     .tv-host-main{padding: 40px 0;}
     .tv-host-heading {margin-bottom: 32px; }
