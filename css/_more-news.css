@@ -33,5 +33,12 @@
 }
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
-    .more-news-list {margin-bottom: 22px; width: 100%;}
+    .more-news-main {padding: 52px 0 98px;}
+    .more-news-heading {margin-bottom: 33px;}
+    .more-news-heading .heading-lt h2 {font-size: 1.5rem;}
+    
+    .more-news-list {margin-bottom: 24px; width: 100%;}
+    .more-news-list h3 {margin-bottom: 12px;}
+    .more-news-thumb {height: 197px;}
+    
 }
