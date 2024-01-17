@@ -64,6 +64,7 @@
     .host-text{line-height: 0.8;}
     .host-name{margin-bottom: 6px;}
     .host-icons.share-icons{display: none;}
+    .asidebar-gusto{padding: 0 0 40px;}
 }
 @media only screen and (max-width: 719px) and (min-width: 200px) {
     .video-wrap{margin: 20px 0;}
