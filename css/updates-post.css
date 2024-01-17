@@ -2,6 +2,7 @@
 @import url("../css/_cta-module.css");
 @import url("../css/_optional-cta-module.css");
 @import url("../css/_more-recipes-section.css");
+@import url("../css/_more-news.css");
 @import url("../css/_newsletter-signup.css");
 
 .updates-post-container {clear: both; width: 100%; position: relative; z-index: 1; overflow: hidden;}

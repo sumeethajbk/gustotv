@@ -10,26 +10,31 @@
   .more-recipes-list h3 a{color: var(--foreground);}
   .more-recipes-list h3 a:hover{color: var(--green)}
   
+
+
   @media only screen and (min-width: 1200px) {
-    .more-recipes-main{padding: 98px 0 50px;}
+    .more-recipes-main{padding:98px 0 68px;}
   }
+
+
   @media only screen and (max-width: 1199px) and (min-width: 1024px) {
   .more-recipes-main{padding: 64px 0 40px;}
   }
+
+
   @media only screen and (min-width: 1024px) {
     .more-recipes-row{gap: 48px;}
     .more-recipes-list{flex: 0 0 calc(25% - 36px);}
-    .more-recipes-thumb figure{height: 189px;}
-
-  }
+    .more-recipes-thumb {height: 189px;}
+}
 
   @media only screen and (max-width: 1023px) and (min-width: 720px) {
-
     .more-recipes-row{gap:  0 48px;}
     .more-recipes-list{flex: 0 0 calc(50% - 36px); margin-bottom: 25px;}
   }
+
+
   @media only screen and (max-width: 719px) and (min-width: 200px) {
     .more-recipes-row{margin-bottom: 80px;}
     .more-recipes-list{margin-bottom: 22px;}
-
-  }
+}
