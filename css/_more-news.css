@@ -25,12 +25,13 @@
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
+    .more-news-main {padding: 60px 0;}
     .more-news-row {justify-content: center;}
     .more-news-list {width: 45.86%; margin: 0 0 53px 53px;}
     .more-news-list:nth-child(2n+1) {margin-left: 0;}
+    .more-news-list:nth-child {margin-bottom: 0;}
 }
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
-    .more-news-row {margin-bottom: 80px;}
-    .more-news-list {margin-bottom: 22px;}
+    .more-news-list {margin-bottom: 22px; width: 100%;}
 }
