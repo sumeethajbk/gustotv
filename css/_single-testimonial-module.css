@@ -16,15 +16,10 @@
 
 
 /*-- media starts here --*/
-@media only screen and (max-width: 1299px) and (min-width:1024px){
-}
-@media only screen and (max-width: 1023px) and (min-width: 200px){
-	
-	
-}
+
 @media only screen and (max-width: 719px) and (min-width: 200px){
     .single-testimonial {padding: 24px 0 39px 0;}
     .single-testimonial .single-testimonial-lt {margin: 0 0 -176px 0;transform: rotate(90deg) translateY(-100%); transform-origin: top left;}
-    .single-testimonial .single-testimonial-rt {width: 100%;}
+    .single-testimonial .single-testimonial-rt {width: 100%!important;}
     .single-testimonial .testimonial-cnt {font-size: 1.25rem; line-height: 1.8; padding: 51px 0 0 0; margin: 0 0 19px 0;}
 }
