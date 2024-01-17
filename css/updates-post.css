@@ -1,12 +1,17 @@
 @import url("../css/default-page.css");
+@import url("../css/_cta-module.css");
+@import url("../css/_optional-cta-module.css");
+@import url("../css/_more-recipes-section.css");
+@import url("../css/_more-news.css");
 @import url("../css/_newsletter-signup.css");
 
-
+.updates-post-container {clear: both; width: 100%; position: relative; z-index: 1; overflow: hidden;}
 .general-default-article-section .default-inner {width: 100%; max-width: 960px; margin: 0 auto;}
 .general-default-article-section .default-inner h1 {color: var(--foreground); font-size: 2.5rem; line-height: 1.2;}
 .single-testimonial .single-testimonial-lt {max-width: 104px;}
 .single-testimonial .single-testimonial-rt {width: calc(100% - 137px);}
 
+.optional-cta-module {margin: 0 0 14px 0;}
 
 /*-- media css starts here --*/
 
