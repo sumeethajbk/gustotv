@@ -104,12 +104,30 @@
             </div>
         <hr class="hide-in-desktop">
         <div class="asidebar-gusto">
-          <div class="show-aside-img">
-            <div class="show-host-thumb"> <figure class="object-fit"><img src="images/shows-template-host@2x.png" alt="shows-template-host"></figure> </div>
-            <div class="show-host-bg"> <figure><img src="images/shows-template-host-bg@2x.png" alt=""></figure> </div>
+          <div class="show-host-list">
+            <div class="show-aside-img">
+              <div class="host-bg-wrap pos-relative">
+              <div class="dot-border pos-absolute hide-in-desktop hide-in-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
+                  <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
+                </svg>
+              </div>
+              <div class="show-host-thumb"> 
+                <picture class="object-fit">
+                <source srcset="images/shows-template-host@2x.png" media="(min-width: 1024px)">
+                <source srcset="images/show-host-tab@2x.jpg" media="(min-width: 720px)">
+                <img src="images/shows-template-host@2x.png" alt="shows-template-host">
+              </picture> 
+            </div>
+            </div>
+              <div class="show-host-bg"> <figure><img src="images/shows-template-host-bg@2x.png" alt="shows-template-host-bg"></figure> </div>
+            </div>
+            <div class="host-content">
+              <div class="host-text">Hosted by</div>
+              <div class="host-name">Jessica McGovern</div>
+              <a  href="#" class="button btn-green hide-in-desktop hide-in-mobile" >About the Host</a>
+            </div>
           </div>
-          <div class="host-text">Hosted by</div>
-          <div class="host-name">Jessica McGovern</div>
           <p>At cursus elementum magna nullam quam natoque sem elit. Tellus vitae libero auctor morbi nunc tempor nisl. Duis mi curabitur consequat molestie. Donec risus at egestas neque ultrices viverra duis. Faucibus commodo quis ullamcorper ut in ut egestas at. A in faucibus interdum diam et nullam duis.At cursus elementum magna nullam quam natoque sem elit. Tellus vitae libero auctor morbi nunc tempor.</p>
           <div class="host-icons share-icons flex flex-center">
             <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=658ac847f86fa70012ce42b9&product=sop' async='async'></script> 
@@ -117,7 +135,7 @@
             <div class="share-text">Follow this host:</div>
             <div class="sharethis-inline-share-buttons"></div>
           </div>
-          <a  href="#" class="button btn-full" >About the Host</a>
+          <a  href="#" class="button btn-full hide-in-tab" >About the Host</a>
         
         </div>
       </div>

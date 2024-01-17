@@ -1,8 +1,31 @@
 @import url("../css/_tv-host-slider.css");
+@import url("../css/_optional-cta-module.css");
+
+.featured-host-heading h2{font-size: 1.5rem; margin-bottom: 0;}
+.featured-host-heading{margin-bottom: 32px;}
+
+.featured-host-img{position: relative; margin-bottom: 20px; width: 100%; clear: both;}
+.featured-host-thumb{position: relative; border-bottom: 3px solid var(--darkgreen); z-index: 1;}
+.featured-host-bg{position: absolute; left: 0; bottom: 0; z-index: -1;}
+.featured-host-content{margin-bottom: 32px;}
+.featured-host-content h2{font-size: 2rem; color: var(--foreground); margin-bottom: 0;}
+.featured-host-row p{font-size: 1rem; color: var(--foreground); opacity: 0.75;}
+.featured-host-list{margin-bottom: 24px; align-items: center;}
+.featured-host-image img{border-radius: 6px;}
+.featured-host-text h2{font-size: 1.5rem; color: var(--foreground); margin-bottom: 12px; font-family: DM Sans , sans-serif;}
+
 
 @media only screen and (min-width: 1024px) {
     .tv-host-main{padding: 40px 0;}
     .tv-host-heading h1{ margin-bottom: 0;}
 
-
+    .featured-host-main{gap: 80px; padding: 40px 0 80px;}
+    .featured-host-lt{flex: 1;}
+    .featured-host-rt{flex: 1;}
+    .featured-host-thumb figure{max-width: 600px;}
+    .featured-host-bg{max-width: 600px;}
+    .featured-host-image figure{height: 160px;}
+    .featured-host-list{gap: 32px;}
+    .featured-host-image{flex: 0 0 40%;}
+    .featured-host-text{flex: 0 0 calc(60% - 32px)}
 }
