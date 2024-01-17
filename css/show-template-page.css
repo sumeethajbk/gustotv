@@ -64,11 +64,12 @@
     .host-text{line-height: 0.8;}
     .host-name{margin-bottom: 6px;}
     .host-icons.share-icons{display: none;}
+    .asidebar-gusto{padding: 0 0 40px;}
 }
 @media only screen and (max-width: 719px) and (min-width: 200px) {
     .video-wrap{margin: 20px 0;}
     .video-caption{background: var(--limegreen);}
-    .show-template-main{padding: 40px 0 0;}
+    .show-template-main{padding: 40px 0 40px;}
     .show-wrap{flex-direction: column-reverse;}
     .apply-rt{margin-bottom: 20px; width: 100%;}
     .sharethis-inline-share-buttons .st-btn{width: 40px!important; height: 40px!important; line-height: 38px!important;}
