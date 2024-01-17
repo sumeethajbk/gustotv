@@ -1,7 +1,7 @@
 .more-recipes-section {z-index: 1; position: relative; background: var(--white); width: 100%; clear: both;}  
 .more-recipes-main{width: 100%; clear: both; position: relative;}
 .more-recipes-main:before {content: ""; display: block; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px);
-    background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; width: 100%; position: absolute; top: 0;}
+    background-position: 0 0; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%; position: absolute; top: 0;}
   .more-recipes-heading{margin-bottom: 40px;align-items: center;}
   .more-recipes-heading .heading-lt h2{font-size: 2rem; margin-bottom: 0; line-height: 2.5rem;}
   .more-recipes-thumb{margin-bottom: 24px;}
@@ -36,8 +36,8 @@
 
 
   @media only screen and (max-width: 719px) and (min-width: 200px) {
-    .more-recipes-main{padding: 40px 0 80px;}
-    /* .more-recipes-main{margin-bottom: 80px;} */
+    .more-recipes-main{padding: 40px 0 40px;}
+    
     .more-recipes-heading .heading-lt h2{font-size: 1.5rem; }
     .more-recipes-list{margin-bottom: 22px; width: 100%;}
     .more-recipes-main .heading-rt{justify-content: flex-start;}

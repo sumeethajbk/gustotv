@@ -23,6 +23,13 @@
   .cat-wrap ul li {margin-bottom: 8px;}
   .cat-wrap{margin-bottom: 0;}
 
+  .hosts-list:nth-child(10){flex: 0 0 100%;}
+
+  @media only screen and (min-width: 1200px) {
+
+  .knife-update.ad img { width: 295px; height: 250px; }
+}
+
 @media only screen and (min-width: 1024px) {
     .tv-host-main{padding: 40px 0;}
     .tv-host-heading h1{ margin-bottom: 0;}
@@ -39,11 +46,17 @@
 
     .hosts-main{padding: 80px 0;}
     .hosts-cont span{float: left; font-size: 0.75rem; font-weight: bold; line-height: 0.75; margin-right: 8px; }
-    .hosts-row{gap: 72px;}
+    .hosts-row{gap: 56px 72px;}
     .hosts-list{flex: 0 0 calc(33.33% - 48px);}
     .hosts-cont .cat-wrap{display: inline-block;}
   
     .hosts-thumb figure{ max-width: 379px;}
     .hosts-bg { max-width: 379px; width: 100%;}  
-        
+
+    .knife-update.ad img{height: 250px;}
+    
+}
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+.knife-update.ad{margin: 0;}
+
 }

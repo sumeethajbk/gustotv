@@ -66,7 +66,8 @@
 }
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
-   .newsletter-main{padding: 20px; border: 8px solid var(--input); display: block; border-radius: 32px; margin-bottom: 40px;}
+
+   .newsletter-main{padding: 20px; border: 8px solid var(--input); display: block; border-radius: 32px; margin: 40px 0 40px;}
    .newsletter-left{width: 100%; display: block; text-align: center;}
    .text-column{width: 100%;}
   .text-column .h2{font-size: 1.5rem;}
