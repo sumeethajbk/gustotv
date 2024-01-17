@@ -293,7 +293,7 @@ body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit but
 .heading-rt form {justify-content: flex-end; width: 100%;}
 .heading-rt .form-field {margin:0 0 0 22px; width:29.71%; position: relative;}
 .heading-rt .form-field:first-child {margin-left: 0}
-.heading-rt.sch-form{width: 100%;}
+
 
 /* Full & Fluid width */
 .fluid-width {width: 100vw!important; left: 50%; position: relative; margin-left: -50vw;}
@@ -370,6 +370,10 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .fullimg {clear: both; width: 100%;}
 
 
+.ad-post { display: flex; flex-wrap: wrap; align-items: center; flex-direction: column; }
+.ad-post-center { margin: auto; }
+.knife-update.ad{margin: 20px 0 20px;}
+
 /*-- media css starts here --*/
 
 @media only screen and (min-width:1024px) {
@@ -407,6 +411,8 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
     .hide-in-mobile {display:none;}
     
+    .heading-rt.sch-form{width: 100%;}
+
     .video-wrap {margin: 40px 0 41px 0;}
     .video-wrap .video-thumbnail > img {min-height: 197px; border-radius: 8px;}
     .video-caption {position: static; background: var(--input); border-radius: 8px; color: var(--foreground); font-weight: bold; margin: 8px 0 0 0; line-height: 1.5; padding: 7px 12px 9px 38px; max-width: 100%; width: 100%;}

@@ -34,9 +34,8 @@
 .shows-title-text h3 a:hover{color: var(--green);}
 .shows-title-text p{margin-bottom: 15px; font-size: 1rem; opacity: 0.75; color: var(--foreground);}
 
-.ad-post{display: flex; flex-wrap: wrap; align-items: center; flex-direction: column;}
-.ad-post-center{margin: auto;}
-.knife-update.ad{margin: 20px 0 20px;}
+
+
 .knife-update img{height: 100px;  object-fit: contain;}
 .shows-title-list:nth-child(10){flex: 0 0 100%;}
 .shows-title-main .ad-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
@@ -76,6 +75,7 @@
 
 }
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
+    .tv-host-heading h1{margin-bottom: 0;}
     .show-main{padding: 64px 0 44px;}
     .featured-shows{margin-bottom: 64px;}
     
