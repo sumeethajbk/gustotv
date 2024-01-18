@@ -8,12 +8,13 @@
 .featured-host-thumb{position: relative; border-bottom: 3px solid var(--darkgreen); z-index: 1;}
 .featured-host-bg{position: absolute; left: 0; bottom: 0; z-index: -1;}
 .featured-host-row{margin-bottom: 32px; justify-content: space-between;}
-.featured-host-content h2{font-size: 2rem; color: var(--foreground); margin-bottom: 0;}
+.featured-host-content h2{font-size: 2rem; color: var(--foreground); margin-bottom: 0; }
 .featured-host-lt p{font-size: 1rem; color: var(--foreground); opacity: 0.75;}
 .featured-host-list{margin-bottom: 24px; align-items: center;}
 .featured-host-image img{border-radius: 6px;}
-.featured-host-text h2{font-size: 1.5rem; color: var(--foreground); margin-bottom: 12px; font-family: DM Sans , sans-serif;}
-
+.featured-host-text h2{font-size: 1.5rem;  margin-bottom: 12px; font-family: DM Sans , sans-serif;}
+.featured-host-text h2 a{color: var(--foreground);}
+.featured-host-text h2 a:hover{color: var(--green);}
   .hosts-heading{ justify-content: space-between; align-items: center; margin-bottom: 48px; }
   .hosts-heading-lt h2{margin-bottom: 0;}
   .hosts-img { position: relative; }
@@ -48,6 +49,7 @@
     .featured-host-thumb figure{max-width: 600px;}
     .featured-host-bg{max-width: 600px;}
     .featured-host-image figure{height: 160px;}
+    .featured-host-content{width: 323px;}
     .featured-host-list{gap: 32px;}
     .featured-host-image{flex: 0 0 40%;}
     .featured-host-text{flex: 0 0 calc(60% - 32px);}
@@ -100,3 +102,4 @@
     .knife-update img{height: 71.5px;}
 
 }
+

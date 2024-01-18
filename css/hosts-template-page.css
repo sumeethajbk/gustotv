@@ -1,0 +1,32 @@
+.hosts-template-banner{clear: both; width: 100%;}
+.hosts-template-wrap{margin: 80px 0 40px; position: relative; clear: both;}
+.hosts-template-banner-bg{position: absolute; z-index: -1; overflow: hidden; min-height: 512px; border-radius: 16px; height: 100%;}
+.hosts-template-banner-bg img{filter: blur(5px); border-radius: 16px;}
+.hosts-template-banner-bg::after{position: absolute; content: ""; display: block; left:0; top: 0; width: 100%; height: 100%; background-color:  rgba(255, 255, 255, 0.75); border-radius: 16px;}
+.hosts-tem-banner-rt{ justify-content: flex-end; display: flex; flex-direction: column; }
+.host-tem-banner-lt p{margin-bottom: 24px;}  
+.host-banner-row{align-items: center;}
+.hosts-tem-banner-wrap{position: relative;}
+.hosts-tem-banner-thumb{position: relative; z-index: 1;}
+.hosts-tem-banner-bg{position: absolute; left: 0; bottom: 0; z-index: -1;}
+
+.hosts-tem-main{padding: 40px 0 80px;}
+.hosts-article hr{margin: 40px 0;}
+.hosts-aside-main{padding: 23px; border: 8px solid var(--input); border-radius: 24px; margin-bottom: 32px;}
+
+.hosts-aside-main p:before{position: absolute; margin: auto; content: "\f10d"; font-family:  "Font Awesome 6 Pro"; color: var(--green); display: block; left: 0; top: -10px; right: 0; width: 28px; height: 32px; font-weight: 900; font-size: 2rem; }
+.hosts-aside-main p{ text-align: center; color: var(--heading); font-family: DM Sans , sans-serif; font-size: 1.25rem; position: relative; margin: 0; padding: 45px 0;}
+.hosts-aside-main p:after{position: absolute; margin: auto; content: "\f10e"; font-family:  "Font Awesome 6 Pro"; color: var(--green); display: block; left: 0; bottom: 4px; right: 0; width: 28px; height: 32px; font-weight: 900; font-size: 2rem;}
+
+
+
+
+@media only screen and (min-width: 1024px){
+    .hosts-template-banner-main{gap: 80px; padding: 0 64px;}
+    .host-tem-banner-lt{flex: 0 0 34.8%; padding: 128px 0;}
+    .hosts-tem-banner-rt{flex: 0 0 calc(65.2% - 80px);  }
+    
+    .hosts-tem-main{gap: 120px;}
+    .hosts-article{flex: 0 0 67.2%;}
+    .hosts-aside{flex: 0 0 calc(32.8% - 120px);}
+  }
