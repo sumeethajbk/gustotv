@@ -4,17 +4,12 @@
 @import url("../css/_more-recipes-section.css");
 @import url("../css/_more-news.css");
 @import url("../css/_newsletter-signup.css");
-.fixed {
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
+
 .updates-post-container {clear: both; width: 100%; position: relative; z-index: 1; overflow: hidden;}
-.updates-intro {clear: both; width: 100%; padding:73px 0 56px 0;}
+.updates-intro {clear: both; width: 100%; padding:73px 0 56px 0; position: relative;}
 .updates-intro h1 {font-size: 2.5rem; line-height: 1.2; color: var(--foreground);}
 .updates-intro .post-info {clear: both; width: 100%; margin: 0 0 18px 0;}
 .updates-intro .calender {display: inline-block; margin: 0 12px 10px 0;}
-.updates-intro .calender::before {top: -2px;}
 .updates-intro .cat-wrap {clear: none; display: inline-block; margin: 0;}
 .updates-intro .cat-wrap ul li {margin: 0 15px 10px 0;}
 
@@ -30,8 +25,19 @@
 /*-- media css starts here --*/
 
 
-@media only screen and (max-width: 719px) and (min-width: 200px) {
-    .general-default-article-section h1 {margin-bottom: 47px;}
-    .general-default-article-section .default-inner > p:first-of-type {margin: 0 0 46px 0;}
-    .apply-wrap {margin: 0 0 52px 0;}
+@media only screen and (max-width: 719px) and (min-width: 200px) {    
+    .updates-intro {padding: 33px 0 0 0;}
+    .updates-intro h1 {font-size: 2rem; line-height: 1.25;}
+    .general-default-article-section {padding: 40px 0 40px 0}
+    .general-default-article-section .default-inner > p:first-of-type {margin: 0 0 45px 0;}
+    .general-default-article-section .default-inner h3 {padding: 0;}
+    .general-default-article-section .default-inner h6 {padding-top: 10px;}
+    .general-default-article-section ul {margin-bottom: 40px;}
+    .general-default-article-section ol {margin-bottom: 38px;}
+    
+    
+    .single-testimonial {padding: 0 0 39px 0;}
+    .micro-cta:last-child {padding: 12px 0 0;}   
+    .more-recipes-main {padding: 51px 0 54px;}
+    
 }
