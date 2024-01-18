@@ -3,12 +3,19 @@
 
 .general-default-article-section {float: left; width: 100%; padding:80px 0 62px 0; background: var(--white); position: relative; z-index: 1;}
 .general-default-article-section .default-main .container {padding: 0;}
+.general-default-article-section .default-inner {position: relative;}
 .general-default-article-section .default-inner > p:first-of-type {font-size: 1.745rem; line-height: 1.29; color: var(--optionaltxt); margin: 0 0 62px 0; letter-spacing: -0.01px;}
 .general-default-article-section h1 {margin-bottom: 64px;}
 .general-default-article-section h3 {padding: 37px 0 0 0;}
 .general-default-article-section ol, .general-default-article-section ul {margin-bottom: 63px;}
 .default-main {justify-content: space-between;}
 .default-inner {width:67.1875%;}
+.default-inner .share-icons {padding: 16px 16px 8px;  background-color: var(--white); width: auto; margin-left: auto; justify-content: flex-end; position: absolute; right: 4px; top: -144px; border-top-right-radius: 24px; border-top-left-radius: 24px;}
+.default-inner .share-icons:before, .default-inner .share-icons:after {content:""; width:28px; height:28px; position:absolute; border-radius:50%; z-index:-10;
+  pointer-events:none; border-top:19px solid var(--white); border-right:19px solid transparent; border-left:19px solid transparent; border-bottom:19px solid transparent; border-radius:50%; bottom: -19px;}
+.default-inner .share-icons:after {right:-47px; -webkit-transform:rotate(-120deg); -moz-transform:rotate(-120deg); -o-transform:rotate(-120deg); transform:rotate(-120deg);}
+.default-inner .share-icons:before {left:-47px; -webkit-transform:rotate(120deg); -moz-transform:rotate(120deg); -o-transform:rotate(120deg);  transform:rotate(120deg);}
+
 
 .sidebar {width: calc(100% - 76.5625%);}
 .sidebar .side-bucket {clear: both;}

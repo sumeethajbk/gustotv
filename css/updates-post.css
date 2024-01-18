@@ -4,10 +4,24 @@
 @import url("../css/_more-recipes-section.css");
 @import url("../css/_more-news.css");
 @import url("../css/_newsletter-signup.css");
-
+.fixed {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
 .updates-post-container {clear: both; width: 100%; position: relative; z-index: 1; overflow: hidden;}
+.updates-intro {clear: both; width: 100%; padding:73px 0 56px 0;}
+.updates-intro h1 {font-size: 2.5rem; line-height: 1.2; color: var(--foreground);}
+.updates-intro .post-info {clear: both; width: 100%; margin: 0 0 18px 0;}
+.updates-intro .calender {display: inline-block; margin: 0 12px 10px 0;}
+.updates-intro .calender::before {top: -2px;}
+.updates-intro .cat-wrap {clear: none; display: inline-block; margin: 0;}
+.updates-intro .cat-wrap ul li {margin: 0 15px 10px 0;}
+
+
 .general-default-article-section .default-inner {width: 100%; max-width: 960px; margin: 0 auto;}
 .general-default-article-section .default-inner h1 {color: var(--foreground); font-size: 2.5rem; line-height: 1.2;}
+.general-default-article-section .default-inner h6 {padding-top: 34px;}
 .single-testimonial .single-testimonial-lt {max-width: 104px;}
 .single-testimonial .single-testimonial-rt {width: calc(100% - 137px);}
 

@@ -111,11 +111,10 @@ jQuery(document).ready(function () {
       jQuery(this).removeClass('highlight');
     }
   });
-    
-    
 
-  /* Fixed Section on Scroll */
- function addFixmeClass(element) {
+
+  /* Fixed Section on Scroll 
+  function addFixmeClass(element) {
     var originalY = element.offset().top;
     var topMargin = 0;
     element.css('position', 'relative');
@@ -133,14 +132,33 @@ jQuery(document).ready(function () {
   }
 
   function checkScreenWidthAndAddClass() {
-    if (jQuery(window).width() >= 1200) {
-      jQuery('.fixme').each(function() {
-        addFixmeClass(jQuery(this));
-      });
-    }
+
+    jQuery('.fixme').each(function () {
+      addFixmeClass(jQuery(this));
+    });
   }
+
   checkScreenWidthAndAddClass();
   jQuery(window).on('resize', checkScreenWidthAndAddClass);
-     /* End of Fixed Section on Scroll */
+  /* End of Fixed Section on Scroll */
+    
+    });
 
-});
+$(document).ready(function() {
+      $('.fixme').each(function() {
+        var element = $(this);
+        var originalY = element.offset().top;
+
+        element.css('position', 'relative');
+
+        $(window).on('scroll', function(event) {
+          var scrollTop = $(window).scrollTop();
+
+          element.stop(false, false).animate({
+            top: scrollTop < originalY
+              ? 0
+              : scrollTop - originalY 
+          }, 0);
+        });
+      });
+    });

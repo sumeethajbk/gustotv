@@ -13,8 +13,7 @@
 .show-template-article .show-high p{font-size: 1.5rem; color: var(--foreground); margin-bottom: 40px;}
 .show-wrap { justify-content: space-between; padding: 32px 0 32px 0; align-items: center; position: relative; margin: 0 0 40px 0; }
 .show-wrap::before, .show-wrap::after { content: ""; display: inline-block; position: absolute; left: 0; top: 0; height: 2px; background-image: radial-gradient(circle at 1px, var(--green) 1px, rgba(255,255,255,0) 1.25px); width: 100%; background-size: 8px 2px; background-position: 0 0; } .show-wrap::after { top: inherit; bottom: 0; }
-.share-icons{gap: 15px;}
-.share-text{font-size: 1rem; color: var(--darkgreen); font-weight: bold;}
+
 .apply-rt .button{padding: 17px 20px 18px 20px;}
 .apply-rt .button:after{ content:"\f26c";  }   
 

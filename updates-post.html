@@ -90,15 +90,17 @@
   
   <main id="mainContent">
     <section class="updates-post-container">
-      <section class="updates-intro fixme" touching="">
+      <section class="updates-intro fixme">
         <div class="container">
           <div class="container-sm">
-            <div class="breadcrumb">
-              <ul>
-                <li><a href="#"><i class="fa-regular fa-house"></i></a></li>
-                <li><a href="#">Parent Section</a></li>
-                <li>Current Page Title</li>
-              </ul>
+            <div class="post-info">
+                <div class="calender">8/16/2023</div>
+             <div class="cat-wrap">
+                <ul>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Canada</a></li>
+                </ul>
+              </div>
             </div>
             <h1>Gusto TV launches live-to-tape studio in ottawa: open call for local food enthusiasts</h1>
           </div>
@@ -106,8 +108,10 @@
       </section>
       <!-- end of updates intro -->
       
-      <section class="fullimg fixme"  touching="">
-        <figure class="object-fit"><img src="images/updates-post-banner@2x.jpg" alt="Updates Banner"></figure>
+      <section class="fullimg fixme">
+        <picture class="object-fit">
+          <source srcset="images/updates-post-banner@2x.jpg" media="(min-width:720px)">
+          <img src="images/optional-cta-shows-mobile@2x.jpg" alt="optional-cta"> </picture>
       </section>
       <!-- end of fullimg -->
       <section class="general-default-article-section">
@@ -115,6 +119,14 @@
           <div class="general-default-inner">
             <div class="default-main flex">
               <div class="default-inner">
+                <div class="share-icons flex flex-center"> 
+                  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=658ac847f86fa70012ce42b9&product=sop' async='async'></script> 
+                  <!-- ShareThis BEGIN -->
+                  <div class="share-text">Share it!</div>
+                  <div class="sharethis-inline-share-buttons"></div>
+                  <!-- ShareThis END --> 
+                  
+                </div>
                 <p>Short introduction to this individual vitae, condimentum ut quam aenean euismod. Condimentum lorem augue fermentum risus enim. Morbi diam massa odio est tellus ornare pretium nisi nibh. Volutpat feugiat nulla habitant quis ullamcorper donec ultricies ipsum.</p>
                 <h2>Short subhead if necessary</h2>
                 <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper. Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas et at vulputate molestie feugiat. Vitae sed nec, proin amet. Semper lobortis interdum ullamcorper dui urna eu.</p>
@@ -147,7 +159,7 @@
                       <!-- end of single testimonial lt -->
                       <div class="single-testimonial-rt">
                         <div class="testimonial-cnt">
-                          <p>A callout or note this host appears here met vitae egestas tellus eu enim, nibh <strong>including highlight words</strong> mauris arcu, tempus euismod aliquet dictum sollicitudin congue fringilla diam nisi volutpat diam pharetra quis lorem ut viverra.”</p>
+                          <p>A fun quote from this host appears here met vitae egestas tellus eu enim, nibh <strong>including highlight words</strong> mauris arcu, tempus euismod aliquet dictum sollicitudin congue fringilla diam nisi volutpat diam pharetra quis lorem ut viverra.”</p>
                         </div>
                         <div class="author flex">
                           <div class="author-thumb pos-relative">
@@ -296,9 +308,8 @@
                 </ul>
               </div>
             </div>
-            
           </div>
-            <div class="heading-rt hide-in-desktop hide-in-tab"> <a href="#" class="button btn-green">More Recipes</a> </div>
+          <div class="heading-rt hide-in-desktop hide-in-tab"> <a href="#" class="button btn-green">More Recipes</a> </div>
         </div>
       </div>
     </section>
@@ -353,9 +364,9 @@
                   <li><a href="#">Category Tag Two</a></li>
                 </ul>
               </div>
-            </div>            
+            </div>
           </div>
-            <div class="heading-rt hide-in-desktop hide-in-tab"> <a href="#" class="button btn-green">More News</a> </div>
+          <div class="heading-rt hide-in-desktop hide-in-tab"> <a href="#" class="button btn-green">More News</a> </div>
         </div>
       </div>
     </section>
