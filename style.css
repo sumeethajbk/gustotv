@@ -355,7 +355,7 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .readmore {position: relative; display: inline-block; font-size:1rem; padding-right: 23px; font-weight: bold; text-decoration: none;}
 .readmore:after {right: 0px; content:"\f061"; font-size:1rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; top: 1px; bottom: 0; color: var(--optionaltxt);}
 .readmore:hover:after {animation-name: bounceAlpha; animation-duration: 1.4s; animation-iteration-count: infinite; animation-timing-function: linear;}
-
+.readmore:hover {color: var(--optionaltxt);}
 
 
 /* Dotted ROund Border */
