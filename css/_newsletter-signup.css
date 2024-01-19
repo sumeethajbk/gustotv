@@ -15,8 +15,8 @@
 .newsletter-right{flex: calc(36.8% - 28px); }
 
 .newsletter-main .frm_button_submit{gap: 24px;}
-.newsletter-main .frm_form_field.form-note{flex: 1; line-height: 1rem; font-size: 0.625rem; margin-bottom: 0;}
-
+.newsletter-main .frm_form_field.form-note{flex: 1; line-height: 1rem; font-size: 0.625rem; }
+.newsletter-main .frm_wrapper .frm_form_field.form-note{margin-bottom: 0 !important;}
 
 @media only screen and (min-width: 1024px){
    .newsletter-form .frm_forms .frm_form_fields .frm_form_field{float: none; width: 100%;}
