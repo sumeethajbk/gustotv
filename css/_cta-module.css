@@ -7,10 +7,16 @@
 .cta_module .cta-right .cta-thumb {max-width: 344px; width: 100%; margin-left: auto; position: absolute; top: -79px; right: 0; display: block;}
 
 /*-- media css starts here --*/
-
+@media only screen and (max-width: 1023px) and (min-width: 720px) {
+.cta_module .cta-right .cta-thumb {position: relative; top: inherit; max-width: 216px;}
+}
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
-    .general-default-article-section h1 {margin-bottom: 47px;}
-    .general-default-article-section .default-inner > p:first-of-type {margin: 0 0 46px 0;}
-    .apply-wrap {margin: 0 0 52px 0;}
+    .cta-main {flex-direction: column-reverse;}
+    .cta_module {padding:36px 20px 28px 20px;}
+    .cta_module .cta-left {width: 100%;}
+    .cta_module .cta-right {width: 100%; margin: 0 0 49px 0;}
+    .cta_module .cta-right .cta-thumb {position: relative; top: inherit; max-width: 278px; margin: 0 auto;}
+    .micro-cta {padding: 20px 0 20px;}
+    
 }

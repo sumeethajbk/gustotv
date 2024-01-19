@@ -1,0 +1,16 @@
+.intro-module {clear: both; width: 100%; padding:69px 0;}
+.intro-lt {width:20%; flex-grow: 1; margin:0 3% 0 0;}
+.intro-lt .optional-text {margin: 0 0 24px 0;}
+.intro-rt {flex-grow: 1; width: calc(100% - 51%); padding:14px 0 0 0; color: var(--optionaltxt);}
+
+/* Responsive */
+@media only screen and (max-width: 1023px) and (min-width:200px){
+	.intro-lt {width: 100%; margin: 0 0 7px 0;}
+	.intro-col-lt .button {margin: 19px 0 0 0;}
+}
+@media only screen and (max-width: 719px) and (min-width:200px){
+	.intro-lt h2{margin-bottom: 13px;}
+	.intro-lt .hide-in-mobile{display: block;}
+	.intro-lt .hide-in-desktop{display: none;}
+    .intro-lt span svg  {bottom: -30px; right: -14px; width: 129px; height: 46px;}
+}

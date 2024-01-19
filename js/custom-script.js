@@ -141,24 +141,23 @@ jQuery(document).ready(function () {
   checkScreenWidthAndAddClass();
   jQuery(window).on('resize', checkScreenWidthAndAddClass);
   /* End of Fixed Section on Scroll */
+
+
+  jQuery('.fixme').each(function () {
+    var element = jQuery(this);
+    var originalY = element.offset().top;
+
+    element.css('position', 'relative');
+
+    jQuery(window).on('scroll', function (event) {
+      var scrollTop = jQuery(window).scrollTop();
+
+      element.stop(false, false).animate({
+        top: scrollTop < originalY
+          ? 0
+          : scrollTop - originalY
+      }, 0, "slow");
+    });
+  });
     
-    });
-
-$(document).ready(function() {
-      $('.fixme').each(function() {
-        var element = $(this);
-        var originalY = element.offset().top;
-
-        element.css('position', 'relative');
-
-        $(window).on('scroll', function(event) {
-          var scrollTop = $(window).scrollTop();
-
-          element.stop(false, false).animate({
-            top: scrollTop < originalY
-              ? 0
-              : scrollTop - originalY 
-          }, 0);
-        });
-      });
-    });
+});
