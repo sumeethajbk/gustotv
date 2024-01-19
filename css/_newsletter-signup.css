@@ -2,9 +2,9 @@
 .newsletter-main {  padding: 64px;  position: relative; align-items: center; z-index: 1;}
 
 .newsletter-main .frm_forms .frm_form_fields .frm_form_field{margin-bottom: 20px;}
-.newsletter-main .form-note p{line-height: 1rem; font-size: 0.625rem;}
+
 .newsletter-main .frm_wrapper{align-items: center;}
-.newsletter-main .frm_wrapper .frm_button_submit{padding: 14px 20px 15px 20px; margin-left: 24px;}
+.newsletter-main .frm_wrapper .frm_submit .frm_button_submit{padding: 14px 20px 15px 20px; margin-left: 24px;}
 .newsletter-main .frm_wrapper button:after {content: "\f1d8";}
 .newsletter-main{gap: 28px;}
 .newsletter-left{flex: 63.2%; gap: 28px}
@@ -15,7 +15,7 @@
 .newsletter-right{flex: calc(36.8% - 28px); }
 
 .newsletter-main .frm_button_submit{gap: 24px;}
-.newsletter-main .form-note{flex: 1;}
+.newsletter-main .frm_form_field.form-note{flex: 1; line-height: 1rem; font-size: 0.625rem; margin-bottom: 0;}
 
 
 @media only screen and (min-width: 1024px){
@@ -62,7 +62,7 @@
    .newsletter-main .frm_forms .frm_form_fields .newsletter_frm_half.frm_first{margin-left: 0;}
    .newsletter-main .frm_forms .frm_form_fields  .newsletter_frm_half.frm_last{margin-right: 0;}
    .newsletter-main .frm_wrapper{display: block; text-align: center;}
-   .newsletter-main .form-note p{margin-bottom: 16px;}
+   .newsletter-main .frm_form_field.form-note{margin-bottom: 16px;}
 }
 
 @media only screen and (max-width: 719px) and (min-width: 200px) {
@@ -78,7 +78,7 @@
   .image-column { max-width: 100%; width: 100%; margin:34px 0 32px;}
   .newsletter-main .frm_forms .frm_form_fields .frm_form_field{float: none; width: 100%;}
   .newsletter-main .frm_wrapper{display: block; text-align: center;}
-  .newsletter-main .form-note p{margin-bottom: 16px;}
+  .newsletter-main .frm_form_field.form-note{margin-bottom: 16px;}
 
 }
 @media only screen and (max-width: 385px) and (min-width: 200px) {
