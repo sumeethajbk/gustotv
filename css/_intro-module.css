@@ -1,6 +1,7 @@
-.intro-module {clear: both; width: 100%; padding:69px 0 52px;}
+.intro-module {clear: both; width: 100%;}
 .intro-main {padding: 0 0 57px 0; clear: both; width: 100%;}
 .intro-main:last-child {padding:0;}
+.intro-wrap {position: relative;  padding:69px 0 52px;} 
 .intro-wrap:after {content: ""; display: block; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255, 255, 255, 0) 1px); background-position: 0 0; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%; position: absolute; bottom: 0;}
 .intro-lt {width:20%; flex-grow: 1; margin:0 3% 0 0;}
 .intro-lt .optional-text {margin: 0 0 24px 0;}
