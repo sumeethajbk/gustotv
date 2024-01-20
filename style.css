@@ -207,7 +207,7 @@ ul.slick-dots li.slick-active button {opacity:1;}
 #blog_list{margin: 0;}
 .btn-center{position: relative; z-index: 1; width: 100%; text-align: center;}
 .btn-center:before{position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%);  background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1;}
-.btn-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
+.btn-center .more-hosts{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
 .btn-center .button::after{display: none;}
 .btn-center .button{padding: 14px 20px 15px 20px;}
 
