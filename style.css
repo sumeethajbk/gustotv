@@ -363,6 +363,7 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .dot-border svg{height: 100%; width: 100%;}
 .dot-border circle {stroke: var(--green); stroke-width: 2;}
 
+
 /* Calendar */
 .calender{position: relative; display: block;  padding-left:20px; font-size: 0.75rem; font-weight: bold;  line-height: 1; color: var(--heading); margin-bottom: 15px;}
 .calender::before{position: absolute; content: "\f133"; font-size: 0.875rem; font-weight: normal; font-family: 'Font Awesome 6 Pro'; display: block; left: 0; top: -2px; width: 13px; height: 14px;}
