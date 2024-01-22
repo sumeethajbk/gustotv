@@ -4,7 +4,7 @@
 
 
 
-.screening-room-detail-section{position: relative;}
+.screening-room-detail-section{position: relative; clear: both; width: 100%;}
 .screening-room-main{ position: relative; padding: 0 0 80px;} 
 .screening-room-article h1{margin-bottom: 32px; font-size: 3rem;}
 .screening-room-article span{color: var(--optionaltxt); font-size: 1.75rem; line-height: 2.25rem; margin-bottom: 32px; display: block;}
@@ -12,14 +12,14 @@
 .show-aside-img { position: relative; margin-bottom: 20px; width: 100%; clear: both; }
 .show-host-thumb { position: relative; border-bottom: 3px solid var(--darkgreen); z-index: 1; }
 .show-host-bg { position: absolute; left: 0; bottom: 0; z-index: -1; }
-  .host-text { color: var(--body-text); opacity: 0.5; font-size: 1rem; font-weight: bold; font-family: DM Sans , sans-serif; margin-bottom: 3px; }
+.host-text { color: var(--body-text); opacity: 0.5; font-size: 1rem; font-weight: bold; font-family: DM Sans , sans-serif; margin-bottom: 3px; }
 .host-name { font-size: 1.5rem; line-height: 1.75; color: var(--heading); font-weight: bold; font-family: DMSerif Display; margin-bottom: 22px; }
 .screening-room-aside{padding: 64px 0 0;}
 .screening-room-aside p { font-size: 1rem; color: var(--foreground); margin-bottom: 24px; }
 .show-host-list .button{padding: 14px 12px 15px 12px;}
 .screening-room-aside hr{margin: 56px 0 58px;}
-.flour-thumb{margin-bottom: 24px;}
-.flour-thumb img{height: 110px; width: 174px;}
+.show-host-rt .flour-thumb{margin-bottom: 24px;}
+.show-host-rt  .flour-thumb img{height: 110px; width: 174px;}
 
 
 @media only screen and (min-width: 1200px) {
