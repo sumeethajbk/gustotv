@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
 <script src="https://kit.fontawesome.com/4a8777acf0.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
-<link rel="stylesheet" type="text/css" href="css/screening-room-datail-page.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/screening-room-detail-page.css" media="all"/>
 </head>
 <body>
 <div id="main">
@@ -62,7 +62,7 @@
   <!-- end of main header -->
   <main id="mainContent"> 
 
-    <section class="screening-room-detail">
+    <section class="screening-room-detail-section">
         <div class="container">
             <div class="screening-room-main flex">
                 <div class="screening-room-article">
@@ -79,23 +79,262 @@
                     <h1>Video title appears in this spot here</h1>
                     <div class="cat-wrap flex">
                         <ul>
-                          <li><a href="#">Show Title Appears Here</a></li>
-                          <li><a href="#">Meal Type</a></li>
-                          <li><a href="#">Primary Ingredient</a></li>
-                          <li><a href="#">Diet Type</a></li>
+                          <li><a href="#">Show Title</a></li>
+                          <li><a href="#">Host Name</a></li>
+                          <li><a href="#">Video Cateogry</a></li>
                         </ul>
                       </div>
                     <span>Short introduction to this individual vitae, condimentum ut quam aenean euismod. Condimentum lorem augue fermentum risus enim. Morbi diam massa odio est tellus ornare pretium nisi nibh.</span>
                     <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper. Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas et at vulputate molestie feugiat.</p>
                 </div>
                 <div class="screening-room-aside">
-
+                  <div class="show-host-list flex">
+                    <div class="show-host-lt">
+                    <div class="show-aside-img">
+                      <div class="host-bg-wrap pos-relative">
+                      
+                      <div class="show-host-thumb"> 
+                        <picture class="object-fit">
+                        <source srcset="images/shows-template-host@2x.png" media="(min-width: 720px)">
+                       
+                        <img src="images/shows-template-host@2x.png" alt="shows-template-host">
+                      </picture> 
+                      </div>
+                    <div class="show-host-bg"> <figure class="object-fit"><img src="images/shows-template-host-bg@2x.png" alt="shows-template-host-bg"></figure> </div>
+                    </div>
+                    </div>
+                    <div class="host-content">
+                      <div class="host-text">Hosted by</div>
+                      <div class="host-name">Jessica McGovern</div>
+                    </div>
+                    <p>At cursus elementum magna nullam quam natoque sem elit. Tellus vitae libero auctor morbi nunc tempor nisl. Duis mi curabitur consequat molestie. Donec risus at egestas neque ultrices.</p>
+                    <a href="#" class="button btn-full ">About the Host</a>
+                    </div>
+                    <hr>
+                    <div class="show-host-rt">
+                    <div class="flour-thumb">
+                    <figure class="object-fit"><img src="images/flour-power@2x.png"></figure> 
+                    </div>
+                    <p>At cursus elementum magna nullam quam natoque sem elit. Tellus vitae libero auctor morbi nunc tempor nisl. Duis mi curabitur consequat molestie.</p>      
+                    <a href="#" class="button btn-full ">About the show</a>
+                    </div>
+                  </div>
                 </div>
           </div>
       </div>
     </section>
 
+    <section class="more-related-video-section">
+      <div class="container">
+        <div class="more-related-video-main">
+          <div class="more-related-video-heading flex">
+            <div class="heading-lt"><h2>Related Videos</h2></div>
+            <div class="heading-rt hide-in-mobile"><a href="#" class="button btn-green">Back to Screening Room</a> </div>
+          </div>
+          <div class="more-related-video-row flex">
+            <div class="more-related-video-list">
+              <div class="more-related-wrap">
+                <div class="related-video-thumbnail"> <img src="images/related-video-thumb-one@x.jpg" alt="Default Video">
+                  <div class="play-btn-main flex flex-center"> <a class="play-btn flex flex-center" href="#"> <img src="images/play-icon.svg" alt="play-icon"> </a> </div>
+                </div>
+             
+                <div class="related-video-caption">
+                  <span>Episode 1234</span>
+                  <p><a href="#">This is a concise video  title that likely spans a few lines</a></p>
+                  <div class="cat-wrap flex">
+                    <ul>
+                      <li><a href="#">Show Title</a></li>
+                      <li><a href="#">Host Name</a></li>
+                      <li><a href="#">Video Cateogry</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-related-video-list">
+              <div class="more-related-wrap">
+                <div class="related-video-thumbnail"> <img src="images/related-video-thumb-two@2x.jpg" alt="related-video-thumb-two">
+                  <div class="play-btn-main flex flex-center"> <a class="play-btn flex flex-center" href="#"> <img src="images/play-icon.svg" alt="play-icon"> </a> </div>
+                </div>
+             
+                <div class="related-video-caption">
+                  <span>Episode 1234</span>
+                  <p><a href="#">This is a concise video  title that likely spans a few lines</a></p>
+                  <div class="cat-wrap flex">
+                    <ul>
+                      <li><a href="#">Show Title</a></li>
+                      <li><a href="#">Host Name</a></li>
+                      <li><a href="#">Video Cateogry</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-related-video-list">
+              <div class="more-related-wrap">
+                <div class="related-video-thumbnail"> <img src="images/related-video-thumb-three@x.jpg" alt="related-video-thumb-three">
+                  <div class="play-btn-main flex flex-center"> <a class="play-btn flex flex-center" href="#"> <img src="images/play-icon.svg" alt="play-icon"> </a> </div>
+                </div>
+             
+                <div class="related-video-caption">
+                  <span>Episode 1234</span>
+                  <p><a href="#">This is a concise video  title that likely spans a few lines</a></p>
+                  <div class="cat-wrap flex">
+                    <ul>
+                      <li><a href="#">Show Title</a></li>
+                      <li><a href="#">Host Name</a></li>
+                      <li><a href="#">Video Cateogry</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-related-video-list">
+              <div class="more-related-wrap">
+                <div class="related-video-thumbnail"> <img src="images/related-video-thumb-four@x.jpg" alt="related-video-thumb-four">
+                  <div class="play-btn-main flex flex-center"> <a class="play-btn flex flex-center" href="#"> <img src="images/play-icon.svg" alt="play-icon"> </a> </div>
+                </div>
+             
+                <div class="related-video-caption">
+                  <span>Episode 1234</span>
+                  <p><a href="#">This is a concise video  title that likely spans a few lines</a></p>
+                  <div class="cat-wrap flex">
+                    <ul>
+                      <li><a href="#">Show Title</a></li>
+                      <li><a href="#">Host Name</a></li>
+                      <li><a href="#">Video Cateogry</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+          </div>
+          <div class="heading-rt hide-in-desktop hide-in-tab"><a href="#" class="button btn-green">Back to Screening Room</a> </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="more-recipes-section">
+      <div class="container">
+        <div class="more-recipes-main">
+          <div class="more-recipes-heading flex">
+            <div class="heading-lt"> <h2>Popular Recipes from Show Title</h2> </div>
+            <div class="heading-rt hide-in-mobile"> <a href="#" class="button btn-green">More Recipes</a> </div>
+          </div>
+          <div class="more-recipes-row flex">
+             <div class="more-recipes-list">
+              <div class="more-recipes-thumb">
+                <figure class="object-fit"><img src="images/show-tide-one@2x.jpg" alt="show-tide-one"> </figure>
+              </div>
+              <h3><a href="#">Classic Aioli with Patatas Bravas</a></h3>
+              <div class="cat-wrap flex">
+                <ul>
+                  <li><a href="#">Show Title Appears Here</a></li>
+                  <li><a href="#">Meal Type</a></li>
+                  <li><a href="#">Primary Ingredient</a></li>
+                  <li><a href="#">Diet Type</a></li>
+                </ul>
+              </div>
+             </div>
+             
+             <div class="more-recipes-list">
+              <div class="more-recipes-thumb">
+                <figure class="object-fit"><img src="images/show-tide-two@2x.jpg" alt="show-tide-two"> </figure>
+              </div>
+              <h3><a href="#">Duo of Chimichurri</a></h3>
+              <div class="cat-wrap flex">
+                <ul>
+                  <li><a href="#">Show Title Appears Here</a></li>
+                  <li><a href="#">Meal Type</a></li>
+                  <li><a href="#">Primary Ingredient</a></li>
+                  <li><a href="#">Diet Type</a></li>
+                </ul>
+              </div>
+             </div>
+             <div class="more-recipes-list">
+              <div class="more-recipes-thumb">
+                <figure class="object-fit"><img src="images/show-tide-three@2x.jpg" alt="show-tide-three"> </figure>
+              </div>
+              <h3><a href="#">Sauce Choron over Crab Cakes</a></h3>
+              <div class="cat-wrap flex">
+                <ul>
+                  <li><a href="#">Show Title Appears Here</a></li>
+                  <li><a href="#">Meal Type</a></li>
+                  <li><a href="#">Primary Ingredient</a></li>
+                  <li><a href="#">Diet Type</a></li>
+                </ul>
+              </div>
+             </div>
+             <div class="more-recipes-list">
+              <div class="more-recipes-thumb">
+                <figure class="object-fit"><img src="images/show-tide-four@2x.jpg" alt="show-tide-four"> </figure>
+              </div>
+              <h3><a href="#">Classic Sweet and Sour Sauce with Chicken</a></h3>
+              <div class="cat-wrap flex">
+                <ul>
+                  <li><a href="#">Show Title Appears Here</a></li>
+                  <li><a href="#">Meal Type</a></li>
+                  <li><a href="#">Primary Ingredient</a></li>
+                  <li><a href="#">Diet Type</a></li>
+                </ul>
+              </div>
+             </div>
+             
+            </div>
+            <div class="heading-rt hide-in-desktop hide-in-tab"> <a href="#" class="button btn-green">More Recipes</a> </div>
+        </div>    
+        </div>
+    </section>
+
+    <section class="tv-show-slider">
+      <div class="container">
+        <hr>
+        <div class="tv-show-main ">
+          <div class="tv-show-heading flex">
+            <div class="heading-lt">
+              <h3>Gusto TV Shows</h3>
+            </div>
+            <div class="heading-rt">
+              <div class="heading-btn">
+              <a href="#" class="button btn-green">All Shows</a>
+              </div>
+            </div>
+          </div>
+          <div class="tv-slider">
+            <div class="tv-show-row flex">
+              <div class="tv-show-img">
+                <figure><a href="#"> <img src="images/like-a-chef@2x.png" alt="like-a-chef"> </a></figure>
+              </div>
+              <div class="tv-show-img">
+                <figure> <a href="#"><img src="images/crate-to-plate@2x.png" alt="like-a-chef"></a> </figure>
+              </div>
+              <div class="tv-show-img">
+                <figure><a href="#"> <img src="images/dine-your-sign@2x.png" alt="like-a-chef"> </a></figure>
+              </div>
+              <div class="tv-show-img">
+                <figure><a href="#"> <img src="images/road-show@2x.png" alt="like-a-chef"></a> </figure>
+              </div>
+              <div class="tv-show-img">
+                <figure><a href="#"><img src="images/fish-dish@2x.png" alt="like-a-chef"></a> </figure>
+              </div>
+              <div class="tv-show-img">
+                <figure><a href="#"> <img src="images/flour-power@2x.png" alt="like-a-chef"> </a></figure>
+              </div>
+              <div class="tv-show-img">
+                <figure><a href="#"> <img src="images/dine-your-sign@2x.png" alt="like-a-chef"></a> </figure>
+              </div>
+              <div class="tv-show-img">
+                <figure> <a href="#"><img src="images/dine-your-sign@2x.png" alt="like-a-chef"> </a></figure>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+  
+        <hr>
+      </div>
+    </section>
   </main>
 </div>
 <footer id="main_footer">

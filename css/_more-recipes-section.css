@@ -9,7 +9,7 @@
   .more-recipes-list h3{font-size: 1.25rem;  font-family: DM Sans; font-weight: 500; }
   .more-recipes-list h3 a{color: var(--foreground);}
   .more-recipes-list h3 a:hover{color: var(--green)}
-  
+  .more-recipes-list .cat-wrap{margin: 0;}  
 
 
   @media only screen and (min-width: 1200px) {
@@ -31,7 +31,7 @@
   @media only screen and (max-width: 1023px) and (min-width: 720px) {
     .more-recipes-main{padding: 40px 0;}
     .more-recipes-row{gap:  0 48px;}
-    .more-recipes-list{flex: 0 0 calc(50% - 36px); margin-bottom: 25px;}
+    .more-recipes-list{flex: 0 0 calc(50% - 24px); margin-bottom: 25px;}
   }
 
 
