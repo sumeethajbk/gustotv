@@ -82,3 +82,17 @@ jQuery('.scroll-left').slick({
   });
     /* End of Marquee Slider */
 });
+
+/* Awards */
+jQuery('.awards-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: false,
+    speed: 1000,
+    dots: false,
+    arrows: false,
+    variableWidth: true,
+    draggable: true,
+      swipeToSlide: true,
+    touchThreshold:100
+  });

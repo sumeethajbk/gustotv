@@ -29,15 +29,64 @@
 .international-rt .map-thumb {max-width: 850px; margin-left: auto;}
 
 .awards {padding: 96px 0; position: relative;}
-.awards .h1 {}
+.awards .heading {padding: 0 0 18px;}
+.awards .heading .heading-lt {width: 25%;}
+.awards .heading .heading-rt {width: calc(100% - 25%);}
+.awards.ui-widget.ui-widget-content {border: 0 none; padding:96px 0 56px; font-family: "DM Sans", sans-serif;} 
+.awards.ui-tabs .ui-tabs-panel {padding: 0; border-radius: 0;}
+.awards.ui-tabs .ui-tabs-nav {padding: 0; background: transparent; margin: 0; border: 0 none; border-bottom: solid 2px var(--input);}
+.awards.ui-tabs .ui-tabs-nav li {margin: 0; border: 0 none; background: transparent;}
+.awards.ui-tabs .ui-tabs-nav li:before {display: none;}
+.awards.ui-tabs .ui-tabs-nav li a {font-size: 1.5rem; font-family:"DM Serif Display", sans-serif; color: var(--heading); font-weight: normal; padding: 0 16px 4px;}
+.awards.ui-tabs .ui-tabs-nav li.ui-state-active a {color: var(--optionaltxt);}
+.awards.ui-tabs .ui-tabs-nav li.ui-state-active:after {content: ''; position: absolute; display: block; margin: auto; height: 4px; left: 50%; transform: translate(-50%, 0); width: 100%; background: var(--green); bottom: -1px;}
+.awards.ui-tabs .ui-tabs-nav li.ui-state-active {background: transparent;}
+.awards .awards-grid {width: 284px; margin: 0 48px 0 0;}
+.awards .awards-grid .awards-thumb {height: 160px; margin: 0 0 15px 0;}
+.awards .awards-grid .awards-thumb img {border-radius: 4px;}
+.awards .awards-grid .h4 {color: var(--blacktext); margin-bottom: 8px;}
+.awards .awards-grid .awards-cat {display: block; color: var(--foreground); font-size: 1rem; opacity: 0.6; margin: 0 0 17px 0;}
+.awards .awards-slider .slick-list {overflow: visible;}
+
+.heading_mobile_menu {display:none;}	
+
 
 /*-- media css starts here --*/
 @media only screen and (max-width: 1199px) and (min-width:1024px){
     .statistics-main {padding: 64px 0;}
     .statistics-container .heading-lt {width: 72%;}   
     .statistics-container .heading-rt {width: calc(100% - 72%);}
+    
+    .awards.ui-widget.ui-widget-content {padding:64px 0 40px;}
+    
 }
-@media only screen and (max-width: 1023px) and (min-width: 200px) {
+
+@media only screen and (max-width: 1199px) and (min-width:200px){
+        .awards .awards-grid {margin-right: 24px;}
+
+}
+@media only screen and (max-width: 1023px) and (min-width: 719px) {
+    .awards .heading .h1 {margin-bottom: 7px;}
+    .awards .heading {padding: 0 0 16px;}
+    .awards.ui-widget.ui-widget-content {padding: 40px 0 44px;}
+    .awards .awards-grid {width: 256px;}
+    .awards .awards-grid .awards-thumb {height: 145px;}
+}
+
+@media only screen and (max-width: 719px) and (min-width: 200px) {
+    .awards .heading .heading-lt {width: 50%;}
+    .awards .heading .heading-lt .h1 {margin-bottom: 0;}
+    .awards .heading .heading-rt {width: calc(100% - 50%);}
+    .awards.ui-widget.ui-widget-content {padding:96px 0 16px;}
     
+    .awards .heading .heading-rt ul {display:none; position:absolute; width:100%; z-index:8; background-color:#ffffff; left:0; margin:0; transition:none; padding:12px 0 5px 0;  border:1px solid #ebebeb; border-top:0 none;}
+    .awards .heading .heading-rt ul li {display: block;}
     
+    .heading_mobile_menu {padding:13px 40px 12px 15px; display:block; margin:0; border-bottom:1px solid var(--blacktext); background-color:var(--input); position:relative; cursor:pointer; display:block; width:128px; margin-left: auto;}
+    .heading_mobile_menu:after {width:auto; right:20px; top:calc(50% + 2px); transform:translateY(-50%); font-size:18px; color: var(--heading); border:none; font-family:"Font Awesome 6 Pro"; font-weight:600; position:absolute; display:flex; align-items:center; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; background:none; content:"\f107";}
+    .heading_mobile_menu.active::after {transform:translateY(-50%) rotate(-180deg);}
+    
+    .awards.ui-tabs .ui-tabs-nav li {display: block; float: none;}
+    .awards.ui-tabs .ui-tabs-nav li a {font-size: 1rem; float: none;}
+    .awards.ui-tabs .ui-tabs-nav li.ui-state-active::after {display: none;}
 }

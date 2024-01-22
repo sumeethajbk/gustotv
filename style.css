@@ -253,7 +253,7 @@ body .frm_forms .frm_form_fields input.input-has-value.highlight, body .frm_form
 
 
 .frm_forms .frm_submit{margin:0;}
-body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin:0; padding: 9px 34px 10px 12px; vertical-align: middle; cursor: pointer; border: 0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family: "DM Sans", sans-serif; text-decoration: none; display: inline-block; font-size: 1rem; font-weight: bold; line-height: normal;}
+body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin:0; padding: 9px 12px 10px 12px; vertical-align: middle; cursor: pointer; border: 0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family: "DM Sans", sans-serif; text-decoration: none; display: inline-block; font-size: 1rem; font-weight: bold; line-height: normal;}
 body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {background-color: var(--green)!important; color: var(--blacktext)!important;}
 body .frm_forms .frm_submit .button:after, body .frm_forms .frm_submit button:after {right: 12px;}
 body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit button:hover:after, body .frm_forms .frm_submit button:focus:after  {color: var(--blacktext);}
@@ -265,7 +265,7 @@ body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit but
 .frm_forms .frm_message p {color: var(--optionaltxt);}
 
 
-.frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-: space-between;}
+.frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
 .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; width: 55%;}
 .frm_half {width:calc(50% - 12px); float: left; clear: none!important;}
 .frm_first {margin-right:24px;}
@@ -407,11 +407,12 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
+    .h1 {font-size: 2.5rem; line-height: 1.2; margin-bottom:24px;}
 
 }
 
 @media only screen and (max-width:719px) and (min-width:200px) {
-    
+
     blockquote {padding: 136px 0 0 0; margin: 43px 0 37px;}
     blockquote:before {transform: rotate(90deg) translateY(-100%); transform-origin: top left;}
     blockquote p {font-size: 1.25rem; line-height: 1.8;}

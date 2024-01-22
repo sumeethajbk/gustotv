@@ -159,5 +159,16 @@ jQuery(document).ready(function () {
       }, 0, "slow");
     });
   });
-    
+
+  /* Tabs */
+  jQuery("#tabs").tabs();
+
+
+  jQuery(document).on('click', '.heading_mobile_menu', function (e) {
+    e.preventDefault();
+    jQuery(this).toggleClass('active');
+    jQuery('ul.sidebar_panel').slideToggle();
+  });
+
+
 });
