@@ -87,6 +87,6 @@
     .heading_mobile_menu.active::after {transform:translateY(-50%) rotate(-180deg);}
     
     .awards.ui-tabs .ui-tabs-nav li {display: block; float: none;}
-    .awards.ui-tabs .ui-tabs-nav li a {font-size: 1rem; float: none;}
+    .awards.ui-tabs .ui-tabs-nav li a {font-size: 1rem; float: none; display: block;}
     .awards.ui-tabs .ui-tabs-nav li.ui-state-active::after {display: none;}
 }
