@@ -21,7 +21,6 @@
 
 .international-main {padding: 96px 0; position: relative; justify-content: space-between;}
 .international-main:after {content: ""; display: block; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255, 255, 255, 0) 1px); background-position: 0 0; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%; position: absolute; bottom: 0;}
-
 .international-lt {width: 27%; flex-grow: 1;}
 .international-lt .h3 {margin: -1px 0 23px 0;}
 .international-lt p {font-size: 1rem; line-height: 1.5; color: var(--foreground); margin-bottom: 23px;}
@@ -29,7 +28,15 @@
 .international-rt {width: calc(100% - 27%);}
 .international-rt .map-thumb {max-width: 850px; margin-left: auto;}
 
+.awards {padding: 96px 0; position: relative;}
+.awards .h1 {}
+
 /*-- media css starts here --*/
+@media only screen and (max-width: 1199px) and (min-width:1024px){
+    .statistics-main {padding: 64px 0;}
+    .statistics-container .heading-lt {width: 72%;}   
+    .statistics-container .heading-rt {width: calc(100% - 72%);}
+}
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
     
     
