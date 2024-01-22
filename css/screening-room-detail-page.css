@@ -1,0 +1,4 @@
+.screening-room-main{padding: 64px 0 80px;}
+.screening-room-main{gap: 104px;}
+.screening-room-article { flex: 0 0 68.5%; }
+.screening-room-aside { flex: 0 0 calc(100% - 104px); }
