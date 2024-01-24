@@ -21,7 +21,7 @@ ul.recipes-block li a:hover{color: var(--green);}
 @media only screen and (min-width: 1200px){
 
     ul.recipes-block{gap: 0 10px;}
-    ul.recipes-block li { display: inline-block; flex: 0 0 calc(50% - 5px); line-height: 0.8; margin-bottom: 16px;}
+    ul.recipes-block li { display: inline-block; flex: 0 0 calc(50% - 5px); line-height: 0.8; margin: 14px 0 2px;}
 
 }
 @media only screen and (min-width: 1024px){
@@ -30,7 +30,7 @@ ul.recipes-block li a:hover{color: var(--green);}
     .recipes-heading-right{flex: 0 0 calc(50% - 12px);}
     .recipes-row{gap: 40px; margin-bottom: 56px;}
     .recipes-list{width: 9.7%;}
-    .links-list .h4{margin-bottom: 32px; font-size: 1.25rem;}
+    .links-list .h4{margin-bottom: 18px; font-size: 1.25rem;}
     
 }
 @media only screen and (max-width: 1360px) and (min-width: 1024px) {

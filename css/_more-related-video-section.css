@@ -5,7 +5,7 @@
 .related-video-thumbnail img{border-radius: 4px;}
 .related-video-caption{position: relative;}
 .related-video-caption span:before{content: "\f03d"; position: absolute; top: -3px; left: 0; width: 16px; height: 14px; font-family:  "Font Awesome 6 Pro"; font-size: 0.875rem; font-weight: normal;}
-.related-video-caption span{margin-left: 24px; font-size: 0.75rem; font-family: DM Sans , sans-serif; display: block; font-weight: bold; color: var(--heading); font-weight: bold; margin-bottom: 12px;}
+.related-video-caption span{font-size: 0.75rem; font-family: DM Sans , sans-serif; display: block; font-weight: bold; color: var(--heading); font-weight: bold; margin-bottom: 12px;}
 .related-video-caption p{font-size: 1.25rem;   margin-bottom: 12px;}
 .related-video-caption p a{color: var(--foreground); text-decoration: none; font-weight: 500;}
 .related-video-caption p a:hover{color: var(--green);}
