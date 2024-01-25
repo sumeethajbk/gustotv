@@ -4,8 +4,8 @@
 
 
 .trending-recipe-img { margin-bottom: 24px; }
-.trending-recipe-thumb figure { height: 400px; }
-.trending-recipe-thumb img{border-radius: 8px;}
+.trending-recipe-img figure { height: 400px; }
+.trending-recipe-img img{border-radius: 8px;}
 .trending-recipe-content h2{font-size: 2rem; color: var(--foreground);}
 .trending-recipe-list{align-items: center; margin-bottom: 24px;}
 .trending-recipe-image img{border-radius: 6px;}
@@ -45,7 +45,7 @@
 @media only screen and (max-width: 719px) and (min-width: 200px) {
     .trending-recipe-main{padding: 56px 0 16px;}
     .trending-recipe-lt{margin-bottom: 20px;}
-    .trending-recipe-thumb figure {height: 233px};
+    .trending-recipe-img figure {height: 233px};
     .trending-recipe-content h2{margin-bottom: 16px;}
     .trending-recipe-heading h2{font-size: 1.5rem; margin-bottom: 24px;}
     .trending-recipe-list{ margin-bottom: 24px; gap: 20px; }
