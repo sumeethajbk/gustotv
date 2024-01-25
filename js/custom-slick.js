@@ -56,6 +56,9 @@ jQuery(document).ready(function () {
       centerMode: true,
     })
   }
+  if (jQuery(window).width() <= 719) {
+  jQuery(".page-template-recipe .recipes-row").slick('unslick');
+  }
 
   /* Marquee Slider */
   jQuery('.scroll-left').slick({

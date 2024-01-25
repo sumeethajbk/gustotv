@@ -68,12 +68,9 @@ ul.recipes-block li a:hover{color: var(--green);}
     .links-mobile-wrap{display: none;}
     ul.recipes-block{gap:  14px 20px; padding-bottom: 20px;}
     ul.recipes-block li{flex:  0 0 calc(50% - 10px); margin-bottom: 0;}
-<<<<<<< HEAD
-}
-=======
+
     .recipes-heading .heading-lt.center{text-align: center;}
 }
  
  
 
->>>>>>> 9d182274b9953511199510dc67b7bbfe0ca46150

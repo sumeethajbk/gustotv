@@ -49,7 +49,10 @@
     .post-list.ad-center span .post-img img{width: 300px;} 
       .newsletter-main{margin: 56px 0;}
       .more-news-main{padding: 28px 0 40px;}
-      .recipes-heading{margin-bottom: 25px;}
+      .page-template-recipe .recipes-heading{margin-bottom: 26px;}
+      .page-template-recipe .recipes-heading h1{margin-bottom: 25px;}
       .recipes-heading .heading-lt h2{font-size: 1.5rem;}
-      .recipes-links{padding-top: 0;}
+      .page-template-recipe .recipes-links{padding-top: 0;}
+      .page-template-recipe .recipes-img figure{width: 96px; }
+      .page-template-recipe .recipes-row{gap: 17px 20px; justify-content: center;}
     }
