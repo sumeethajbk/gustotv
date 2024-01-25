@@ -11,7 +11,7 @@
 
 .recipes-heading-right input[type="search"] {padding: 17px 50px 17px 19px;}
 
-.recipes-main{padding: 8px 0 78px;}
+.recipes-wrap{padding: 8px 0 78px; clear: both; width: 100%;}
 .recipes-heading{gap: 0;}
 .recipes-heading h1{width: 100%; text-align: center;}
 .recipes-heading-right{width: 100%; max-width: 680px; margin: 0 auto;}
@@ -39,7 +39,7 @@
     .more-news-main { padding: 40px 0 0; }
 }
 @media only screen and (max-width: 719px) and (min-width: 200px) {
-    .recipes-main { padding: 8px 0 34px; }
+    .recipes-wrap { padding: 8px 0 34px; }
     .no-line .more-recipes-main { padding: 40px 0 40px; }
     .more-recipes-main{padding: 54px 0 54px;}
       .ad-center { margin: 24px 0 24px; }
@@ -49,4 +49,7 @@
       .ad-center span .post-img img{width: 300px;} 
       .newsletter-main{margin: 56px 0;}
       .more-news-main{padding: 28px 0 40px;}
+      .recipes-heading{margin-bottom: 25px;}
+      .recipes-heading .heading-lt h2{font-size: 1.5rem;}
+      .recipes-links{padding-top: 0;}
     }

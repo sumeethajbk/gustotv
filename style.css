@@ -271,7 +271,12 @@ body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit but
 .frm_dropzone .frm_small_text {display: none;}
 .frm_upload_text button {text-align: left;}
 
+<<<<<<< HEAD
+.recipes-heading-right .form-field input::placeholder{ font-family: DMSerifDisplay; text-transform: none; line-height: 1.25;}
+
+=======
 .frm_forms .frm_form_fields .frm-wrapper .frm_html_container .frm_form_field {width: 100%; margin: 0 !important;}
+>>>>>>> 4efda340aafc7a845a595e4e4e94fae04b91c8be
 .frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
 .frm-wrapper .frm_submit {width: calc(100% - 55%);}
 .frm-wrapper .frm_submit button {margin-left: auto!important;}
@@ -455,7 +460,7 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
     .hide-in-mobile {display:none;}
     
-    .heading-rt.sch-form{width: 100%;}
+    .heading-rt.sch-form{width: 100%; margin-top: 24px;}
 
     .video-wrap {margin: 40px 0 41px 0;}
     .video-wrap .video-thumbnail > img {min-height: 197px; border-radius: 8px;}
