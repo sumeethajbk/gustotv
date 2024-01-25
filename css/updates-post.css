@@ -17,6 +17,12 @@
 .general-default-article-section .default-inner {width: 100%; max-width: 960px; margin: 0 auto;}
 .general-default-article-section .default-inner h1 {color: var(--foreground); font-size: 2.5rem; line-height: 1.2;}
 .general-default-article-section .default-inner h6 {padding-top: 34px;}
+.general-default-article-section .default-inner .share-icons {padding: 16px 16px 8px;  background-color: var(--white); width: auto; margin-left: auto; justify-content: flex-end; position: absolute; right: 4px; top: -144px; border-top-right-radius: 24px; border-top-left-radius: 24px;}
+.general-default-article-section .default-inner .share-icons:before, .default-inner .share-icons:after {content:""; width:28px; height:28px; position:absolute; border-radius:50%; z-index:-10;
+  pointer-events:none; border-top:19px solid var(--white); border-right:19px solid transparent; border-left:19px solid transparent; border-bottom:19px solid transparent; border-radius:50%; bottom: -19px;}
+.general-default-article-section .default-inner .share-icons:after {right:-47px; -webkit-transform:rotate(-120deg); -moz-transform:rotate(-120deg); -o-transform:rotate(-120deg); transform:rotate(-120deg);}
+.general-default-article-section .default-inner .share-icons:before {left:-47px; -webkit-transform:rotate(120deg); -moz-transform:rotate(120deg); -o-transform:rotate(120deg);  transform:rotate(120deg);}
+
 .single-testimonial .single-testimonial-lt {max-width: 104px;}
 .single-testimonial .single-testimonial-rt {width: calc(100% - 137px);}
 
@@ -34,6 +40,14 @@
     .general-default-article-section .default-inner h6 {padding-top: 10px;}
     .general-default-article-section ul {margin-bottom: 40px;}
     .general-default-article-section ol {margin-bottom: 38px;}
+    .default-inner .share-icons::before, .default-inner .share-icons::after {width: 30px; height: 30px;}
+    .default-inner .share-icons::after {right: -49px;}
+    .default-inner .share-icons::before {left: -49px;}
+    .default-inner .share-icons .sharethis-inline-share-buttons .st-btn {width: 38px; height: 38px!important; line-height: 36px!important; margin: 0 0 0 9px!important;}
+    .default-inner .share-icons .sharethis-inline-share-buttons .st-btn.st-first {margin-left: 0!important;}
+    .default-inner .share-icons .sharethis-inline-share-buttons .st-btn::after {font-size: 1.175rem;}
+    .default-inner .share-icons {top: -100px; padding: 15px 15px 7px; max-width: 330px; right: 0; left: 0; margin: auto; border-top-right-radius: 22px;
+  border-top-left-radius: 22px;}
     
     
     .single-testimonial {padding: 0 0 39px 0;}

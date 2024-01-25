@@ -1,0 +1,15 @@
+@import url("../css/_more-recipes-section.css");
+@import url("../css/_newsletter-signup.css");
+@import url("../css/_gustotv-recipes-section.css");
+
+
+.recipes-main {padding: 80px 0 77px;}
+.recipes-heading h2 {font-size: 2rem; margin-bottom: 0;}
+
+/*-- media css starts here --*/
+
+
+@media only screen and (max-width: 719px) and (min-width: 200px) {    
+    
+    
+}

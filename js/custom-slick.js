@@ -10,6 +10,9 @@ jQuery(document).ready(function () {
     dots: false,
     arrows: false,
     variableWidth: true,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
 
   });
 
@@ -23,6 +26,18 @@ jQuery(document).ready(function () {
     dots: false,
     arrows: false,
     variableWidth: true,
+    draggable: true,
+    swipeToSlide: true,
+    touchThreshold: 100,
+      responsive: [
+      {
+        breakpoint:720,
+        settings: {
+           centerMode: true,
+        }
+      }
+    ]
+   
   });
 
 
@@ -42,8 +57,8 @@ jQuery(document).ready(function () {
     })
   }
 
-/* Marquee Slider */
-jQuery('.scroll-left').slick({
+  /* Marquee Slider */
+  jQuery('.scroll-left').slick({
     speed: 8000,
     autoplay: true,
     autoplaySpeed: 0,
@@ -80,19 +95,19 @@ jQuery('.scroll-left').slick({
     buttons: false,
     rtl: true
   });
-    /* End of Marquee Slider */
+  /* End of Marquee Slider */
 });
 
 /* Awards */
 jQuery('.awards-slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: false,
-    speed: 1000,
-    dots: false,
-    arrows: false,
-    variableWidth: true,
-    draggable: true,
-      swipeToSlide: true,
-    touchThreshold:100
-  });
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  infinite: false,
+  speed: 1000,
+  dots: false,
+  arrows: false,
+  variableWidth: true,
+  draggable: true,
+  swipeToSlide: true,
+  touchThreshold: 100
+});

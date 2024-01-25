@@ -10,11 +10,7 @@
 .general-default-article-section ol, .general-default-article-section ul {margin-bottom: 63px;}
 .default-main {justify-content: space-between;}
 .default-inner {width:67.1875%;}
-.default-inner .share-icons {padding: 16px 16px 8px;  background-color: var(--white); width: auto; margin-left: auto; justify-content: flex-end; position: absolute; right: 4px; top: -144px; border-top-right-radius: 24px; border-top-left-radius: 24px;}
-.default-inner .share-icons:before, .default-inner .share-icons:after {content:""; width:28px; height:28px; position:absolute; border-radius:50%; z-index:-10;
-  pointer-events:none; border-top:19px solid var(--white); border-right:19px solid transparent; border-left:19px solid transparent; border-bottom:19px solid transparent; border-radius:50%; bottom: -19px;}
-.default-inner .share-icons:after {right:-47px; -webkit-transform:rotate(-120deg); -moz-transform:rotate(-120deg); -o-transform:rotate(-120deg); transform:rotate(-120deg);}
-.default-inner .share-icons:before {left:-47px; -webkit-transform:rotate(120deg); -moz-transform:rotate(120deg); -o-transform:rotate(120deg);  transform:rotate(120deg);}
+
 
 
 .sidebar {width: calc(100% - 76.5625%);}
@@ -71,14 +67,7 @@
     .general-default-article-section ol, .general-default-article-section ul {margin-bottom: 48px;}
     .accordion-module {padding: 12px 0 36px 0;}
     
-    .default-inner .share-icons::before, .default-inner .share-icons::after {width: 30px; height: 30px;}
-    .default-inner .share-icons::after {right: -49px;}
-    .default-inner .share-icons::before {left: -49px;}
-    .default-inner .share-icons .sharethis-inline-share-buttons .st-btn {width: 38px; height: 38px!important; line-height: 36px!important; margin: 0 0 0 9px!important;}
-    .default-inner .share-icons .sharethis-inline-share-buttons .st-btn.st-first {margin-left: 0!important;}
-    .default-inner .share-icons .sharethis-inline-share-buttons .st-btn::after {font-size: 1.175rem;}
-    .default-inner .share-icons {top: -100px; padding: 15px 15px 7px; max-width: 330px; right: 0; left: 0; margin: auto; border-top-right-radius: 22px;
-  border-top-left-radius: 22px;}
+    
     
     
 }

@@ -206,7 +206,7 @@ ul.slick-dots li.slick-active button {opacity:1;}
 
 #blog_list{margin: 0;}
 .btn-center{position: relative; z-index: 1; width: 100%; text-align: center;}
-.btn-center:before{position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%);  background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1;}
+.btn-center:before{position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%);  background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: center center; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; z-index: -1;}
 .btn-center .more-hosts{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
 .btn-center .button::after{display: none;}
 .btn-center .button{padding: 14px 20px 15px 20px;}
@@ -236,7 +236,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
 
-.frm_forms .frm_form_fields .frm_form_field label { font-size: 1rem; line-height: 1.25; padding: 0;}
+.frm_forms .frm_form_fields .frm_form_field label { font-size: 1rem; line-height: 1.25; padding: 0; text-indent: inherit; font-weight: normal; color: var(--body-text);}
 .frm_forms .frm_form_fields .frm_form_field label a {text-decoration: underline;}
 .frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding-left:29px; display:block; cursor: pointer;}
 
@@ -263,17 +263,36 @@ body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit but
 .frm_forms .frm_error_style {display: none;}
 .frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
 .frm_forms .frm_message p {color: var(--optionaltxt);}
+.frm_forms .frm_dropzone {margin: 0; line-height: normal; min-height: inherit;}
+.frm_forms .dz-message {margin: 0!important; background-color: var(--input); color: var(--blacktext); border-radius: 0; border: 0 none; border-bottom: solid 1px var(--blacktext); padding:15px 40px 15px 16px; text-align: left; font-family: "DM Sans", sans-serif; font-weight: bold; font-size: 1rem;}
+.frm_forms .dz-message button:after {display: none;}
+.frm_forms .dz-message svg {display: none;}
+.frm_forms .dz-message:after {content:"\f093"; font-family: "Font Awesome 6 Pro"!important; font-weight: 900; margin:0 auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; vertical-align: middle; display: flex; font-size: 1rem; color: var(--heading); position: absolute; right: 18px; top: 0; line-height: 14px; align-items: center; bottom: 0;}
+.frm_dropzone .frm_small_text {display: none;}
+.frm_upload_text button {text-align: left;}
 
+<<<<<<< HEAD
 .recipes-heading-right .form-field input::placeholder{ font-family: DMSerifDisplay; text-transform: none; line-height: 1.25;}
 
+=======
+.frm_forms .frm_form_fields .frm-wrapper .frm_html_container .frm_form_field {width: 100%; margin: 0 !important;}
+>>>>>>> 4efda340aafc7a845a595e4e4e94fae04b91c8be
 .frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
+.frm-wrapper .frm_submit {width: calc(100% - 55%);}
+.frm-wrapper .frm_submit button {margin-left: auto!important;}
 .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; width: 55%;}
+
 .frm_half {width:calc(50% - 12px); float: left; clear: none!important;}
 .frm_first {margin-right:24px;}
 .frm_last {float: right; margin-left: auto;}
 .frm_full {margin-right: 0;}
+
 .frm_radio {margin: 0 0 9px 0;}
 .frm_radio label {padding: 0px 0 0 34px; cursor: pointer;}
+
+.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"] {position: absolute; left: 0; width: 21px; height: 21px; cursor: pointer;  outline: none;  -moz-border-radius: 4px; -webkit-border-radius: 4px;  border-radius: 3px; padding: 0 !important; background: var(--optionaltxt)!important; border: 0 none !important;}
+.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked:before {content: "\f00c"; font-family: "Font Awesome 6 Pro"; display: block; height: 21px; left: 0px; position: absolute; top: 2px; width: 21px; font-weight: 900; color: var(--white); font-size: 13px; transform: none; clip-path: inherit; box-shadow: none; text-align: center; margin: 0;}
+.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:before {display: none;}
 
 .default_form {padding:32px; border-radius: 24px; border: solid 8px var(--input); clear: both; width:100%; margin: 64px 0 17px;}
 .form-intro {clear: both; width: 100%; margin: 0 0 40px 0;}
@@ -383,8 +402,13 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .ad-center{position: relative; z-index: 1; text-align: center; width: 100%;}
 .ad-center::before { position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%); background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1; }
 
-/*-- media css starts here --*/
 
+.video:before{content: "\f03d"; position: absolute; top: -3px; left: 0; width: 16px; height: 14px; font-family:  "Font Awesome 6 Pro"; font-size: 0.875rem; font-weight: normal;}
+.video{padding-left: 24px; font-size: 0.75rem; font-family: DM Sans , sans-serif; display: block; color: var(--heading); font-weight: bold; margin-bottom: 12px; position: relative;}
+
+
+
+/*-- media css starts here --*/
 @media only screen and (min-width:1024px) {
     .hide-in-desktop {display:none;}
     .heading-lt {width: 50%;}
@@ -394,9 +418,18 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
     .container {padding:0 40px; max-width:100%;}
 }
 
+@media only screen and (max-width:1240px)and (min-width:1024px) {
+    #mainContent {padding: 72px 0 0 0;}
+}
+
+
 @media only screen and (min-width:1200px) {
 .knife-update img { height: 100px; max-width: 300px;}
+}
 
+@media only screen and (max-width: 1199px) and (min-width: 720px) {
+    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {width: 53%;}
+    .frm-wrapper .frm_submit {width: calc(100% - 53%);}
 }
 
 @media only screen and (max-width:1023px) and (min-width:720px) {
@@ -409,6 +442,9 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
     .h1 {font-size: 2.5rem; line-height: 1.2; margin-bottom:24px;}
+    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {width: 100%; }
+    .frm-wrapper .frm_submit {width: 100%; margin:24px 0 0 0;}
+    .frm-wrapper .frm_submit button {margin-left: 0!important;}
 
 }
 
@@ -443,17 +479,14 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
     .sharethis-inline-share-buttons .st-btn {width: 60px; height: 60px !important; line-height: 56px !important; margin: 0 0 0 12px !important;}
 
     .frm_forms .frm_submit {width: 100%;}
-     body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {display: flex; justify-content: center; padding:9px 12px 10px 12px; width: 100%;}
-     body .frm_forms .frm_submit .button::after,  body .frm_forms .frm_submit button::after {position: inherit;}
-     body .frm_forms .frm_submit button span {padding: 0 21px 0 11px;}
     .frm_half {width:100%; margin-left: 0; margin-right: 0;} 
     
+    body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {width: 100%;}
     .frm_forms .frm_form_fields .frm_form_field.vertical_radio, .default_form .frm_forms .frm_form_fields .frm_form_field.vertical_radio {width: 100%; margin: 0 0 23px 0;}
     .frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding: 0 50px 0 0; line-height: 1.25;}
-    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker {left: inherit; right: 0; width: 35px; height: 35px; margin: 0 0 0 7px; top: 0;}
-    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span {width: 35px; height: 35px; border-radius: 5px;}
-    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span.checked::before {height: 35px; width: 35px; font-size: 21px; line-height: 33px; top: 0;}
-    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; width: 100%;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"] {left: inherit; right: 0; width: 35px; height: 35px; border-radius: 5px; margin: 0;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {height: 35px; width: 35px; font-size: 21px; line-height: 33px; top: 0;}
+    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; width: 100%; min-height: 35px;}
     
     .default_form {padding: 24px; margin: 48px 0 20px;}
     .form-intro p {font-size: 1.125rem; line-height: 1.44;}
