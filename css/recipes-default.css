@@ -3,12 +3,23 @@
 @import url("../css/_gustotv-recipes-section.css");
 
 
-.recipes-main {padding: 80px 0 77px;}
+.recipes-main {padding: 70px 0 77px;}
+.recipes-heading {margin-bottom: 56px;}
 .recipes-heading h2 {font-size: 2rem; margin-bottom: 0;}
+.recipe-top-main {padding: 0 0 79px 0;}
+.recipe-img {height: 720px;}
+.recipe-img img {border-radius: 16px;}
+
+.recipe-lt {width: 67.1875%;}
+.recipe-lt .video-wrap {margin:0 0 30px 0;}
+.recipe-lt .video-caption {max-width: 390px;}
+.recipe-lt h4 {color: var(--darkgreen);}
+
+.more-recipes-main {padding: 98px 0 58px;}
+
+
 
 /*-- media css starts here --*/
-
-
 @media only screen and (max-width: 719px) and (min-width: 200px) {    
     
     

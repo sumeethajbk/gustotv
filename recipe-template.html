@@ -91,8 +91,101 @@
   <main id="mainContent">
     <section class="recipe-default-section">
       <div class="container">
+        <div class="recipe-top-main">
+          <div class="recipe-top flex">
+            <div class="recipe-top-lt">
+              <h1>Title of the Recipe Appears Here</h1>
+              <p>Short introduction to this recipe condimentum ut quam aenean euismod. Condimentum lorem augue fermentum risus enim. Morbi diam massa.</p>
+              <div class="recipe-info">
+                <ul>
+                  <li>Show Title Appears Right Here</li>
+                  <li>Meal Type</li>
+                  <li>Primary Ingredient</li>
+                  <li>Diet Type</li>
+                </ul>
+              </div>
+              <!-- end of recipe info --> 
+            </div>
+            <!-- end of recipe top lt -->
+            <div class="recipe-top-rt"></div>
+            <!-- end of recipe top rt --> 
+          </div>
+          <!-- end of recipe top -->
+          <div class="recipe-img">
+            <figure class="object-fit"> <img src="images/recipe-template-thumb-big@2x.jpg" alt="recipe-thumb"> </figure>
+          </div>
+          <!-- end of recipe img --> 
+        </div>
+        <!-- end of recipe top -->
         <div class="recipe-main flex">
-          <div class="recipe-lt"></div>
+          <div class="recipe-lt">
+            <div class="recipe-vid-wrap">
+              <div class="video-wrap">
+                <div class="video-thumbnail"> <img src="images/recipe-template-video-thumb@2x.jpg" alt="Recipe Video">
+                  <div class="play-btn-main flex flex-center"> <a class="play-btn flex flex-center" href="#"> <img src="images/play-icon.svg" alt="play-icon"> </a> </div>
+                </div>
+                <div class="video-caption">
+                  <div class="video-txt">
+                    <p>Watch chef First Lastname make this recipe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of recipe vid wrap -->
+            <h2>The Ingredients</h2>
+            <h4>Classic Aioli</h4>
+            <ul>
+              <li>1 egg</li>
+              <li>3 egg yolks</li>
+              <li>5 garlic cloves, finely chopped.</li>
+              <li>3 teaspoons (15 ml) white wine vinegar</li>
+              <li>1 cup (240 ml) olive oil</li>
+              <li>Salt and pepper</li>
+            </ul>
+            <h4>Bravas Sauce</h4>
+            <ul>
+              <li>⅓ cup (80 ml) olive oil</li>
+              <li>½ tablespoon (7.5 ml) hot smoked paprika</li>
+              <li>1 ½ tablespoons (22 ml) sweet paprika</li>
+              <li>1 tablespoon (15 ml) smoked Spanish paprika</li>
+              <li>2 tablespoons (30 ml) sherry vinegar</li>
+              <li>1 cup (240 ml) passata</li>
+              <li>Salt to taste</li>
+            </ul>
+            <h4>Fried Patatas</h4>
+            <ul>
+              <li>4 medium russet potatoes, large diced</li>
+              <li>Salt to taste</li>
+              <li>Olive oil for deep frying</li>
+            </ul>
+              <hr>
+              <h2>The Method</h2>
+              <h4>For Classic Aioli</h4>
+              <p>In a food processor, combine the egg and yolks, garlic, vinegar, and mustard. With the machine running, slowly stream the olive oil in through the feed tube until emulsified. Season with salt and pepper and reserve until needed.</p>
+              <h4>For Bravas Sauce</h4>
+              <p>In a small saucepan over medium heat, warm the oil slightly. Add the hot, sweet, and smoked paprikas, blooming them in the oil for 1-2 minutes. Add the vinegar and passata, bring the mixture to a simmer and cook for 6-8 minutes, stirring often.</p>
+<p>Season with salt and pepper and keep warm until needed.</p>
+              <h4>For the Fried Patatas</h4>
+              <p>Prepare a large pot of heavily salted water. Add the cubed potatoes and turn the heat under the pot to medium-high, gradually bringing the water to a simmer. Simmer the potatoes for 7-8 minutes, then strain out onto a tray. Allow the potatoes to steam and dry.</p>
+<p>Meanwhile, in a Dutch oven or heavy-bottomed pot, bring the olive oil to 375 F (190 C)</p>
+<p>Carefully transfer the potatoes to the hot oil and cook until golden brown and crisp, 3-4 minutes.</p>  
+<p>Using a wire strainer, transfer the fried potatoes to a bowl and season immediately with salt.</p>
+<p>Drizzle the Classic Aioli and Bravas Sauce over the hot potatoes and serve immediately.</p>
+              <ul>
+<li>Optional bulleted list </li>
+<li>Second bullet point lives here</li>
+<li>Third point shows right here</li>
+<li>There can be an endless number</li>
+<li>Fifth bullet point here</li>
+</ul>
+              <hr>
+              <h2>To Serve</h2>
+              <p>Ut cras diam nec tincidunt id libero turpis. Turpis consectetur nec lacus, in. Aliquet aliquam hac in egestas arcu id auctor. Urna, mattis et amet morbi turpis tellus sapien auctor. Sem neque tortor in semper. Feugiat placerat et sit auctor. Faucibus lectus mollis dignissim cursus elementum ut arcu integer. Egestas et at vulputate molestie feugiat. Vitae sed nec, proin amet. Semper lobortis interdum ullamcorper dui urna eu.</p>
+              <div class="final-thumb">
+                          <figure class="object-fit"> <img src="images/recipe-template-serve@2x.jpg" alt="recipe-thumb"> </figure>
+
+              </div>
+          </div>
           <!-- end of recipe lt -->
           <aside class="recipe-sidebar">
             <div class="side-bucket">
@@ -256,10 +349,15 @@
       <div class="container">
         <div class="recipes-main">
           <div class="recipes-heading flex">
-            <h2>More Recipes</h2>
+            <div class="heading-lt">
+              <h2>More Recipes</h2>
+            </div>
+            <div class="heading-rt">
+              <div class="heading-btn"> <a href="#" class="button btn-green">All Recipes</a> </div>
+            </div>
           </div>
           <div class="recipes-links flex">
-            <div class="links-list"> <span class="h4">Meals</span>
+            <div class="links-list links1-of-4"> <span class="h4">Meals</span>
               <div class="links-mobile-wrap">
                 <ul class="recipes-block flex">
                   <li><a href="#">Breakfast</a></li>
@@ -270,12 +368,12 @@
                   <li><a href="#">Sides</a></li>
                   <li><a href="#">Snacks</a></li>
                   <li><a href="#">Desserts</a></li>
-                  <li><a href="#">Appetizers</a></li>
+                  <li><a href="#">Appetizers</a</li>
                   <li><a href="#">Drinks</a></li>
                 </ul>
               </div>
             </div>
-            <div class="links-list"> <span class="h4">Ingredients</span>
+            <div class="links-list links1-of-4"> <span class="h4">Ingredients</span>
               <div class="links-mobile-wrap">
                 <ul class="recipes-block flex">
                   <li><a href="#">Chicken</a></li>
@@ -291,7 +389,7 @@
                 </ul>
               </div>
             </div>
-            <div class="links-list"> <span class="h4">Dishes</span>
+            <div class="links-list links1-of-4"> <span class="h4">Dishes</span>
               <div class="links-mobile-wrap">
                 <ul class="recipes-block flex">
                   <li><a href="#">Salads</a></li>
@@ -307,7 +405,7 @@
                 </ul>
               </div>
             </div>
-            <div class="links-list"> <span class="h4">Diets</span>
+            <div class="links-list links1-of-4"> <span class="h4">Diets</span>
               <div class="links-mobile-wrap">
                 <ul class="recipes-block flex">
                   <li><a href="#">Gluten-free</a></li>
