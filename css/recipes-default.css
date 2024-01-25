@@ -10,10 +10,21 @@
 .recipe-img {height: 720px;}
 .recipe-img img {border-radius: 16px;}
 
+
+.recipe-social {justify-content: space-between; align-items: center;}
+.recipe-social .button {padding: 16px 20px 19px; margin: 8px 0 8px 16px; letter-spacing: -0.07px;}
+.recipe-social .button.buy-btn:after {content: "\f07a"}
+.recipe-social .button.print-btn:after {content: "\f02f"}
+.recipe-social .button.outline-btn {padding: 14px 18px 17px;}
+
 .recipe-lt {width: 67.1875%;}
-.recipe-lt .video-wrap {margin:0 0 30px 0;}
+.recipe-lt h2 {margin-bottom: 27px;}
+.recipe-lt hr {margin: 62px 0 64px 0;}
+.recipe-lt .video-wrap {margin:0 0 40px 0;}
 .recipe-lt .video-caption {max-width: 390px;}
-.recipe-lt h4 {color: var(--darkgreen);}
+.recipe-lt h4 {color: var(--darkgreen); margin-bottom: 16px; padding: 20px 0 0 0;}
+.recipe-lt ul {margin:17px 0 27px 30px;}
+
 
 .more-recipes-main {padding: 98px 0 58px;}
 
