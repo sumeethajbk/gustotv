@@ -50,6 +50,7 @@
 @media only screen and (max-width: 719px) and (min-width: 200px) {
     .recipe-category-heading h2{font-size: 1.5rem;}
     .recipe-category-row{flex-direction: column-reverse;}
+    .reverse .recipe-category-row{flex-direction: column-reverse;}
     .recipe-category-thumb figure{height: 233px;}
     .recipe-category-rt{margin-bottom: 24px;}
     .recipe-category-list{gap: 20px;}
