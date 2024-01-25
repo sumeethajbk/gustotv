@@ -18,7 +18,7 @@ ul.recipes-block  li:before{display: none;}
 ul.recipes-block li a{text-decoration: none; font-size: 1rem; line-height: 1.5rem; color: var(--foreground); opacity: 0.75}
 ul.recipes-block li a:hover{color: var(--green);}
 
-
+.recipes-form .form-field { width: 100%; }
 @media only screen and (min-width: 1200px){
     .links1-of-4{flex: 25%;}
     ul.recipes-block{gap: 0 16px;}
@@ -50,7 +50,9 @@ ul.recipes-block li a:hover{color: var(--green);}
     .recipes-img{width: 148px;}
     ul.recipes-block{justify-content: flex-start; display: block;}
     .links-list{padding: 0 20px;}
+    .links-list span{margin-bottom: 28px;}
     .links-list:last-child{padding-right: 0;}
+    ul.recipes-block li{margin: 12px 0 2px;}
  }
 @media only screen and (max-width: 719px) and (min-width: 200px) {
     .recipes-main{padding: 40px 0 40px;}
