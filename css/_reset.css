@@ -114,10 +114,10 @@ button:hover:after, .button:hover:after {animation-name: bounceAlpha; animation-
 
 
 /* Default Outline Button*/
-.outline-btn {background: transparent; border: 4px solid var(--text-blue); color: var(--text-blue);}
-.outline-btn:hover {background: var(--violet); border-color: var(--violet); color: var(--white);}
-
-
+.outline-btn {background: transparent; border: 2px solid var(--heading); color: var(--blacktext); padding:6px 10px 9px 10px; letter-spacing: normal;}
+.outline-btn:hover {background: var(--heading); border-color: var(--heading); color: var(--white);}
+.outline-btn:after {color: var(--optionaltxt);}
+.outline-btn:hover:after {color: var(--white);}
 
 input[type="submit"] {background-image: url("../images/search.svg") !important; background-repeat: no-repeat !important; position: absolute; right:19px; top:0; bottom: 0; padding: 0 !important; width: 17px; height: 17px; margin: auto; background-color: transparent !important; border: 0 none; border-radius: 0;}
 
