@@ -174,4 +174,21 @@
     .rate-recipe-form .frm_forms .frm_form_fields .frm-wrapper {display: block;}
     .rate-recipe-form .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {width: 100%; padding: 0; display: block;}
     .rate-recipe-form .frm_forms .frm_form_fields .frm-wrapper .frm_submit {width: 100%; text-align: center;  display: block; margin: 17px 0 0 0;}
+    
+    .recipe-top-main .recipe-top {display: flex; width: 100%; flex-wrap: wrap;}
+    .recipe-top-main .recipe-top .recipe-top-lt {width: 100%;}
+    .recipe-top-rt {float: none; order: 3; width: 100%; margin: 14px 0 0;}
+    .recipe-info {float: none; order: 2; width: 100%; margin: 14px 0 0;}   
+    .recipe-info ul li::after {display: none;}
+    .recipe-info ul li:nth-child(2n):after {content: ""; display: inline-block; position: absolute; right: -26px; top: inherit; height: 100%; background-image: radial-gradient(circle at 1px, var(--green) 1px, rgba(255,255,255,0) 1.25px); width: 2px; background-size: 2px 7.2px; background-color: transparent; border-radius: inherit; bottom: -4px; min-height: 30px; left: inherit;}
+    .recipe-info ul li:last-child:after {display: none;}
+    
+    .recipe-default-section {padding: 39px 0 76px 0;}
+    .recipe-default-section h1 {font-size: 2rem; line-height: 1.25; margin-bottom: 32px;}
+    .recipe-top-main .recipe-top .recipe-top-lt p {line-height: 1.44; font-size: 1.125rem;}
+
+    
+    .recipe-social .recipe-social-lt {width: 100%;}
+    .recipe-social .recipe-social-rt {width: 100%;}
+    .recipe-social .button {width:100%; margin-left: 0;}
 }
