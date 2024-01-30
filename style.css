@@ -390,7 +390,7 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .ad-post { display: flex; flex-wrap: wrap; align-items: center; flex-direction: column; }
 .ad-post-center { margin: auto; }
 .knife-update.ad{margin: 20px 0 20px;}
-.knife-update img{height: 100px;  object-fit: contain;}
+.knife-update img{ object-fit: contain;}
 
 .ad-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
 .ad-center {margin: 32px 0;}
@@ -432,7 +432,9 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
 
 @media only screen and (min-width:1200px) {
-.knife-update img { height: 100px; max-width: 300px;}
+.knife-update img { max-width: 300px;}
+.knife-update:first-child img { height: 100px; }
+.knife-update:last-child img { height: 100px; }
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 720px) {
