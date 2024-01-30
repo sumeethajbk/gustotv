@@ -35,12 +35,12 @@
   .hosts-template-wrap{margin: 80px 0 40px;}
   .hosts-template-banner-bg{min-height: 512px;}
   .hosts-template-banner-main{gap: 80px; padding: 0 64px;}
-  .host-tem-banner-lt{padding: 128px 0; flex: 0 0 34.8%;}
+  .host-tem-banner-lt{margin: auto 0;   flex: 0 0 34.8%;}
   .hosts-tem-banner-rt{flex: 0 0 calc(65.2% - 80px);  }
   .hosts-tem-main{gap: 120px;}
   .hosts-article{flex: 0 0 67.2%;}
   .hosts-aside{flex: 0 0 calc(32.8% - 120px);}
-
+  .hosts-tem-banner-wrap{padding-top: 65px;}
 }
 
 @media only screen and (min-width: 1024px){
@@ -58,7 +58,7 @@
     .hosts-template-banner-main{ padding: 0 48px;}
     .hosts-template-banner-bg{min-height: 384px};
     .hosts-tem-main{padding: 32px 0 32px;}
-    .host-tem-banner-lt{flex: 0 0 39.2%; padding: 56px 0;}
+    .host-tem-banner-lt{flex: 0 0 39.2%; margin: auto 0;}
     .host-tem-banner-lt h1{font-size: 2rem;}
     .host-tem-banner-lt p{font-size: 1.125rem;}
     .hosts-tem-banner-rt{flex: 0 0 calc(100% - 39.2%);  }

@@ -36,7 +36,11 @@
 .single-testimonial .container {padding: 0;}
 .accordion-module .container {padding: 0;}
 
-
+  .default-leaf-block{ gap: 32px; align-items: center; padding: 64px 0;}
+  .default-leaf-thumb { flex: 0 0 12.1%; }
+  .default-leaf-thumb img{height: 300px;}
+  .default-leaf-txt { flex: 0 0 calc(87.9% - 32px); padding-top: 35px;}
+  .default-leaf-txt p{font-size: 1.5rem; line-height: 1.67; color: var(--heading); margin-bottom: 20px;}
 /*-- media css starts here --*/
 
 @media only screen and (max-width: 1023px) and (min-width: 200px) {
