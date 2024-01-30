@@ -73,6 +73,8 @@ jQuery(document).ready(function () {
     jQuery('.overlay_main_sec').removeClass('active');
   });
 
+    
+    /* Header Search */
   if (jQuery(window).width() >= 1023) {
     jQuery('.search-btn').on('click', function () {
       jQuery(this).toggleClass('active');
@@ -160,15 +162,28 @@ jQuery(document).ready(function () {
     });
   });
 
-  /* Tabs */
-  jQuery("#tabs").tabs();
+    
+  
 
 
+    
+  /* Awards Toggle */
   jQuery(document).on('click', '.heading_mobile_menu', function (e) {
     e.preventDefault();
     jQuery(this).toggleClass('active');
     jQuery('ul.sidebar_panel').slideToggle();
   });
+    
+    
 
+  /* Star Rating */
+  jQuery(".star").click(function () {
+    var index = jQuery(this).index();
+    jQuery(".star").removeClass("selected");
+    jQuery(this).prevAll().addBack().addClass("selected");
+    console.log("Selected rating:", index + 1);
+  });
 
+    /* Tabs */
+  jQuery("#tabs").tabs();
 });
