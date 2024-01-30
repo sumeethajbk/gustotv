@@ -405,7 +405,8 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 /* Recipe Info */
 .recipe-info {clear: both; margin: 0 0 15px 0; justify-content: space-between; position: relative;}
 .recipe-info ul {margin: 0; font-size: 0;}
-.recipe-info ul li {display: inline-block; color: var(--darkgreen); font-size: 1.125rem; font-weight: bold; line-height: normal; text-decoration: none; position: relative; margin: 0 48px 11px 0; padding: 0 1px 0 1px; letter-spacing: -0.1px;}
+.recipe-info ul li {display: inline-block; color: var(--darkgreen); font-size: 1.125rem; font-weight: bold; line-height: normal; text-decoration: none; position: relative; margin: 0 48px 11px 0;  letter-spacing: -0.1px;}
+.recipe-info ul li span {padding: 0 1px 0 1px;}
 .recipe-info ul li:after {content: ""; display: inline-block; position: absolute; right: -26px; top: inherit; height: 100%; background-image: radial-gradient(circle at 1px, var(--green) 1px, rgba(255,255,255,0) 1.25px); width: 2px; background-size: 2px 7.2px; background-color: transparent; border-radius: inherit; bottom: -4px; min-height: 30px; left: inherit;}
 .recipe-info ul li:last-child:after {display: none;}
 
@@ -492,7 +493,7 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
     body .cky-notice-btn-wrapper .cky-btn-reject {order: inherit;}	
     body .cky-custom-brand-logo-wrapper, body .cky-notice .cky-title, body .cky-notice-des, body .cky-notice-btn-wrapper {padding: 0!important;}
 
-    .sharethis-inline-share-buttons .st-btn {width: 60px; height: 60px !important; line-height: 56px !important; margin: 0 0 0 12px !important;}
+    .sharethis-inline-share-buttons .st-btn {width: 40px; height: 40px !important; line-height: 40px !important; margin: 0 0 0 12px !important;}
 
     .frm_forms .frm_submit {width: 100%;}
     .frm_half {width:100%; margin-left: 0; margin-right: 0;} 
@@ -527,6 +528,8 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
     
     .fullimg {max-height: 500px;}
     .share-text {font-size: 0.94rem; margin-right: 12px;}
+    
+    .recipe-info ul li {margin: 0 47px 11px 0;}
     
 }
 
