@@ -403,13 +403,16 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .video{padding-left: 24px; font-size: 0.75rem; font-family: DM Sans , sans-serif; display: block; color: var(--heading); font-weight: bold; margin-bottom: 12px; position: relative;}
 
 /* Recipe Info */
-.recipe-info {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
+.recipe-info {clear: both; margin: 0 0 15px 0; justify-content: space-between; position: relative;}
 .recipe-info ul {margin: 0; font-size: 0;}
-.recipe-info ul li {display: inline-block; color: var(--darkgreen); font-size: 1.125rem; font-weight: bold; line-height: normal; text-decoration: none; position: relative; margin: 0 48px 10px 0; padding: 0 1px 0 1px; letter-spacing: -0.1px;}
+.recipe-info ul li {display: inline-block; color: var(--darkgreen); font-size: 1.125rem; font-weight: bold; line-height: normal; text-decoration: none; position: relative; margin: 0 48px 11px 0; padding: 0 1px 0 1px; letter-spacing: -0.1px;}
 .recipe-info ul li:after {content: ""; display: inline-block; position: absolute; right: -26px; top: inherit; height: 100%; background-image: radial-gradient(circle at 1px, var(--green) 1px, rgba(255,255,255,0) 1.25px); width: 2px; background-size: 2px 7.2px; background-color: transparent; border-radius: inherit; bottom: -4px; min-height: 30px; left: inherit;}
 .recipe-info ul li:last-child:after {display: none;}
-.recipe-info ul li:before{ content: ""; display: block; background:#DEE67F; width: 100%; height: 2px; bottom:2px; left: 0; position: absolute; transition: all 0.3s ease-in-out; z-index: -1; top: inherit; border-radius: inherit;}
-.recipe-info ul li:hover:before {height: 6px; background: var(--limegreen);}
+
+.recipe-info ul li:before {display: none;}
+.recipe-info ul li a, .recipe-info ul li span {position: relative;}
+.recipe-info ul li a:before, .recipe-info ul li span:before{ content: ""; display: block; background:#DEE67F; width: 100%; height: 2px; bottom:2px; left: 0; position: absolute; transition: all 0.3s ease-in-out; z-index: -1; top: inherit; border-radius: inherit;}
+.recipe-info ul li a:hover:before, .recipe-info ul li span:hover:before {height: 6px; background: var(--limegreen);}
 
 
 
@@ -443,6 +446,12 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
     .heading-lt {width: 50%;}
     .heading-rt {width: calc(100% - 50%);}
+    
+    .recipe-info ul li a::before, .recipe-info ul li span::before {bottom: 1px; height: 1px;}
+    .recipe-info ul li {margin: 0; padding:13px 8px 10.5px; display: block;}    
+    .recipe-info ul li::after {content: ""; display: block; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px);  background-position: 0 0; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%; position: absolute; top: 0; left: 0; right: inherit; bottom: inherit;  min-height: inherit;}
+    .recipe-info ul li:last-child:after {display: block;}
+    .recipe-info:after {content: ""; display: block; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px);  background-position: 0 0; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%; position: absolute; top: inherit; left: 0; right: inherit; bottom: 0;  min-height: inherit;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
