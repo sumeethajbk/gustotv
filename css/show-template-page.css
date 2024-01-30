@@ -68,12 +68,10 @@ ul.follow-icons li:last-child{margin-right: 0;}
 
 @media only screen and (max-width: 1023px) and (min-width: 720px) {
     .show-template-section hr{margin: 40px 0;}
-    .show-host-list{display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; margin-bottom: 32px;}
-    .host-bg-wrap { width: 122px; height: 122px; display: flex; align-items: center; justify-content: center; }
-    .show-aside-img{flex: 0 0 120px; margin-bottom: 0;}
-    .host-content{flex: 0 0 calc(100% - 142px);}
-    .show-host-thumb{ overflow: hidden; border-bottom: 0; width: 112px; height: 112px; position: relative; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 5px;}
-    .show-host-bg{display: none;}
+    .show-host-list{display: flex; flex-wrap: wrap;  align-items: center; gap: 50px; margin-bottom: 32px;}
+    .show-aside-img{flex: 0 0 50%; margin-bottom: 0;}
+    .host-content{flex: 0 0 calc(50% - 50px);}
+    
     .host-text{line-height: 0.8;}
     .host-name{margin-bottom: 6px;}
     .host-icons.share-icons{display: none;}
