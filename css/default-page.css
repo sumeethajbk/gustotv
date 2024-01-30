@@ -71,7 +71,9 @@
     .general-default-article-section ol, .general-default-article-section ul {margin-bottom: 48px;}
     .accordion-module {padding: 12px 0 36px 0;}
     
-    
-    
+    .default-leaf-block{display: block; padding: 40px 0;}
+    .default-leaf-thumb{transform: rotate(90deg) translateY(-100%); transform-origin: top left; margin: 0 0 -176px 0; max-width: 104px;}
+    .default-leaf-txt{padding-top: 10px;}
+    .default-leaf-txt p { font-size: 1.25rem; line-height: 1.8;}
     
 }
