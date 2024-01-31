@@ -49,7 +49,7 @@ ul.main_menu li.flex-menu > li > ul > li ul li a {font-size: 15px; line-height: 
     
     
     ul.main_menu > li {margin-left: 32px; display: inline-block; margin-bottom: 0;}
-    ul.main_menu > li:first-child {margin-left: 0;}
+    ul.main_menu > li:first-child {margin-left: 0; position: static;}
     ul.main_menu > li > a {padding:14px 0 30px; font-size: 1rem; font-weight: bold; line-height: normal; display: inline-block; position: relative; color: var(--heading); }
     ul.main_menu > li >a::after {content: ''; position: absolute; display: block; margin: auto; height: 2px; width: 0; bottom: 26px; transition: width .5s ease, background-color .5s ease; left: 50%; transform: translate(-50%, 0);}
     ul.main_menu > li >a:hover:after, ul.main_menu > li.current-menu-item > a:after, 
