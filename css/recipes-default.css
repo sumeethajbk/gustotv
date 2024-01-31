@@ -175,10 +175,11 @@
     .rate-recipe-form .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {width: 100%; padding: 0; display: block;}
     .rate-recipe-form .frm_forms .frm_form_fields .frm-wrapper .frm_submit {width: 100%; text-align: center;  display: block; margin: 17px 0 0 0;}
     
-    .recipe-top-main .recipe-top {display: flex; width: 100%; flex-wrap: wrap;}
+    .recipe-top-main {padding: 0 0 59px 0;}
+    .recipe-top-main .recipe-top {display: flex; width: 100%; flex-wrap: wrap; margin: 0 0 64px 0;}
     .recipe-top-main .recipe-top .recipe-top-lt {width: 100%;}
-    .recipe-top-rt {float: none; order: 3; width: 100%; margin: 14px 0 0;}
-    .recipe-info {float: none; order: 2; width: 100%; margin: 14px 0 0;}   
+    .recipe-top-rt {float: none; order: 3; width: 100%; margin:25px 0 0;}
+    .recipe-info {float: none; order: 2; width: 100%; margin: 7px 0 0;}   
     .recipe-info ul li::after {display: none;}
     .recipe-info ul li:nth-child(2n):after {content: ""; display: inline-block; position: absolute; right: -26px; top: inherit; height: 100%; background-image: radial-gradient(circle at 1px, var(--green) 1px, rgba(255,255,255,0) 1.25px); width: 2px; background-size: 2px 7.2px; background-color: transparent; border-radius: inherit; bottom: -4px; min-height: 30px; left: inherit;}
     .recipe-info ul li:last-child:after {display: none;}
@@ -188,7 +189,29 @@
     .recipe-top-main .recipe-top .recipe-top-lt p {line-height: 1.44; font-size: 1.125rem;}
 
     
-    .recipe-social .recipe-social-lt {width: 100%;}
+    .recipe-social .recipe-social-lt {width: 100%; margin: 8px 0 23px 0;}
     .recipe-social .recipe-social-rt {width: 100%;}
     .recipe-social .button {width:100%; margin-left: 0;}
+    
+    
+    .rating-cell {padding: 13px 8px 7.5px;}
+    .rating-cell .rating {margin-left: 5px;}
+    .ratingTable {padding: 0 0 2px;}
+    .rating-star svg {margin: -6px 0 0 2.8px;}
+    .difficulty svg {margin: -6px 0 0 3.4px;}
+    .people svg {margin: 0 0 0 -0.6px;}
+    
+    .recipe-img {height: 197px;}
+    .video-wrap .video-thumbnail > img {height: 197px;}
+    
+    .recipe-social .recipe-social-lt .share-icons {justify-content: center;}
+    .sharethis-inline-share-buttons .st-btn {margin: 0 0 0 9px !important;}
+    .share-text {margin-right: 15px;}
+    
+    .recipe-lt h2 {font-size: 2.5rem; line-height: 1.2;}
+    .recipe-vid-wrap {margin: 0 0 40px 0;}
+    .recipe-lt ul {margin: 16px 0 28px 30px;}
+    .recipe-lt hr {margin: 38px 0 40px 0;}
+    .recipe-lt .video-caption {max-width: 100%;}
+    .recipe-lt .final-thumb {height: 197px;}
 }
