@@ -72,7 +72,7 @@
    .text-column{width: 100%;}
   .text-column .h2{font-size: 1.5rem;}
   .text-column span{margin-bottom: 10px;}
-   .newsletter-img img { min-width: 390px; position: relative; left: -48px; }
+   .newsletter-img img { min-width: 390px; position: relative; left: 50%; transform: translateX(-50%);}
 
    .image-column picture {display: block; max-width: 354px; margin: 0 auto;}
   .image-column { max-width: 100%; width: 100%; margin:34px 0 32px;}
