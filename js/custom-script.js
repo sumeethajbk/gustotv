@@ -19,6 +19,8 @@ jQuery(document).ready(function () {
       jQuery(this).toggleClass("active");
       jQuery(".mobile_menu").toggleClass("navOpen");
       jQuery(".main_header").toggleClass("menu-open");
+      jQuery("html").toggleClass("no-scroll");
+
     });
 
     jQuery("ul.main_menu > li.menu-item-has-children > a").on("click", function (event) {

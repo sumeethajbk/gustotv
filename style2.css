@@ -158,6 +158,7 @@ body .mfp-close:after {display: none;}
 /* Show Author */
 .show-author { align-items: center; color: var(--body-text); }
 .show-author-thumb{width: 32px; height: 32px; border-radius: 50%; margin-right: 9px;}
+.show-author-thumb img{border-radius: 50%;}
 .show-author-info{ width: calc(100% - 41px);font-size: 0.75rem; color: var(--blacktext); gap: 4px; line-height: 1.67;}
 .show-author-pos{font-weight: bold;}
 
@@ -166,10 +167,10 @@ body .mfp-close:after {display: none;}
 /* Cat Wrap */
 .cat-wrap {clear: both; margin: 0 0 15px 0; justify-content: space-between;}
 .cat-wrap ul {margin: 0; font-size: 0;}
-.cat-wrap ul li {margin: 0; margin-right: 10px; display: inline-block;}
+.cat-wrap ul li {margin: 0; margin: 0 8px 10px 0; display: inline-block;}
 .cat-wrap ul li:before {display: none;}
-.cat-wrap ul li a {display: inline-block; color: var(--darkgreen); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative; z-index: 1;}
-.cat-wrap ul li a:after{ content: ""; display: block; background: var(--green); width: 100%; height: 1px; bottom: 0; left: 0; position: absolute; transition: all 0.3s ease-in-out; z-index: -1;}
+.cat-wrap ul li a {display: inline-block; color: var(--darkgreen); font-size: 0.75rem; font-weight: bold; line-height: 1; text-decoration: none; position: relative;  padding: 0 2px 0 1px;}
+.cat-wrap ul li a:after{ content: ""; display: block; background: var(--green); width: 100%; height: 1px; bottom: -1px; left: 0; position: absolute; transition: all 0.3s ease-in-out; z-index: -1;}
 .cat-wrap ul li a:hover:after {height: 6px; background: var(--limegreen);}
 
 /* Breadcrumb */
@@ -205,8 +206,8 @@ ul.slick-dots li.slick-active button {opacity:1;}
 
 #blog_list{margin: 0;}
 .btn-center{position: relative; z-index: 1; width: 100%; text-align: center;}
-.btn-center:before{position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%);  background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1;}
-.btn-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
+.btn-center:before{position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%);  background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: center center; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; z-index: -1;}
+.btn-center .more-hosts{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
 .btn-center .button::after{display: none;}
 .btn-center .button{padding: 14px 20px 15px 20px;}
 
@@ -235,7 +236,7 @@ body ul.selectBox-dropdown-menu li.selectBox-selected a, body ul.selectBox-dropd
 .frm_forms .frm_form_fields .frm_form_field{margin-bottom:24px; position: relative; clear: both;}
 .frm_forms .frm_form_fields .frm_form_field.frm_full {clear:both; width: 100%;}
 
-.frm_forms .frm_form_fields .frm_form_field label { font-size: 1rem; line-height: 1.25; padding: 0;}
+.frm_forms .frm_form_fields .frm_form_field label { font-size: 1rem; line-height: 1.25; padding: 0; text-indent: inherit; font-weight: normal; color: var(--body-text);}
 .frm_forms .frm_form_fields .frm_form_field label a {text-decoration: underline;}
 .frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding-left:29px; display:block; cursor: pointer;}
 
@@ -252,7 +253,7 @@ body .frm_forms .frm_form_fields input.input-has-value.highlight, body .frm_form
 
 
 .frm_forms .frm_submit{margin:0;}
-body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin:0; padding: 9px 34px 10px 12px; vertical-align: middle; cursor: pointer; border: 0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family: "DM Sans", sans-serif; text-decoration: none; display: inline-block; font-size: 1rem; font-weight: bold; line-height: normal;}
+body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {margin:0; padding: 9px 12px 10px 12px; vertical-align: middle; cursor: pointer; border: 0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family: "DM Sans", sans-serif; text-decoration: none; display: inline-block; font-size: 1rem; font-weight: bold; line-height: normal;}
 body .frm_forms .frm_submit .button:hover, body .frm_forms .frm_submit button:hover, body .frm_forms .frm_submit button:focus {background-color: var(--green)!important; color: var(--blacktext)!important;}
 body .frm_forms .frm_submit .button:after, body .frm_forms .frm_submit button:after {right: 12px;}
 body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit button:hover:after, body .frm_forms .frm_submit button:focus:after  {color: var(--blacktext);}
@@ -262,16 +263,32 @@ body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit but
 .frm_forms .frm_error_style {display: none;}
 .frm_forms .frm_message, .frm_forms .frm_success_style {margin: 0 0 20px 0; padding: 0; background: top; border: 0 none; font-weight: bold; font-size: 1rem; line-height: 1.5;}
 .frm_forms .frm_message p {color: var(--optionaltxt);}
+.frm_forms .frm_dropzone {margin: 0; line-height: normal; min-height: inherit;}
+.frm_forms .dz-message {margin: 0!important; background-color: var(--input); color: var(--blacktext); border-radius: 0; border: 0 none; border-bottom: solid 1px var(--blacktext); padding:15px 40px 15px 16px; text-align: left; font-family: "DM Sans", sans-serif; font-weight: bold; font-size: 1rem;}
+.frm_forms .dz-message button:after {display: none;}
+.frm_forms .dz-message svg {display: none;}
+.frm_forms .dz-message:after {content:"\f093"; font-family: "Font Awesome 6 Pro"!important; font-weight: 900; margin:0 auto; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; vertical-align: middle; display: flex; font-size: 1rem; color: var(--heading); position: absolute; right: 18px; top: 0; line-height: 14px; align-items: center; bottom: 0;}
+.frm_dropzone .frm_small_text {display: none;}
+.frm_upload_text button {text-align: left;}
 
+.recipes-heading-right .form-field input::placeholder{ font-family: DMSerifDisplay; text-transform: none; line-height: 1.25;}
 
 .frm-wrapper {width: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;}
+.frm-wrapper .frm_submit {width: calc(100% - 55%);}
+.frm-wrapper .frm_submit button {margin-left: auto!important;}
 .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; width: 55%;}
+
 .frm_half {width:calc(50% - 12px); float: left; clear: none!important;}
 .frm_first {margin-right:24px;}
 .frm_last {float: right; margin-left: auto;}
 .frm_full {margin-right: 0;}
+
 .frm_radio {margin: 0 0 9px 0;}
 .frm_radio label {padding: 0px 0 0 34px; cursor: pointer;}
+
+.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"] {position: absolute; left: 0; width: 21px; height: 21px; cursor: pointer;  outline: none;  -moz-border-radius: 4px; -webkit-border-radius: 4px;  border-radius: 3px; padding: 0 !important; background: var(--optionaltxt)!important; border: 0 none !important;}
+.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked:before {content: "\f00c"; font-family: "Font Awesome 6 Pro"; display: block; height: 21px; left: 0px; position: absolute; top: 2px; width: 21px; font-weight: 900; color: var(--white); font-size: 13px; transform: none; clip-path: inherit; box-shadow: none; text-align: center; margin: 0;}
+.frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:before {display: none;}
 
 .default_form {padding:32px; border-radius: 24px; border: solid 8px var(--input); clear: both; width:100%; margin: 64px 0 17px;}
 .form-intro {clear: both; width: 100%; margin: 0 0 40px 0;}
@@ -286,9 +303,9 @@ body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit but
 
 /* Heading */
 .heading {clear: both; padding: 0 0 41px; width: 100%; justify-content: space-between; align-items: center;}
-.heading-lt {width: 50%;}
+
 .heading-lt h3 {margin: 0;}
-.heading-rt {width: calc(100% - 50%); margin-left: auto; display: flex; justify-content: flex-end;}
+.heading-rt{  display: flex; justify-content: flex-end;}
 .heading-rt form {justify-content: flex-end; width: 100%;}
 .heading-rt .form-field {margin:0 0 0 22px; width:29.71%; position: relative;}
 .heading-rt .form-field:first-child {margin-left: 0}
@@ -313,6 +330,7 @@ position: relative; z-index: 1; text-decoration: none; border-radius: 50%!import
 .sharethis-inline-share-buttons .st-btn[data-network=linkedin]:after {content: "\f0e1";}
 .sharethis-inline-share-buttons .st-btn[data-network=mailru]:after {content: "\40"; font-family: "Font Awesome 6 Pro";}
 .sharethis-inline-share-buttons .st-btn[data-network=sharethis]:after {content: "\f0c1"; font-family: "Font Awesome 6 Pro";}
+.share-text{font-size: 1rem; color: var(--darkgreen); font-weight: bold; margin-right: 15px;}
 
 .sharethis-inline-share-buttons .st-btn:hover {color: var(--limegreen); background: var(--heading)!important; opacity: 1 !important; top: 0!important;}
 .sharethis-inline-share-buttons .st-btn span, .sharethis-inline-share-buttons .st-btn img {display: none!important;}
@@ -351,9 +369,9 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
 
 .readmore {position: relative; display: inline-block; font-size:1rem; padding-right: 23px; font-weight: bold; text-decoration: none;}
-.readmore:after {right: 0px; content:"\f061"; font-size:1rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; top: 0; bottom: 0; color: var(--optionaltxt);}
+.readmore:after {right: 0px; content:"\f061"; font-size:1rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: absolute; display: flex; align-items: center; flex-wrap: wrap; top: 1px; bottom: 0; color: var(--optionaltxt);}
 .readmore:hover:after {animation-name: bounceAlpha; animation-duration: 1.4s; animation-iteration-count: infinite; animation-timing-function: linear;}
-
+.readmore:hover {color: var(--optionaltxt);}
 
 
 /* Dotted ROund Border */
@@ -361,37 +379,94 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 .dot-border svg{height: 100%; width: 100%;}
 .dot-border circle {stroke: var(--green); stroke-width: 2;}
 
-/* Calendar */
-.calender{position: relative; display: block;  padding-left:20px; font-size: 0.75rem; font-weight: bold;  line-height: 1.25rem; color: var(--heading); margin-bottom: 11px;}
-.calender::before{position: absolute; content: "\f133"; font-size: 0.875rem; font-weight: normal; font-family: 'Font Awesome 6 Pro'; display: block; left: 0; top: 0; width: 13px; height: 14px;}
 
+/* Calendar */
+.calender{position: relative; display: block;  padding-left:20px; font-size: 0.75rem; font-weight: bold;  line-height: 1; color: var(--heading); margin-bottom: 15px;}
+.calender::before{position: absolute; content: "\f133"; font-size: 0.875rem; font-weight: normal; font-family: 'Font Awesome 6 Pro'; display: block; left: 0; top: -2px; width: 13px; height: 14px;}
+
+.fullimg {clear: both; width: 100%;}
+
+
+.ad-post { display: flex; flex-wrap: wrap; align-items: center; flex-direction: column; }
+.ad-post-center { margin: auto; }
+.knife-update.ad{margin: 20px 0 20px;}
+.knife-update img{ object-fit: contain;}
+
+.ad-center span{padding: 0 8px; background-color: #fff; position: relative; z-index: 1; display: inline-block;}
+.ad-center {margin: 32px 0;}
+.ad-center span img{width: 728px;}
+.ad-center{position: relative; z-index: 1; text-align: center; width: 100%;}
+.ad-center::before { position: absolute; display: block; content: ""; width: 100%; left: 0; right: auto; top: 50%; transform: translateY(-50%); background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px); background-position: 0 0; background-size: 11px 2px; background-repeat: repeat-x; height: 2px; z-index: -1; }
+
+
+.video:before{content: "\f03d"; position: absolute; top: -3px; left: 0; width: 16px; height: 14px; font-family:  "Font Awesome 6 Pro"; font-size: 0.875rem; font-weight: normal;}
+.video{padding-left: 24px; font-size: 0.75rem; font-family: DM Sans , sans-serif; display: block; color: var(--heading); font-weight: bold; margin-bottom: 12px; position: relative;}
+
+/* Recipe Info */
+.recipe-info {clear: both; margin: 0 0 15px 0; justify-content: space-between; position: relative;}
+.recipe-info ul {margin: 0; font-size: 0;}
+.recipe-info ul li {display: inline-block; color: var(--darkgreen); font-size: 1.125rem; font-weight: bold; line-height: normal; text-decoration: none; position: relative; margin: 0 48px 11px 0;  letter-spacing: -0.1px;}
+.recipe-info ul li span {padding: 0 1px 0 1px;}
+.recipe-info ul li:after {content: ""; display: inline-block; position: absolute; right: -26px; top: inherit; height: 100%; background-image: radial-gradient(circle at 1px, var(--green) 1px, rgba(255,255,255,0) 1.25px); width: 2px; background-size: 2px 7.2px; background-color: transparent; border-radius: inherit; bottom: -4px; min-height: 30px; left: inherit;}
+.recipe-info ul li:last-child:after {display: none;}
+
+.recipe-info ul li:before {display: none;}
+.recipe-info ul li a, .recipe-info ul li span {position: relative;}
+.recipe-info ul li a:before, .recipe-info ul li span:before{ content: ""; display: block; background:#DEE67F; width: 100%; height: 2px; bottom:2px; left: 0; position: absolute; transition: all 0.3s ease-in-out; z-index: -1; top: inherit; border-radius: inherit;}
+.recipe-info ul li a:hover:before, .recipe-info ul li span:hover:before {height: 6px; background: var(--limegreen);}
 
 
 
 /*-- media css starts here --*/
-
 @media only screen and (min-width:1024px) {
     .hide-in-desktop {display:none;}
-
+    .heading-lt {width: 50%;}
+    .heading-rt {width: calc(100% - 50%);}
 }
 @media only screen and (max-width:1400px) {
     .container {padding:0 40px; max-width:100%;}
 }
 
+@media only screen and (max-width:1240px)and (min-width:1024px) {
+    #mainContent {padding: 72px 0 0 0;}
+}
 
 
+@media only screen and (min-width:1200px) {
+.knife-update img { max-width: 300px;}
+.knife-update:first-child img { height: 100px; }
+.knife-update:last-child img { height: 100px; }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 720px) {
+    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {width: 53%;}
+    .frm-wrapper .frm_submit {width: calc(100% - 53%);}
+}
 
 @media only screen and (max-width:1023px) and (min-width:720px) {
     .hide-in-tab, .hide-in-tablet {display:none;}
     #mainContent {padding: 64px 0 0 0;}
 
+    .heading-lt {width: 50%;}
+    .heading-rt {width: calc(100% - 50%);}
+    
+    .recipe-info ul li a::before, .recipe-info ul li span::before {bottom: 1px; height: 1px;}
+    .recipe-info ul li {margin: 0; padding:13px 8px 10.5px; display: block;}    
+    .recipe-info ul li::after {content: ""; display: block; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px);  background-position: 0 0; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%; position: absolute; top: 0; left: 0; right: inherit; bottom: inherit;  min-height: inherit;}
+    .recipe-info ul li:last-child:after {display: block;}
+    .recipe-info:after {content: ""; display: block; background-image: radial-gradient(circle at 1px, var(--green) 1.25px, rgba(255,255,255,0) 1px);  background-position: 0 0; background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%; position: absolute; top: inherit; left: 0; right: inherit; bottom: 0;  min-height: inherit;}
 }
 
 @media only screen and (max-width:1023px) and (min-width:200px) {
+    .h1 {font-size: 2.5rem; line-height: 1.2; margin-bottom:24px;}
+    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {width: 100%; }
+    .frm-wrapper .frm_submit {width: 100%; margin:24px 0 0 0;}
+    .frm-wrapper .frm_submit button {margin-left: 0!important;}
 
 }
 
 @media only screen and (max-width:719px) and (min-width:200px) {
+
     blockquote {padding: 136px 0 0 0; margin: 43px 0 37px;}
     blockquote:before {transform: rotate(90deg) translateY(-100%); transform-origin: top left;}
     blockquote p {font-size: 1.25rem; line-height: 1.8;}
@@ -402,6 +477,8 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
 
     .hide-in-mobile {display:none;}
     
+    .heading-rt.sch-form{width: 100%; margin-top: 24px;}
+
     .video-wrap {margin: 40px 0 41px 0;}
     .video-wrap .video-thumbnail > img {min-height: 197px; border-radius: 8px;}
     .video-caption {position: static; background: var(--input); border-radius: 8px; color: var(--foreground); font-weight: bold; margin: 8px 0 0 0; line-height: 1.5; padding: 7px 12px 9px 38px; max-width: 100%; width: 100%;}
@@ -416,20 +493,17 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
     body .cky-notice-btn-wrapper .cky-btn-reject {order: inherit;}	
     body .cky-custom-brand-logo-wrapper, body .cky-notice .cky-title, body .cky-notice-des, body .cky-notice-btn-wrapper {padding: 0!important;}
 
-    .sharethis-inline-share-buttons .st-btn {width: 60px; height: 60px !important; line-height: 56px !important; margin: 0 0 0 12px !important;}
+    .sharethis-inline-share-buttons .st-btn {width: 40px; height: 40px !important; line-height: 40px !important; margin: 0 0 0 12px !important;}
 
     .frm_forms .frm_submit {width: 100%;}
-     body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {display: flex; justify-content: center; padding:9px 12px 10px 12px; width: 100%;}
-     body .frm_forms .frm_submit .button::after,  body .frm_forms .frm_submit button::after {position: inherit;}
-     body .frm_forms .frm_submit button span {padding: 0 21px 0 11px;}
     .frm_half {width:100%; margin-left: 0; margin-right: 0;} 
     
+    body .frm_forms .frm_submit .button, body .frm_forms .frm_submit button {width: 100%;}
     .frm_forms .frm_form_fields .frm_form_field.vertical_radio, .default_form .frm_forms .frm_form_fields .frm_form_field.vertical_radio {width: 100%; margin: 0 0 23px 0;}
     .frm_forms .frm_form_fields .frm_form_field.vertical_radio label {padding: 0 50px 0 0; line-height: 1.25;}
-    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker {left: inherit; right: 0; width: 35px; height: 35px; margin: 0 0 0 7px; top: 0;}
-    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span {width: 35px; height: 35px; border-radius: 5px;}
-    .frm_forms .frm_form_fields .frm_form_field.vertical_radio div.checker span.checked::before {height: 35px; width: 35px; font-size: 21px; line-height: 33px; top: 0;}
-    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; width: 100%;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"] {left: inherit; right: 0; width: 35px; height: 35px; border-radius: 5px; margin: 0;}
+    .frm_forms.with_frm_style .frm_checkbox input[type="checkbox"]:checked::before {height: 35px; width: 35px; font-size: 21px; line-height: 33px; top: 0;}
+    .frm_forms .frm_form_fields .frm-wrapper .frm_form_field {margin: 0; width: 100%; min-height: 35px;}
     
     .default_form {padding: 24px; margin: 48px 0 20px;}
     .form-intro p {font-size: 1.125rem; line-height: 1.44;}
@@ -444,7 +518,18 @@ body .cky-prefrence-btn-wrapper .cky-btn.cky-btn-reject:after {display: flex;}
     .overlay-main .overlay-wrap {border-radius: 0; padding: 24px;}
     .overlay-main .pop_close {top: 20px; right: 24px;}
     
-    .heading-lt, .heading-rt {width: 100%;}
+    .heading-lt { flex: 1;}
+    .heading-rt {justify-content: flex-start;}
+
+    .ad-post {margin: auto; margin-bottom: 40px;}
+    .knife-update{width: 266px; margin: auto;}
+    .ad-center{margin: 0 0 32px;}
+    .knife-update.ad{margin: 20px auto 20px; width: 300px;}
+    
+    .fullimg {max-height: 500px;}
+    .share-text {font-size: 0.94rem; margin-right: 12px;}
+    
+    .recipe-info ul li {margin: 0 47px 11px 0;}
     
 }
 
