@@ -3,8 +3,7 @@
 
 
 .logos-section{margin-top: 0;}
-.page-template-wheretowatch .selectBox-dropdown .selectBox-arrow::after { content: "\f0d7"; font-size: 16px;}
-.page-template-wheretowatch .selectBox-dropdown .selectBox-arrow{right: 27px;}
+
 
  @media only screen and (max-width: 719px) and (min-width: 200px) {
     .page-template-wheretowatch .logos-section { padding-bottom: 40px; }
