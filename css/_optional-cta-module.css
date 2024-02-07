@@ -14,6 +14,10 @@
     .optional-main{padding: 128px 0;}
     .optional-main h2{font-size: 2rem; line-height: 1.25; margin-bottom: 22px;}
     .optional-cta-txt{ max-width: 420px; }
+}
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+    
+    .optional-cta-txt{  padding: 32px;}
 
  }
 @media only screen and (max-width: 1023px) and (min-width: 720px) {

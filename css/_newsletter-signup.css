@@ -79,7 +79,7 @@
   .newsletter-main .frm_forms .frm_form_fields .frm_form_field{float: none; width: 100%;}
   .newsletter-main .frm_wrapper{display: block; text-align: center;}
   .newsletter-main .frm_form_field.form-note{margin-bottom: 16px;}
-
+  .newsletter-main .frm_wrapper .frm_submit .frm_button_submit{width: 121px; margin:16px  auto 0;}
 }
 @media only screen and (max-width: 385px) and (min-width: 200px) {
    .newsletter-img img { min-width: 370px;}

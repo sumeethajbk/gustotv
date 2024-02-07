@@ -7,8 +7,8 @@
 ul.logos-row{margin: 0; gap: 48px;}
 ul.logos-row > li::before {display: none;}
  
-.page-template-wheretowatch ,.page-template-home .selectBox-dropdown .selectBox-arrow::after { content: "\f0d7"; font-size: 16px; }
-.page-template-wheretowatch ,.page-template-home  .selectBox-dropdown .selectBox-arrow{right: 27px;}
+.page-template-wheretowatch .selectBox-dropdown .selectBox-arrow::after, .page-template-home .selectBox-dropdown .selectBox-arrow::after { content: "\f0d7"; font-size: 16px; }
+.page-template-wheretowatch .selectBox-dropdown .selectBox-arrow::after, .page-template-home  .selectBox-dropdown .selectBox-arrow{right: 27px;}
 
 
 

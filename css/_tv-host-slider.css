@@ -1,12 +1,14 @@
 .tv-host-slider hr{margin: 0;}
 .tv-host-heading{ margin-bottom: 48px;align-items: center; }
-.tv-host-list{margin: 0 28px; text-align: center;}
+.tv-host-list{margin: 0 28px; text-align: center; width: 122px;}
 .tv-host-list span{display: block;}
 
-.host-bg-wrap {width: 122px; height: 122px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; }
+.host-bg-wrap {width: 122px; height: 122px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; }
 .host-bg{position: relative;background-color: red; border-radius: 50%;  width: 112px; height: 112px; display: flex; align-items: center; overflow: hidden; justify-content: center; margin: 5px;}
 .tv-host-img img{ border-radius: 50%;}
-.host-text .title{font-size: 1rem; color: var(--body-text); line-height: 1.25rem; font-weight: bold; margin-bottom: 3px;}
+.host-text .title{font-size: 1rem;  line-height: 1.25rem; font-weight: bold; margin-bottom: 4px;}
+.host-text .title a{color: var(--body-text);}
+.host-text .title a:hover{color: var(--green);}
 .host-text .position{font-size: 0.75rem; color: var(--foreground); line-height: 0.75rem; font-weight: bold; opacity: 0.5;}
 .tv-host-row::before{ background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); position: absolute; content: ""; display: block; top: 0; left: 0; z-index: 1; width: 80px; height: 170px;}
 .tv-host-row::after{ background: linear-gradient(-90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); position: absolute; content: ""; display: block; top: 0; right: 0; z-index: 1; width: 80px; height: 170px;}
