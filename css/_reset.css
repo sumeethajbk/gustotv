@@ -18,7 +18,7 @@ address {margin-bottom: 9px;}
 abbr[title] {border-bottom: 1px dotted #2b2b2b; cursor: help;}
 b, strong {font-weight: bold;}
 cite, dfn, em, i {font-style: italic;}
-mark, ins {background: #fff9c0; text-decoration: none;}
+mark, ins {background: transparent; text-decoration: none; color: inherit;}
 p {margin-bottom: 28px;}
 p:last-child {margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 15px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
@@ -42,7 +42,7 @@ ul > li:before {content: ""; width: 5px; height: 5px; display: block; position: 
 li > ul {margin: 25px 0 26px 40px;}
 ol {counter-reset: section; list-style: none; margin:28px 0 28px 30px;}
 ol > li {counter-increment: li; position: relative; margin-bottom: 12px;}
-ol > li:before {counter-increment: section; content: counter(section, decimal) "."; left: -24px; top: 2px; position: absolute; line-height: normal; font-family:"DM Sans", sans-serif; font-size: 1.25rem; min-width: 18px; text-align: right;}
+ol > li:before {counter-increment: section; content: counter(section, decimal) "."; left: -24px; top: 0; position: absolute; line-height: normal; font-family:"DM Sans", sans-serif; font-size: 1.25rem; min-width: 18px; text-align: right;}
 li > ol {margin: 25px 0 26px 40px;}
 img {-ms-interpolation-mode: bicubic; border: 0; vertical-align: middle; max-width: 100%; height: auto;}
 figure {margin: 0;}
@@ -55,11 +55,12 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {-w
 button[disabled], input[disabled] {cursor: default;}
 input[type="checkbox"], input[type="radio"] {padding: 0;}
 
-input[type="search"] {border: none; border-bottom: 1px solid var(--blacktext); background: var(--input); text-transform: capitalize; font-size: 0.875rem; text-transform: none; font-weight: bold; padding:14px 40px 13px 16px; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
-input[type="search"]::placeholder{font-size: 0.875rem; text-transform: none; letter-spacing: -0.1px;}
-input[type="search"]:-moz-placeholder {font-size: 0.875rem; text-transform: none; letter-spacing: -0.1px;}
-input[type="search"]::-moz-placeholder {font-size: 0.875rem; text-transform: none; letter-spacing: -0.1px;}
-input[type="search"]:-ms-input-placeholder {font-size: 0.875rem; text-transform: none; letter-spacing: -0.1px;}
+input[type="search"] {border: none; border-bottom: 1px solid var(--blacktext); background: var(--input); text-transform: capitalize; font-size:1rem; text-transform: none; font-weight: bold; padding:14px 47px 13px 16px; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+input[type="search"]::placeholder{font-size: 0.875rem; text-transform: none; letter-spacing: -0.1px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+input[type="search"]:-moz-placeholder {font-size: 0.875rem; text-transform: none; letter-spacing: -0.1px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+input[type="search"]::-moz-placeholder {font-size: 0.875rem; text-transform: none; letter-spacing: -0.1px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+input[type="search"]:-ms-input-placeholder {font-size: 0.875rem; text-transform: none; letter-spacing: -0.1px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {display: none;}
 input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;}
 
@@ -87,7 +88,8 @@ background-size: 8px 2px; background-repeat: repeat-x; height: 2px; width: 100%;
 ::-moz-selection {background-color: #231f20; color: #fff;}
 
 
-input, select, textarea {outline: 0; width: 100%; font-size: 1rem; line-height: 24px; background: var(--input); box-shadow: none; padding: 15px 27px 17px 27px; vertical-align: middle; font-family:"DM Sans", sans-serif; font-weight: bold; height: auto; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; border: none; border-bottom: 1px solid var(--blacktext); border-radius: 0;}
+input, textarea {outline: 0; width: 100%; font-size: 1rem; line-height: 24px; background: var(--input); box-shadow: none; padding: 15px 27px 17px 27px; vertical-align: middle; font-family:"DM Sans", sans-serif; font-weight: bold; height: auto; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; border: none; border-bottom: 1px solid var(--blacktext); border-radius: 0;}
+select {padding: 12px 46px 13px 12px; outline: 0; width: 100%; font-size: 1rem; line-height: 24px; background: var(--input); box-shadow: none; vertical-align: middle; font-family:"DM Sans", sans-serif; font-weight: bold; height: auto; transition: all .5s ease-in-out; -webkit-transition: all .5s ease-in-out; -moz-transition: all .5s ease-in-out; border: none; border-bottom: 1px solid var(--blacktext); border-radius: 0; min-height: 52px;}
 textarea {width: 100%; resize: none; height: 118px;}
 input:focus, textarea:focus {outline: 0;}
 input[type="button"], input[type="reset"], input[type="submit"] {display: inline-block; font-size: 14px; line-height: normal; padding: 17px 35px 16px 36px; vertical-align: middle; cursor: pointer; border: none; border-radius: 0; background-color: var(--anchor); font-weight: 700; letter-spacing: normal; position: relative; transition: all .5s linear; -webkit-transition: all .5s linear; -moz-transition: all .5s linear; text-transform: uppercase; text-align: center; color: #FFF; font-family:"DM Sans", sans-serif;}
@@ -97,7 +99,7 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 .search-submit {display: none;} 
 
 
-button, .button  {display: inline-block; font-size:1rem; font-weight: bold; line-height: normal; padding:8px 12px 11px 12px; vertical-align: middle; cursor: pointer; border:0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family:"DM Sans", sans-serif; text-decoration: none; }
+button, .button  {display: inline-block; font-size:1rem; font-weight: bold; line-height: normal; padding:8px 12px 11px 12px; vertical-align: middle; cursor: pointer; border:0 none; border-radius: 4px; background-color: var(--heading); position: relative; transition: all .3s ease-in-out; -webkit-transition: all .3s ease-in-out; -moz-transition: all .5s ease-in-out; text-align: center; color: var(--white); font-family:"DM Sans", sans-serif; text-decoration: none; letter-spacing: -0.08px;}
 button:hover, button:focus, .button:hover, .button:focus {background-color: var(--green); color: var(--blacktext);}
 button::after, .button::after {content:"\f061"; font-size:1rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: static; display: inline-block; margin: -0.5px 0 0 8px;  vertical-align: middle; line-height: 12px; color: var(--green);}
 button:hover:after, .button:hover:after {animation-name: bounceAlpha; animation-duration:1.4s; animation-iteration-count:infinite; animation-timing-function:linear; color: var(--blacktext);}
@@ -133,12 +135,12 @@ p > embed, p > iframe, p > object, span > embed, span > iframe, span > object {m
 .alignleft {float: left;}
 .alignright {float: right;}
 .aligncenter {display: block; margin-left: auto; margin-right: auto; text-align: center;}
-blockquote.alignleft, figure.wp-caption.alignleft, img.alignleft {margin: 6px 49px 38px 0;}
+blockquote.alignleft, figure.wp-caption.alignleft, img.alignleft {margin: 44px 51px 30px 0;}
 .wp-caption.alignleft {margin: 5px 55px 37px 0;}
-blockquote.alignright, figure.wp-caption.alignright, img.alignright {margin: 6px 0 38px 49px;}
+blockquote.alignright, figure.wp-caption.alignright, img.alignright {margin: 44px 0 30px 51px;}
 .wp-caption.alignright {margin: 7px 0 37px 55px;}
-blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {margin-top: 42px; margin-bottom: 38px;}
-img.alignnone {margin:42px 0 38px; display: block; clear: both;}
+blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {margin-top: 44px; margin-bottom:40px;}
+img.alignnone {margin:44px 0 40px; display: block; clear: both;}
 .hide {display: none;}
 .bypostauthor > article .fn:before, .comment-edit-link:before, .comment-reply-link:before, .comment-reply-login:before, .comment-reply-title small a:before, .contributor-posts-link:before, .menu-toggle:before, .search-toggle:before, .slider-direction-nav a:before, .widget_twentyfourteen_ephemera .widget-title:before {-webkit-font-smoothing: antialiased; display: inline-block; font: normal 16px/1 Genericons; text-decoration: inherit; vertical-align: text-bottom;}
 .comment-form label {display: block;}

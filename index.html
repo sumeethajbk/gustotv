@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
 <meta name="keywords" content=""/>
-<title>Home : GustoTV</title>
+<title>Home : Lalande Personal Injury Law Development</title>
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -16,9 +16,13 @@
 <script src="https://kit.fontawesome.com/4a8777acf0.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
 <link rel="stylesheet" type="text/css" href="css/home-page.css" media="all"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
 </head>
-<body class="page-template-home">
-<div id="main"><header id="main_header" class="main_header">
+<body class="home">
+<div id="main">
+  <header id="main_header" class="main_header">
     <div class="container">
       <div class="header flex">
         <div class="logo"> <a href="index.html"><img src="images/logo.svg" alt="GustoTV Logo"></a></div>
@@ -122,9 +126,7 @@
                     </li>
                   </ul>
                   </li>
-                  <li class="hide-in-desktop menu-btn">
-                  <a href="#">Browse All Recipes</a>
-                  </li>
+                  <li class="hide-in-desktop menu-btn"> <a href="#">Browse All Recipes</a> </li>
                 </ul>
                 </li>
                 <li><a href="#">Where to Watch</a> </li>
@@ -189,14 +191,12 @@
   <!-- end of main header -->
   
   <main id="mainContent">
-
     <section class="home-banner-section">
       <div class="banner-bg">
         <picture class="object-fit">
           <source srcset="images/home-banner@2x.jpg" media="(min-width: 1024px)">
           <source srcset="images/home-banner-tab@2x.jpg" media="(min-width: 720px)">
-          <img src="images/home-banner-mobile@2x.jpg" alt="home-banner-mobile">
-        </picture>
+          <img src="images/home-banner-mobile@2x.jpg" alt="home-banner-mobile"> </picture>
         <div class="home-banner-overlay"></div>
       </div>
       <div class="container home-banner-main">
@@ -204,739 +204,11 @@
         <div class="b-border-left banner-border"></div>
         <div class="b-border-bottom banner-border"></div>
         <div class="home-banner-text">
-          <h1>the world’s <span>best</span> food channel</h1>
+          <h1 data-text="the world’s best food channel">the world’s <span>best</span> food channel</h1>
         </div>
       </div>
     </section>
-
-    <section class="featured-show-section">
-      <div class="container">
-        <div class="featured-main flex">
-          <div class="featured-show">
-            <div class="featured-left">
-            <div class="featured-heading flex">
-              <div class="heading-lt">
-                <h2>Featured Shows</h2>
-              </div>
-              <div class="heading-rt hide-in-mobile">
-              <a href="#" class="button btn-green">View All Shows</a>
-              </div>
-            </div>
-            <div class="featured-img">
-              <figure class="object-fit"> <img src="images/featured-thumb-big@2x.jpg" alt="featured-thumb-big"></figure>
-            </div>
-          </div>
-          <div class="spice-secrets flex">
-              <div class="spice-lt">
-                <figure><img src="images/spice-logo.svg" alt="spice-logo"></figure>
-              </div>
-              <div class="spice-rt flex">
-                <div class="spice-list">
-                  <div class="spice-bg-wrap pos-relative">
-                    <div class="dot-border pos-absolute">
-                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="110, 110">
-                        <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                      </svg>
-                    </div>
-                    <div class="spice-bg">
-                    <figure><img src="images/jasmin-thumb@2x.jpg" alt="jasmin-thumb"></figure>
-                    </div>
-                  </div>
-                  <div class="spice-text">
-                    <span class="position">Hosted by</span>
-                    <span class="title">Jasmin Ibrahim</span>
-                  </div>
-                </div>
-                <div class="spice-list">
-                  <div class="spice-bg-wrap pos-relative">
-                    <div class="dot-border pos-absolute">
-                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="110, 110">
-                        <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                      </svg>
-                    </div>
-                    <div class="spice-bg">
-                  <figure><img src="images/shahir-thumb@2x.jpg" alt="shahir-thumb"></figure>
-                  </div>
-                  </div>
-                  <div class="spice-text">
-                    <span class="position">Hosted by</span>
-                    <span class="title">Shahir Massoud</span>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="hide-in-desktop hide-in-tab">
-            <a href="#" class="button  btn-full btn-green">View All Shows</a>
-          </div>
-        </div>
-          <div class="featured-recipe">
-            <div class="featured-heading flex">
-              <div class="heading-lt">
-                <h2>Top Recipes</h2>
-              </div>
-              <div class="heading-rt hide-in-mobile">
-              <a href="#" class="button btn-green">More Recipes</a>
-              </div>
-            </div>
-            <div class="featured-list flex">
-              <div class="featured-thumb">
-                <figure class="object-fit"><img src="images/featured-thumb-one@2x.jpg" alt="featured-thumb-one"></figure>
-              </div>
-              <div class="featured-txt">
-                <div class="h3"><a href="#" >Spaghetti alla Carbonara</a></div>
-                <div class="cat-wrap flex">
-                  <ul>
-                    <li><a href="#">Show Title Appears Here</a></li>
-                    <li><a href="#">Meal Type</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="featured-list flex">
-              <div class="featured-thumb">
-                <figure class="object-fit"><img src="images/featured-thumb-two@2x.jpg" alt="featured-thumb-two"></figure>
-              </div>
-              <div class="featured-txt">
-                <div class="h3"><a href="#">Rosemary Chicken Skewers</a></div>
-                <div class="cat-wrap flex">
-                  <ul>
-                    <li><a href="#">Show Title Appears Here</a></li>
-                    <li><a href="#">Meal Type</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="featured-list flex">
-              <div class="featured-thumb">
-                <figure class="object-fit"><img src="images/featured-thumb-three@2x.jpg" alt="featured-thumb-three"></figure>
-              </div>
-              <div class="featured-txt">
-                <div class="h3"><a href="#">Orange-Chili Trout</a></div>
-                <div class="cat-wrap flex">
-                  <ul>
-                    <li><a href="#">Show Title Appears Here</a></li>
-                    <li><a href="#">Meal Type</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="hide-in-desktop hide-in-tab">
-              <a href="#" class="button btn-full btn-green">More Recipes</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <section class="optional-cta-module ">
-      <div class="optional-cta-bg">
-          <picture class="optional-img object-fit">
-              <source srcset="images/optional-cta-home@2x.jpg" media="(min-width:1024px)">
-              <source srcset="images/optional-cta-home-tab@2x.jpg" media="(min-width:720px)">
-              <img src="images/optional-cta-mobile-home@2x.jpg" alt="optional-cta">
-          </picture>
-      </div>
-       <div class="container">
-          <div class=" optional-main">
-              <div class="optional-cta-txt">
-                  <h2>Start Cooking with the Gusto TV App!</h2>
-                  <hr class="min-line">
-                  <p>Ornare enim facilisi elementum nulla. Pellentesque pellentesque elementum lobortis dignissim pretium in cursus.</p>
-                  <a  href="#" class="button download" >Download Now</a>
-              </div>
-          </div>
-      </div>   
-  </section>
-
-  <section class="gustotv-recipes-section">
-    <div class="container">
-      <div class="recipes-main">
-        <div class="recipes-heading flex">
-          <div class="heading-lt center">
-            <h2>Gusto TV Recipes</h2>
-          </div>
-          <div class="heading-rt sch-form">
-            <form action="" class="recipes-form">
-              <div class="form-field">
-              <input type="search" placeholder="Search by Host, Show and Meal Type, Occasions, Diets, and more...">
-              <input type="submit" value="">
-              </div>
-            </form>
-          </div>
-          
-        </div> 
-        <div class="recipes-row flex">
-          <div class="recipes-list">
-            <div class="recipes-img">
-              <figure><a href="#"><img src="images/dinner-thumb@2x.jpg" alt="dinner-thumb"></a></figure>
-            </div>
-            <span><a href="#">Dinners</a></span>
-          </div>
-          <div class="recipes-list">
-            <div class="recipes-img">
-              <figure><a href="#"><img src="images/apptizers-thumb@2x.jpg" alt="apptizers-thumb"></a></figure>
-            </div>
-            <span><a href="#">Appetizers</a></span>
-          </div>
-          <div class="recipes-list">
-            <div class="recipes-img">
-              <figure><a href="#"><img src="images/desserts-thumb@2x.jpg" alt="desserts-thumb"></a></figure>
-            </div>
-            <span><a href="#">Desserts</a></span>
-          </div>
-          <div class="recipes-list">
-            <div class="recipes-img">
-              <figure><a href="#"><img src="images/vegetarian-thumb@2x.jpg" alt="vegetarian-thumb"></a></figure>
-            </div>
-            <span><a href="#">Vegetarian</a></span>
-          </div>
-          <div class="recipes-list">
-            <div class="recipes-img">
-              <figure><a href="#"><img src="images/snacks-thumb@2x.jpg" alt="snacks-thumb"></a></figure>
-            </div>
-            <span><a href="#">Snacks</a></span>
-          </div>
-          <div class="recipes-list">
-            <div class="recipes-img">
-              <figure><a href="#"><img src="images/mains-thumb@2x.jpg" alt="mains-thumb"></a></figure>
-            </div>
-            <span><a href="#">Mains</a></span>
-          </div>
-          <div class="recipes-list">
-            <div class="recipes-img">
-              <figure><a href="#"><img src="images/soups-thumb@2x.jpg" alt="soups-thumb"></a></figure>
-            </div>
-            <span><a href="#">Soups</a></span>
-          </div>
-          <div class="recipes-list">
-            <div class="recipes-img">
-              <figure><a href="#"><img src="images/salads-thumb@2x.jpg" alt="salads-thumb"></a></figure>
-            </div>
-            <span><a href="#">Salads</a></span>
-          </div>
-        </div>
-        <div class="recipes-links flex">
-          <div class="links-list links1-of-4">
-          <span class="h4">Meals</span>
-          <div class="links-mobile-wrap">
-            <ul class="recipes-block flex">
-              <li><a href="#">Breakfast</a></li>
-              <li><a href="#">Brunch</a></li>
-              <li><a href="#">Lunch</a></li>
-              <li><a href="#">Dinner</a></li>
-              <li><a href="#">Mains</a></li>
-              <li><a href="#">Sides</a></li>
-              <li><a href="#">Snacks</a></li>
-              <li><a href="#">Desserts</a></li>
-              <li><a href="#">Appetizers</a></li>
-              <li><a href="#">Drinks</a></li>
-            </ul>
-          </div>
-          </div>
-          
-          <div class="links-list links1-of-4">
-          <span class="h4">Ingredients</span>
-          <div class="links-mobile-wrap">
-            <ul class="recipes-block flex">
-              <li><a href="#">Chicken</a></li>
-              <li><a href="#">Beef</a></li>
-              <li><a href="#">Dairy</a></li>
-              <li><a href="#">Cheese</a></li>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Fruit</a></li>
-              <li><a href="#">Grains</a></li>
-              <li><a href="#">Beans</a></li>
-              <li><a href="#">Seafood</a></li>
-              <li><a href="#">Pork</a></li>
-            </ul>
-            </div>
-          </div>
-          
-          <div class="links-list links1-of-4">
-            <span class="h4">Dishes</span>
-            <div class="links-mobile-wrap">
-            <ul class="recipes-block flex">
-                <li><a href="#">Salads</a></li>
-                <li><a href="#">Soups</a></li>
-                <li><a href="#">Stews</a></li>
-                <li><a href="#">Cakes</a></li>
-                <li><a href="#">Pies</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">Pasta</a></li>
-                <li><a href="#">Bread</a></li>
-                <li><a href="#">Sandwiches</a></li>
-                <li><a href="#">Casseroles</a></li>
-            </ul>
-            </div>
-          </div>
-          
-          <div class="links-list links1-of-4">
-              <span class="h4">Diets</span>
-              <div class="links-mobile-wrap">
-              <ul class="recipes-block flex">
-                <li><a href="#">Gluten-free</a></li>
-                <li><a href="#">Keto</a></li>
-                <li><a href="#">Kid-friendly</a></li>
-                <li><a href="#">Kosher</a></li>
-                <li><a href="#">Low-carb</a></li>
-                <li><a href="#">Paleo</a></li>
-                <li><a href="#">Pescatarian</a></li>
-                <li><a href="#">Vegan</a></li>
-                <li><a href="#">Vegetarian</a></li>
-              </ul>
-              </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section> 
-
-  <section class="recipe-cta-module">
-    <div class="recipe-cta-bg">
-        <picture class="object-fit">
-            <source srcset="images/recipe-title-here@2x.jpg" media="(min-width:768px)">
-            <img src="images/recipe-title-here-mobile@2x.jpg" alt=" recipe-title-here-mobile">
-        </picture>
-    </div>
-     <div class="container">
-        <div class="recipe-cta-main">
-            <div class="recipe-cta-content flex">
-              <div class="recipe-cta-img hide-in-mobile">
-                <figure><img src="images/recipe-home-img@2x.png" alt="recipe-home-img"></figure>
-              </div>
-              <div class="recipe-cta-txt">
-                  <div class="h4"><a href="#">Recipe Title Here</a></div>
-                  <p>Chef First Lastname pulls back the curtain on veggie sauces! Tomato sauce, pesto and more!</p>
-                  <a href="#" class="readmore">View Recipe</a>
-              </div>
-            </div>
-        </div>
-    </div>   
-</section>
-
-    <section class="logos-section">
-      <div class="container">
-          <h1>Short headline about where and how to watch your favorite Gusto TV shows</h1>
-          <div class="cnty-dropdown">
-              <select id="country-names">
-                  <option value="volvo">Select Your Country</option>
-                  <option value="saab">country1</option>
-                  <option value="mercedes">country2</option>
-                  <option value="audi">country3</option>
-              </select>
-          </div>
-          <div class="logos-main">
-              <ul class="logos-row flex">
-                  <li><figure> <img src="images/xumo@2x.png" alt="xumo-logo" title="xumo-logo"> </figure></li>
-                  <li><figure> <img src="images/roku@2x.png" alt="roku-logo" title="roku-logo"> </figure></li>
-                  <li><figure> <img src="images/seven-plus@2x.png" alt="seven-plus-logo" title="seven-plus-logo"> </figure></li>
-                  <li><figure> <img src="images/pluto@2x.png" alt="pluto-logo" title="pluto-logo"> </figure></li>
-                  <li><figure> <img src="images/sling@2x.png" alt="sling-logo" title="sling-logo"> </figure></li>
-                  <li><figure> <img src="images/tubi@2x.png" alt="tubi-logo" title="tubi-logo"> </figure></li>
-                  <li><figure> <img src="images/plex@2x.png" alt="plex-logo" title="plex-logo"> </figure></li>
-                  <li><figure> <img src="images/rlaxx@2x.png" alt="rlaxx-logo" title="rlaxx-logo"> </figure></li>
-                  <li><figure> <img src="images/sooka@2x.png" alt="sling-logo" title="sooka-logo"> </figure></li>
-                  <li><figure> <img src="images/fetch-tv@2x.png" alt="fetch-tv-logo" title="fetch-tv-logo"> </figure></li>
-                  <li><figure> <img src="images/now@2x.png" alt="now-logo" title="now-logo"> </figure></li>
-                  <li><figure> <img src="images/cmg@2x.png" alt="cmg-logo" title="cmg-logo"> </figure></li>
-                  <li><figure> <img src="images/crave@2x.png" alt="crave-logo" title="crave-logo"> </figure></li>
-                  <li><figure> <img src="images/disney-hotstar@2x.png" alt="disney-hotstar" title="disney-hotstar"> </figure></li>
-                  <li><figure> <img src="images/prime-video@2x.png" alt="prime-video" title="prime-video"> </figure></li>
-                  <li><figure> <img src="images/fv@2x.png" alt="fv-logo" title="fv-logo"> </figure></li>
-                  <li><figure> <img src="images/freetv@2x.png" alt="freetv-logo" title="freetv-logo"> </figure></li>
-                  <li><figure> <img src="images/fubo-tv@2x.png" alt="fubo-tv-logo" title="fubo-tv-logo"> </figure></li>
-                  <li><figure> <img src="images/glewed@2x.png" alt="glewed-logo" title="glewed-logo"> </figure></li>
-                  <li><figure> <img src="images/kiro@2x.png" alt="kiro-logo" title="kiro-logo"> </figure></li>
-                  <li><figure> <img src="images/lg@2x.png" alt="lg-logo" title="lg-logo"> </figure></li>
-                  <li><figure> <img src="images/stremium@2x.png" alt="stremium-logo" title="stremium-logo"> </figure></li>
-                  <li><figure> <img src="images/metax@2x.png" alt="metax-logo" title="metax-logo"> </figure></li>
-                  <li><figure> <img src="images/netgemtv@2x.png" alt="netgemtv-logo" title="netgemtv-logo"> </figure></li>
-                  <li><figure> <img src="images/philo@2x.png" alt="philo-logo" title="philo-logo"> </figure></li>
-                  <li><figure> <img src="images/rakuten@2x.png" alt="rakuten-logo" title="rakuten-logo"> </figure></li>
-                  <li><figure> <img src="images/sumsung@2x.png" alt="sumsung-logo" title="sumsung-logo"> </figure></li>
-                  <li><figure> <img src="images/elect-tv@2x.png" alt="elect-tv" title="elect-tv"> </figure></li>
-                  <li><figure> <img src="images/tcl@2x.png" alt="tcl-logo" title="tcl-logo"> </figure></li>
-                  <li><figure> <img src="images/tigi@2x.png" alt="tigo-logo" title="tigo-logo"> </figure></li>
-                  <li><figure> <img src="images/vidaa@2x.png" alt="vidaa-logo" title="vidaa-logo"> </figure></li>
-                  <li><figure> <img src="images/vizio@2x.png" alt="vizio-logo" title="vizio-logo"> </figure></li>
-                  <li><figure> <img src="images/dtv@2x.png" alt="dtv-logo" title="dtv-logo"> </figure></li>
-                  <li><figure> <img src="images/wftv@2x.png" alt="wftv-logo" title="wftv-logo"> </figure></li>
-                  <li><figure> <img src="images/whio@2x.png" alt="whio-logo" title="whio-logo"> </figure></li>
-                  <li><figure> <img src="images/action-news@2x.png" alt="action-news-logo" title="action-news-logo"> </figure></li>
-                  <li><figure> <img src="images/wpxi@2x.png" alt="wpxi-logo" title="wpxi-logo"> </figure></li>
-                  <li><figure> <img src="images/wsb@2x.png" alt="wsb-logo" title="wsb-logo"> </figure></li>
-                  <li><figure> <img src="images/wsoc@2x.png" alt="wsoc-logo" title="wsoc-logo"> </figure></li>
-                  <li><figure> <img src="images/localnow@2x.png" alt="localnow-logo" title="local-now"> </figure></li>
-                  <li><figure> <img src="images/mi@2x.png" alt="mi-logo" title="mi-logo"> </figure></li>
-                  <li><figure> <img src="images/zeas@2x.png" alt="zeas-logo" title="zeas-logo"> </figure></li>
-              </ul>
-              </div>
-          </div>
-  </section>
-  
-  <section class="tv-show-slider">
-    <div class="container">
-      <div class="tv-show-main ">
-        <div class="tv-show-heading flex">
-          <div class="heading-lt">
-            <h3>Gusto TV Shows</h3>
-          </div>
-          <div class="heading-rt">
-            <div class="heading-btn">
-            <a href="#" class="button btn-green">All Shows</a>
-            </div>
-          </div>
-        </div>
-        <div class="tv-slider">
-          <div class="tv-show-row flex">
-            <div class="tv-show-img">
-              <figure><a href="#"> <img src="images/like-a-chef@2x.png" alt="like-a-chef"> </a></figure>
-            </div>
-            <div class="tv-show-img">
-              <figure> <a href="#"><img src="images/crate-to-plate@2x.png" alt="like-a-chef"></a> </figure>
-            </div>
-            <div class="tv-show-img">
-              <figure><a href="#"> <img src="images/dine-your-sign@2x.png" alt="like-a-chef"> </a></figure>
-            </div>
-            <div class="tv-show-img">
-              <figure><a href="#"> <img src="images/road-show@2x.png" alt="like-a-chef"></a> </figure>
-            </div>
-            <div class="tv-show-img">
-              <figure><a href="#"><img src="images/fish-dish@2x.png" alt="like-a-chef"></a> </figure>
-            </div>
-            <div class="tv-show-img">
-              <figure><a href="#"> <img src="images/flour-power@2x.png" alt="like-a-chef"> </a></figure>
-            </div>
-            <div class="tv-show-img">
-              <figure><a href="#"> <img src="images/dine-your-sign@2x.png" alt="like-a-chef"></a> </figure>
-            </div>
-            <div class="tv-show-img">
-              <figure> <a href="#"><img src="images/dine-your-sign@2x.png" alt="like-a-chef"> </a></figure>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-      <hr>
-    </div>
-  </section>
-  
-  <section class="tv-host-slider">
-    <div class="container">
-      <div class="tv-host-main ">
-        <div class="tv-host-heading flex">
-          <div class="heading-lt">
-            <h3>Gusto TV Hosts</h3>
-          </div>
-          <div class="heading-rt">
-            <div class="heading-btn">
-            <a href="#" class="button btn-green">All Hosts</a>
-            </div>
-          </div>
-        </div>
-        <div class="tv-host-slider">
-          <div class="tv-host-row flex">
-            <div class="tv-host-list">
-              <div class="host-bg-wrap pos-relative">              
-                  <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
-                      <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                    </svg>
-                  </div>
-                  <div class="dot-border pos-absolute hide-in-desktop">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                      <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                    </svg>
-                  </div>
-                  <!-- end of dot border -->
-                  <div class="host-bg">
-                  <figure class="object-fit"><a href="#"><img src="images/host-thumb-one@2x.jpg" alt="host-thumb-one"></a></figure>
-                </div>
-              </div>
-              <div class="host-text">
-                <span class="title"><a href="#">First Lastname</a></span>
-                <span class="position">Show Title Here</span>
-              </div>
-            </div>
-            <div class="tv-host-list">
-              <div class="host-bg-wrap pos-relative">  
-                  <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
-                      <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                    </svg>
-                  </div>
-                  <div class="dot-border pos-absolute hide-in-desktop">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                      <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                    </svg>
-                  </div>
-                  <!-- end of dot border -->
-                  
-                  <div class="host-bg">
-                  <figure class="object-fit"><a href="#"> <img src="images/host-thumb-two@2x.jpg" alt="host-thumb-one"></a></figure>
-                </div>
-              </div>
-                <div class="host-text">
-                  <span class="title"><a href="#">First Lastname</a></span>
-                  <span class="position">Show Title Here</span>
-              </div>
-            </div>
-            <div class="tv-host-list">
-              <div class="host-bg-wrap pos-relative">
-                <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
-                      <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                    </svg>
-                  </div>
-                  <div class="dot-border pos-absolute hide-in-desktop">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                      <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                    </svg>
-                  </div>
-                  <!-- end of dot border -->
-                  <div class="host-bg">
-                  <figure class="object-fit"><a href="#"> <img src="images/host-thumb-three@2x.jpg" alt="host-thumb-one"></a></figure>
-                </div>
-              </div>
-                <div class="host-text">
-                  <span class="title"><a href="#">First Lastname</a></span>
-                  <span class="position">Show Title Here</span>
-                </div>
-            </div>
-            <div class="tv-host-list">
-              <div class="host-bg-wrap pos-relative">
-                  <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
-                      <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                    </svg>
-                  </div>
-                  <div class="dot-border pos-absolute hide-in-desktop">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                      <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                    </svg>
-                  </div>
-                  <!-- end of dot border -->
-                  <div class="host-bg">
-                  <figure class="object-fit"> <a href="#"><img src="images/host-thumb-four@2x.jpg" alt="host-thumb-one"></a></figure>
-                </div>
-                </div>
-                <div class="host-text">
-                  <span class="title"><a href="#">First Lastname</a></span>
-                  <span class="position">Show Title Here</span>
-                </div>
-              </div>
-            <div class="tv-host-list">
-                <div class="host-bg-wrap pos-relative">
-                    <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="122" height="122" viewport="122, 122">
-                      <circle class="circle" fill="none" height="122" width="122" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                    </svg>
-                  </div>
-                  <div class="dot-border pos-absolute hide-in-desktop">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                      <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                    </svg>
-                  </div>
-                  <!-- end of dot border -->
-              <div class="host-bg">
-                            
-                  <figure class="object-fit"><a href="#"> <img src="images/host-thumb-five@2x.jpg" alt="host-thumb-one"></a></figure>
-               </div>
-                </div><!-- end of host bg wrap -->
-                <div class="host-text">
-                    <span class="title"><a href="#">First Lastname</a></span>
-                  <span class="position">Show Title Here</span>
-                </div>
-              </div>
-            <div class="tv-host-list">
-              <div class="host-bg-wrap pos-relative">
-                  <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
-                      <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                    </svg>
-                  </div>
-                  <div class="dot-border pos-absolute hide-in-desktop">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                      <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                    </svg>
-                  </div>
-                  <!-- end of dot border -->
-                  <div class="host-bg">
-                  <figure class="object-fit"><a href="#"><img src="images/host-thumb-six@2x.jpg" alt="host-thumb-one"></a></figure>
-                </div>
-              </div>
-                <!-- end of host bg wrap -->
-                <div class="host-text">
-                  <span class="title"><a href="#">First Lastname</a></span>
-                  <span class="position">Show Title Here</span>
-              </div>
-            </div>
-            <div class="tv-host-list">
-              
-                <div class="host-bg-wrap pos-relative">
-                  <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
-                      <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                    </svg>
-                  </div>
-                  <div class="dot-border pos-absolute hide-in-desktop">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                      <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                    </svg>
-                  </div>
-                  <!-- end of dot border -->
-                  <div class="host-bg">
-                  <figure class="object-fit"><a href="#"> <img src="images/host-thumb-seven@2x.jpg" alt="host-thumb-one"></a></figure>
-                </div>
-                </div>
-                <!-- end of host bg wrap -->
-                <div class="host-text">
-                  <span class="title"><a href="#">First Lastname</a></span>
-                  <span class="position">Show Title Here</span>
-                </div>
-            </div>
-            <div class="tv-host-list">
-              <div class="host-bg-wrap pos-relative">
-                <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
-                    <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                  </svg>
-                </div>
-                <div class="dot-border pos-absolute hide-in-desktop">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                    <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                  </svg>
-                </div>
-                <!-- end of dot border -->
-                <div class="host-bg">
-                 <figure class="object-fit"><a href="#"><img src="images/host-thumb-eight@2x.jpg" alt="host-thumb-one"></a></figure>
-              </div>
-              </div>
-              <div class="host-text">
-                <span class="title"><a href="#">First Lastname</a></span>
-                <span class="position">Show Title Here</span>
-              </div>
-            </div>
-            <div class="tv-host-list">
-              <div class="host-bg-wrap pos-relative">
-                <div class="dot-border pos-absolute hide-in-tab hide-in-mobile">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120" height="120" viewport="120, 120">
-                    <circle class="circle" fill="none" height="120" width="120" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="60"></circle>
-                  </svg>
-                </div>
-                <div class="dot-border pos-absolute hide-in-desktop">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="97" height="97" viewport="120, 120">
-                    <circle class="circle" fill="none" height="97" width="97" cx="50%" cy="50%" stroke-dasharray="2, 4.5" r="48.5"></circle>
-                  </svg>
-                </div>
-                <!-- end of dot border -->
-                <div class="host-bg">
-                 <figure class="object-fit"><a href="#"> <img src="images/host-thumb-two@2x.jpg" alt="host-thumb-one"></a></figure>
-              </div>
-              </div>
-              <div class="host-text">
-                <span class="title"><a href="#">First Lastname</a></span>
-                <span class="position">Show Title Here</span>
-            </div>
-        </div>
-      </div>
-        </div>
-    </div>
-    
-    </div>
-  </section>
-  
-  
-    <section class="newsletter-signup">
-      <div class="container">
-          <div class="newsletter-main flex">
-                  <div class="newsletter-left flex">
-                    <div class="text-column">
-                        <span class="optional-text">Newsletter Signup</span>
-                        <div class="h2">A short but very persuasive headler aimed at driving newsletter signup conversions.</div>
-                    </div>
-                    <div class="image-column">
-                        <picture class="newsletter-img">
-                            <source srcset="images/chopping-board@2x.png" media="(min-width: 1200px)">
-                            <img src="images/chopping-mobile@2x.png" alt="chopping-mobile">
-                        </picture>
-                    </div>
-                  </div>
-                  <div class="newsletter-right">
-                    <div class="newsletter-form common-form">
-                      <div class="frm_forms  with_frm_style frm_inline_form frm_inline_top frm_style_formidable-style" id="frm_form_1_container" >
-                        <form enctype="multipart/form-data" method="post" class="frm-show-form  frm_pro_form " id="form_contact-form"  >
-                        <div class="frm_form_fields ">
-                        <fieldset>
-                        
-                        
-                        <div class="frm_fields_container">
-                        <input type="hidden" name="frm_action" value="create" />
-                        <input type="hidden" name="form_id" value="1" />
-                        <input type="hidden" name="frm_hide_fields_1" id="frm_hide_fields_1" value="" />
-                        <input type="hidden" name="form_key" value="contact-form" />
-                        <input type="hidden" name="item_meta[0]" value="" />
-                        <input type="hidden" id="frm_submit_entry_1" name="frm_submit_entry_1" value="cc4ce51db9" /><input type="hidden" name="_wp_http_referer" value="/contact/" />
-        
-                        <div id="frm_field_1_container" class="newsletter_frm_half frm_first frm_form_field form-field frm_required_field frm_top_container">
-                             <input type="text" name="" value="" placeholder="First Name" /> </div>
-                        
-                        <div id="frm_field_2_container" class="newsletter_frm_half frm_last frm_form_field form-field frm_required_field frm_top_container">
-                            <input type="text"  name="" value="" placeholder="Last Name"   /> </div>
-
-                        <div id="frm_field_3_container" class="newsletter_frm_half frm_first frm_form_field form-field  frm_required_field frm_top_container">
-                            <input type="email"  name="" value="" placeholder="Email"/> </div>
-                        
-                         
-                        <div class="frm_form_field form-field newsletter_frm_half frm_last">
-                          <select id="country-names">
-                            <option value="country1">Which best describes you</option>
-                            <option value="country1">country1</option>
-                            <option value="country1">country2</option>
-                            <option value="country1">country3</option>
-                          </select>
-                        </div>
-                        <div class="frm_form_field form-field frm_full">
-                          <select id="country-names">
-                            <option value="volvo">Select Your Country</option>
-                            <option value="saab">country1</option>
-                            <option value="mercedes">country2</option>
-                            <option value="audi">country3</option>
-                        </select>
-                        </div>
-                          
-                            
-                            
-                        </div>
-                        <div class="frm_wrapper flex">
-                            <div class="form-note"><p>By submitting, you agree to receive email marketing from Gusto TV. Unsubscribe at any time.</p></div>
-                            <button class="frm_button_submit frm_final_submit" type="submit"   formnovalidate="formnovalidate"><span>Submit</span></button>
-                        </div>
-                        
-                      </fieldset>
-                        </div>
-                      </form>
-                      </div>
-                    
-                  
-                    </div>
-                </div>   
-        </div>
-      </div>
- </section>
-  
   </main>
-  <div class="footer-img">
-    <picture class="object-fit">
-      <source srcset="images/footer-banner-two@2x.jpg" media="(min-width: 768px)">
-      <img src="images/footer-banner-two-mobile@2x.jpg" alt="Footer Banner"> </picture>
-  </div>
-  <!-- end of footer img -->
 </div>
 <!-- end of main -->
 <footer id="main_footer">
@@ -947,12 +219,14 @@
         <!-- end of way to watch -->
         <div class="footer-menu">
           <ul class="menu-list">
-            <li><a href="#">Awards</a></li>
-            <li><a href="#">News &amp; Press</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Casting</a></li>
-            <li><a href="#">Screening Room</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
           </ul>
         </div>
         <!-- end of footer menu -->
@@ -967,7 +241,7 @@
         </div>
       </div>
       <!-- ened of footer top -->
-        <hr>
+      <hr>
       <div class="footer-btm flex">
         <p>Copyright &copy;2023 GustoTV</p>
         <div class="privacy-links">
@@ -983,49 +257,15 @@
       <!-- end of footer_btm --> 
       
     </div>
-    
   </div>
   <!-- end of footer --> 
 </footer>
-
-<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
 <link rel="stylesheet" href="css/slick.css" media="all"/>
 <script src="js/slick.min.js"></script> 
 <script src="js/custom-slick.js"></script>
 <link rel="stylesheet" href="css/jquery.selectBox.css" media="all"/>
-<script src="js/jquery.uniform.js"></script> 
-<link rel="stylesheet" href="css/uniform.default.css">
-<script src="js/custom-uniform.js"></script> 
 <script src="js/jquery.selectBox.js"></script> 
 <script src="js/custom-script.js"></script> 
-<script>
-  var $window = jQuery(window);
-var $document = jQuery(document);
-  function check_if_line() {
-  var height = $(".home-banner-text").height();
-  if(jQuery(window).width() >= 1200){
-    const number = 156;
-    var totHeight = height + number;
-    jQuery(".b-border-left").css({ "height": "calc(100% - " + totHeight + "px)", });
-  }
-  else if(jQuery(window).width() <= 1199 && jQuery(window).width() >= 1024){
-    const number = 116;
-    var totHeight = height + number;
-    jQuery(".b-border-left").css({ "height": "calc(100% - " + totHeight + "px)", });
-  }
-  else if(jQuery(window).width() <= 1023 && jQuery(window).width() >= 720){
-    const number = 82;
-    var totHeight = height + number;
-    jQuery(".b-border-left").css({ "height": "calc(100% - " + totHeight + "px)", });
-  }
-}
-
-$window.on("scroll", check_if_line);
-$window.trigger("scroll");
-$document.ready(function() { 
-  check_if_line();
-  setTimeout(check_if_line, 100);
-});
-</script>
 </body>
 </html>

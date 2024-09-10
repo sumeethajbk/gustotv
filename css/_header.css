@@ -1,4 +1,4 @@
-.main_header {width: 100%; top: 0; left: 0; right: 0; position: fixed; z-index: 850; transition: .3s ease-in-out; background: var(--white);}
+.main_header {width: 100%; top: 0; left: 0; right: 0; position: fixed; z-index: 999; transition: .3s ease-in-out; background: var(--white);}
 .main_header:after {content: ""; background:var(--input); height: 1px; width: 100%; display: block; position: absolute; bottom: 0;}
 .main_header .container {position: relative;}
 .main_header .header {padding:16px 0 0;}
@@ -75,7 +75,7 @@
 
 
     /* Submenu */
-    ul.main_menu > li > ul {margin: 0; padding:23px 36px 18px 32px; min-width: 267px; width: 100%; top: calc(100% + 5px); left: 50%; transform: translate(-50%,0); position: absolute; background-color: var(--white); opacity: 0; visibility: hidden; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.175,.885,.32,1.275); z-index: 851;}
+    ul.main_menu > li > ul {margin: 0; padding:23px 36px 18px 32px; min-width: 267px; width: 100%; top: calc(100% + 5px); left: 50%; transform: translate(-50%,0); position: absolute; background-color: var(--white); opacity: 0; visibility: hidden; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.175,.885,.32,1.275); z-index: 9999;}
     ul.main_menu > li > ul li {margin-bottom: 18px;}
     ul.main_menu > li > ul li a {font-size: 1rem; font-weight: bold; color: rgb(40, 40, 44, 0.75); letter-spacing: -0.095px;}
     ul.main_menu > li > ul li a:hover {color: var(--green);}
@@ -154,7 +154,7 @@
     
     .mobile_menu ul.main_menu li:before {display: none;} 
     .mobile_menu ul.main_menu > li >a {font-size: 1.25rem; padding:13px 20px 13px 20px; cursor: pointer; color: var(--heading); position: relative; display:block; font-weight: bold;} 
-    .mobile_menu ul.main_menu > li a:hover {color: var(--heading);} 
+    .mobile_menu ul.main_menu > li a:hover {color: var(--green);} 
 
 
     .mobile_menu ul.main_menu > li > ul {display: none; margin: 0; position: relative; padding: 0; background: var(--input); border-top: 1px solid var(--green); border-bottom: 1px solid var(--green);} 
@@ -162,7 +162,7 @@
     .mobile_menu ul.main_menu li ul li:first-child{border: 0 none;}
     .mobile_menu ul.main_menu li ul li a {color: var(--blacktext); position: relative; padding:13px 20px 13px 20px; display: block; font-size: 1.125rem;} 
     .mobile_menu ul.main_menu li ul li ul {margin: 0 !important; padding:0; top: inherit; display: none;}
-    .mobile_menu ul.main_menu li.flex-menu .menu-1-of-4 > ul {display: block;}
+    .mobile_menu ul.main_menu li.flex-menu .menu-1-of-4 > ul {display: block!important;}
     .mobile_menu ul.main_menu li.menu-btn a {font-size: 1.125rem; font-weight: bold; color: var(--heading);}
     .mobile_menu ul.main_menu li.menu-btn a:hover {color: var(--green);}
     
